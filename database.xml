@@ -9,7 +9,11 @@
 	<actor>
 		<name></name>
 		<surname></surname>
-		<birthyear></birthyear>
+		<birthdate>
+			<day></day>
+			<month></month>
+			<year></year>
+		</birthdate>
 		<birthplace></birthplace>
 		<hight></hight>
 	</actor>
