@@ -1,9 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <database>
 	<series>
 		<name></name>
 		<author></author>
 		<release-year></release-year>
 		<genre></genre>
+		<rating></rating>
+		<seasons-number></seasons-number>
+		<episodes-number></episodes-number>
 	</series>
 	
 	<actor>
@@ -16,6 +21,7 @@
 		</birthdate>
 		<birthplace></birthplace>
 		<hight></hight>
+		<rating></rating>
 	</actor>
 	
 	<prize>
