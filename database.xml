@@ -1,4 +1,23 @@
 <database>
-	<name></name>
-	<author></author>
+	<series>
+		<name></name>
+		<author></author>
+		<release-year></release-year>
+		<genre></genre>
+	</series>
+	
+	<actor>
+		<name></name>
+		<surname></surname>
+		<birthyear></birthyear>
+		<birthplace></birthplace>
+		<hight></hight>
+	</actor>
+	
+	<prize>
+		<name></name>
+		<awarded-for></awarded-for>
+		<country></country>
+		<first-awarded></first-awarded>
+	</prize>
 </databes>
