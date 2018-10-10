@@ -13,3 +13,23 @@
 ATTRIBUTE DEFINITION
 <!ATTLIST elementName attributeName type content> 
 type examples: CDATA, ID, IDREF, IDREFS, NMTOKEN, NMTOKENS
+
+
+example:
+<team> 
+	<name abbreviation="SNT"> spain nation team </name>
+	<player year="2016"> 
+		<goalkeeper>Chuj Fjutowicz</goalkeeper>
+		<midfielder injury =light> mklsamk mkdlsmakdl </midfielder> 
+		<midfielder injury =medium> mklsamk mkdlsmakdl </midfielder>
+		<midfielder injury =high> mklsamk mkdlsmakdl </midfielder>
+	</player>
+</team>
+
+<!ATTLIST name abbreviation NMTOKEN #REQUIRED> 
+<!ATTLIST player year CDATA #FIXED "2016"> 
+<!ATTLIST midfielder injury (light | medium | high)> 
+ 
+
+IDENTIFICATION NUMBER
+<!ATTLIST coach no ID #REQUIRED>
