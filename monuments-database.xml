@@ -546,13 +546,66 @@
             </dimensions>
             <visiting>available</visiting>
             <history>
-                The local authorities of Gdańsk, together with Mayor Bartłomiej Schachmann wanted to raise a more notable monument.
-                The first mason to receive an offer to complete the project was Jakub Kordes from Lubeka, but for unknown reasons his plan was not accepted.
-                The new fountain was to be constructed at the centre of the facade of the Artus Court, from the Green Gate the fountain would be seen with the Gdańsk Main Town Hall in the background,
-                with the turn to the Long Lane. Neptune - the god of the sea - was to be placed facing the townhouses, which were the residence of the Polish kings,
+                The local authorities of Gdańsk, together with Mayor Bartłomiej Schachmann wanted to raise a more
+                notable monument.
+                The first mason to receive an offer to complete the project was Jakub Kordes from Lubeka, but for
+                unknown reasons his plan was not accepted.
+                The new fountain was to be constructed at the centre of the facade of the Artus Court, from the Green
+                Gate the fountain would be seen with the Gdańsk Main Town Hall in the background,
+                with the turn to the Long Lane. Neptune - the god of the sea - was to be placed facing the townhouses,
+                which were the residence of the Polish kings,
                 while at their stay in Gdańsk, the mythological god was to have his head bow down to them.
             </history>
-
         </monument>
+
+        <monument monument-id="central-park" city-id="warsaw" type-id="building">
+            <monument-name>Central Park</monument-name>
+            <monument-author>Frederick Law Olmsted</monument-author>
+            <completion-date>
+                <completion-day>23</completion-day>
+                <completion-month>05</completion-month>
+                <completion-year>1857</completion-year>
+            </completion-date>
+            <costs currency="Milion Dollar">37.5</costs>
+            <dimensions>
+                <width unit="km">11</width>
+                <height unit="m">16</height>
+                <length unit="km">27</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
+                Central Park is an urban park in Manhattan, New York City.
+                It is located between the Upper West Side and Upper East Side, roughly bounded by Fifth Avenue on the
+                east, Central Park West (Eighth Avenue) on the west,
+                Central Park South (59th Street) on the south, and Central Park North (110th Street) on the north.
+                Central Park is the most visited urban park in the United States, with 40 million visitors in 2013,
+                and one of the most filmed locations in the world. In terms of area, Central Park is the fifth-largest
+                park in New York City, covering 843 acres (341 ha).
+            </history>
+        </monument>
+
+        <monument monument-id="stajnia-jednorozcow" city-id="lodz" type-id="building">
+            <monument-name>Stajnia Jednorożców</monument-name>
+            <monument-author>Jan Gałecki</monument-author>
+            <completion-date>
+                <completion-day>31</completion-day>
+                <completion-month>10</completion-month>
+                <completion-year>2015</completion-year>
+            </completion-date>
+            <costs currency="Thousands PLN">60</costs>
+            <dimensions>
+                <width unit="m">13</width>
+                <height unit="m">33</height>
+                <length unit="m">100</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
+                Stajnia jednorożców is a tram station connecting two transport axes of the city of Łódź: the W-Z route
+                and the Łódź Regional Tram (north-south).
+                It is located on Mickiewicza Avenue, between Kościuszki Avenue and Piotrkowska Street. It was opened on
+                October 31, 2015.
+            </history>
+        </monument>
+
     </monuments>
 </monuments-database>
