@@ -379,7 +379,7 @@
     </monument>
 
 
-    <monument monument-id="5" city-id="" type-id="">
+    <monument monument-id="6" city-id="" type-id="">
       <name>Cattedrale di Santa Maria del Fiore</name>
       <author>Arnolfo di Cambio</author>
       <completion-date>
@@ -402,8 +402,54 @@
       </history>
     </monument>
 
+
+    <monument monument-id="7" city-id="" type-id="">
+      <name>David</name>
+      <author>Michelangelo</author>
+      <completion-date>
+        <day>23</day>
+        <month>October</month>
+        <year>1504</year>
+      </completion-date>
+      <costs currency="Thousent Dollar">29</costs>
+      <dimensions>
+        <width unit="m">1,36</width>
+        <height unit="m">5,17</height>
+        <length unit="m">0,93</length>
+      </dimensions>
+      <visiting>available</visiting>
+      <history>
+        David is a 5.17-metre (17.0 ft) marble statue of a standing male nude.
+        The statue represents the Biblical hero David, a favoured subject in the art of Florence.
+      </history>
+    </monument>
+
+
+    <monument monument-id="8" city-id="" type-id="">
+      <name>Palace of Culture and Science</name>
+      <author>Lev Rudnev</author>
+      <completion-date>
+        <day>22</day>
+        <month>July</month>
+        <year>1955</year>
+      </completion-date>
+      <costs currency="Thousent PLN">102</costs>
+      <dimensions>
+        <width unit="m">54</width>
+        <height unit="m">237</height>
+        <length unit="m">48</length>
+      </dimensions>
+      <visiting>nonavailable</visiting>
+      <history>
+        Palace of Culture and Science is a notable high-rise building in Warsaw, Poland. Constructed in 1955, it is the center for various companies,
+        public institutions and cultural activities such as concerts, cinemas, theaters,
+        libraries, sports clubs, universities, scientific institutions and authorities of the Polish Academy of Sciences. 
+        Motivated by Polish historicism and American art deco high-rise buildings, 
+        the PKiN was designed by Soviet architect Lev Rudnev in "Seven Sisters" style and is informally referred to as the Eighth Sister.
+      </history>
+    </monument>
     <!--  eifel, koloseum, mur berlinski, wieza w pizdzie, Notre-Dame, clock tower,
-Katedra Santa Maria del Fiore, Dawid (rzeźba), Campanile di Giotto, palac kultury, sky tower, Statua Wolności,
+Katedra Santa Maria del Fiore, Dawid (rzeźba), palac kultury, sky tower, Statua Wolności,
 Figura Jezusa Chrystusa Króla Wszechświata, pomnik neptuna stajnia jednorozcow, central park-->
   
 
