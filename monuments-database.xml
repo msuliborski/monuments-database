@@ -238,9 +238,7 @@
         <type type-id="landscape">Landscape</type>
     </types>
 
-	<monuments> <!--  eifel, koloseum, mur berlinski, wieza w pizdzie, Notre-Dame, clock tower,
-Katedra Santa Maria del Fiore, Dawid (rzeźba), Campanile di Giotto, palac kultury, sky tower, Statua Wolności,
-Figura Jezusa Chrystusa Króla Wszechświata, pomnik neptuna stajnia jednorozcow, central park-->
+	<monuments> 
         
 
 	<monument monument-id="1" city-id="" type-id="">
@@ -314,14 +312,14 @@ Figura Jezusa Chrystusa Króla Wszechświata, pomnik neptuna stajnia jednorozcow
         </monument>
   
     <monument monument-id="4" city-id="" type-id="">
-		    <name>Notre-Dame de Paris</name>
-		    <author>Unknown</author>
+		    <name>Leaning Tower of Pisa</name>
+		    <author>Bonanno Pisano</author>
 		    <completion-date>
-          <day>35</day>
-          <month>April</month>
-          <year>1345</year>
+          <day>04</day>
+          <month>August</month>
+          <year>1173</year>
     </completion-date>
-            <costs currency="Billion CHF">24.5</costs>
+            <costs currency="Million Dollars">2.9</costs>
             <dimensions>
                 <width unit="m">11,5</width>
                 <height unit="m">55,86</height>
@@ -334,6 +332,80 @@ Figura Jezusa Chrystusa Króla Wszechświata, pomnik neptuna stajnia jednorozcow
             after the cathedral and the Pisa Baptistry.
           </history>
         </monument>
+
+    <monument monument-id="5" city-id="" type-id="">
+      <name>Notre-Dame de Paris</name>
+      <author>Unknown</author>
+      <completion-date>
+        <day>35</day>
+        <month>April</month>
+        <year>1345</year>
+      </completion-date>
+      <costs currency="Billion CHF">24.5</costs>
+      <dimensions>
+        <width unit="m">48</width>
+        <height unit="m">90</height>
+        <length unit="m">128</length>
+      </dimensions>
+      <visiting>available</visiting>
+      <history>
+        Notre-Dame de Paris is a medieval Catholic cathedral on the Île de la Cité in the fourth arrondissement of Paris, France.
+        The cathedral is widely considered to be one of the finest examples of French Gothic architecture.
+        The innovative use of the rib vault and flying buttress, the enormous and colorful rose windows,
+        and the naturalism and abundance of its sculptural decoration all set it apart from earlier Romanesque architecture.
+      </history>
+    </monument>
+
+    <monument monument-id="5" city-id="" type-id="">
+      <name>Big Ben</name>
+      <author>Augustus Pugin</author>
+      <completion-date>
+        <day>31</day>
+        <month>May</month>
+        <year>1859</year>
+      </completion-date>
+      <costs currency="Million GBP">61</costs>
+      <dimensions>
+        <width unit="m">23</width>
+        <height unit="m">96</height>
+        <length unit="m">23</length>
+      </dimensions>
+      <visiting>available</visiting>
+      <history>
+        Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London and is usually extended to refer to both
+        the clock and the clock tower. The official name of the tower in which Big Ben is located was originally the Clock Tower,
+        but it was renamed Elizabeth Tower in 2012 to mark the Diamond Jubilee of Elizabeth II.
+      </history>
+    </monument>
+
+
+    <monument monument-id="5" city-id="" type-id="">
+      <name>Cattedrale di Santa Maria del Fiore</name>
+      <author>Arnolfo di Cambio</author>
+      <completion-date>
+        <day>09</day>
+        <month>September</month>
+        <year>1296</year>
+      </completion-date>
+      <costs currency="Million Italian lira">48</costs>
+      <dimensions>
+        <width unit="m">90</width>
+        <height unit="m">114,5</height>
+        <length unit="m">153</length>
+      </dimensions>
+      <visiting>available</visiting>
+      <history>
+        Cattedrale di Santa Maria del Fiore is the cathedral of Florence, Italy (Italian: Duomo di Firenze). 
+        It was begun in 1296 in the Gothic style to a design of Arnolfo di Cambio and was structurally completed by 1436, with the dome designed by Filippo Brunelleschi.
+        The exterior of the basilica is faced with polychrome marble panels in various shades of green and pink, bordered by white,
+        and has an elaborate 19th-century Gothic Revival façade by Emilio De Fabris.
+      </history>
+    </monument>
+
+    <!--  eifel, koloseum, mur berlinski, wieza w pizdzie, Notre-Dame, clock tower,
+Katedra Santa Maria del Fiore, Dawid (rzeźba), Campanile di Giotto, palac kultury, sky tower, Statua Wolności,
+Figura Jezusa Chrystusa Króla Wszechświata, pomnik neptuna stajnia jednorozcow, central park-->
+  
 
 	</monuments>
 </monuments-database>
