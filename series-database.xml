@@ -3,7 +3,7 @@
 <!DOCTYPE series-database SYSTEM "series-database.dtd"/>
 
 
-<database>
+<monuments-database>
 
 	<authors>
 		<author>
@@ -20,34 +20,38 @@
 	</authors>
 
 
-	<genres>
-		<genre genre-id=""></genre>
-	</genres>
-
-	<actors>
-		<actor>
+	<cities>
+		<city city-id="">
 			<name></name>
-			<surname></surname>
-			<birthdate>
+            <country></country>
+            <area unit="km2"></area>
+            <population></population>
+
+			<date-of-establishment>
 				<day></day>
 				<month></month>
 				<year></year>
-			</birthdate>
-			<birthplace></birthplace>
-			<hight></hight>
-			<rating></rating>
-		</actor>
-	</actors>
+            </date-of-establishment>
+		</city>
+	</cities>
 
-	<series-list>
-		<series series-id="" genere-id="" >
-		<name></name>
-		<author></author>
-		<release-year></release-year>
-		<genre></genre>
-		<rating></rating>
-		<seasons-number></seasons-number>
-		<episodes-number></episodes-number>
-		</series>
-	</series-list>
-</database>
+    <types> <!-- observing tower, building, sculpture -->
+        <type type-id=""></type>
+    </types>
+
+	<monuments>
+        <monument monument-id="" city-id="" type="id">
+		    <name></name>
+		    <author></author>
+		    <completed></completed>
+            <costs currency=""></costs>
+            <dimensions>
+                <width></width>
+                <height></height>
+                <length></length>
+            </dimensions>
+            <visiting></visiting> <!--available/non-available -->
+            <history></history>
+        </monument>
+	</monuments>
+</monuments-database>
