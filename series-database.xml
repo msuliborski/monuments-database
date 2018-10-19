@@ -20,13 +20,13 @@
 	</authors>
 
 
-	<cities>
+	<cities> <!-- paryz, rzym, berlin, pizda, londyn, Florencja, wawa, wroclaw, new york, rio, gdansk
+lodz, -->
 		<city city-id="">
 			<name></name>
             <country></country>
             <area unit="km2"></area>
             <population></population>
-
 			<date-of-establishment>
 				<day></day>
 				<month></month>
@@ -35,11 +35,13 @@
 		</city>
 	</cities>
 
-    <types> <!-- observing tower, building, sculpture -->
+    <types> <!-- observing tower, building, sculpture, church, landmark -->
         <type type-id=""></type>
     </types>
 
-	<monuments>
+	<monuments> <!--  eifel, koloseum, mur berlinski, wieza w pizdzie, Notre-Dame, clock tower,
+Katedra Santa Maria del Fiore, Dawid (rzeźba), Campanile di Giotto, palac kultury, sky tower, Statua Wolności,
+Figura Jezusa Chrystusa Króla Wszechświata, pomnik neptuna stajnia jednorozcow, central park-->
         <monument monument-id="" city-id="" type="id">
 		    <name></name>
 		    <author></author>
