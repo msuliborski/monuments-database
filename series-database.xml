@@ -240,18 +240,99 @@
 	<monuments> <!--  eifel, koloseum, mur berlinski, wieza w pizdzie, Notre-Dame, clock tower,
 Katedra Santa Maria del Fiore, Dawid (rzeźba), Campanile di Giotto, palac kultury, sky tower, Statua Wolności,
 Figura Jezusa Chrystusa Króla Wszechświata, pomnik neptuna stajnia jednorozcow, central park-->
-        <monument monument-id="" city-id="" type="id">
-		    <name></name>
-		    <author></author>
-		    <completed></completed>
-            <costs currency=""></costs>
+        
+
+	<monument monument-id="1" city-id="" type-id="">
+		    <name>Eiffel Tower</name>
+		    <author>Stephen Sauvestre</author>
+		    <completion-date>
+    <day>15</day>
+          <month>march</month>
+          <year>1889</year>    
+    </completion-date>
+            <costs currency="milion CHF">1,5</costs>
             <dimensions>
-                <width></width>
-                <height></height>
-                <length></length>
+                <width unit="m">124,90</width>
+                <height unit="m">324</height>
+                <length unit="m">124,90</length>
             </dimensions>
-            <visiting></visiting> <!--available/non-available -->
-            <history></history>
+            <visiting>available</visiting> <!--available/non-available -->
+            <history>Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France. 
+            It is named after the engineer Gustave Eiffel, whose company designed and built the tower.
+          </history>
         </monument>
+  
+<monument monument-id="2" city-id="" type-id="">
+		    <name>Colosseum</name>
+		    <author>Vespasian</author>
+		    <completion-date>
+        <day>Unknown</day>
+          <month>Unknown</month>
+          <year>80</year>
+            </completion-date>
+            <costs currency="Bilion Italian lire">40</costs>
+            <dimensions>
+                <width unit="m">156</width>
+                <height unit="m">48,5</height>
+                <length unit="m">188</length>
+            </dimensions>
+            <visiting>available</visiting> <!--available/non-available -->
+            <history>
+            Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy.
+            Built of travertine, tuff, and brick-faced concrete, it is the largest amphitheatre ever built. 
+            The Colosseum is situated just east of the Roman Forum. 
+            Construction began under the emperor Vespasian in AD 72, and was completed in AD 80 under his successor and heir Titus.
+            Further modifications were made during the reign of Domitian. 
+            These three emperors are known as the Flavian dynasty, and the amphitheatre was named in Latin for its association with their family name (Flavius).
+          </history>
+        </monument>
+  
+  <monument monument-id="3" city-id="" type-id="">
+		    <name>Berlin Wall</name>
+		    <author>German Democratic Republic</author>
+		    <completion-date>
+          <day>13</day>
+          <month>August</month>
+          <year>1961</year>
+    </completion-date>
+            <costs currency="Bilion DM">22.5</costs>
+            <dimensions>
+                <width unit="m">156</width>
+                <height unit="m">4,2</height>
+                <length unit="m">111,9</length>
+            </dimensions>
+            <visiting>available</visiting> <!--available/non-available -->
+            <history>
+            Berlin Wall was a guarded concrete barrier that physically and ideologically divided Berlin from 1961 to 1989.
+            Constructed by the German Democratic Republic, starting on 13 August 1961, 
+            the Wall cut off West Berlin from virtually all of surrounding East Germany and East Berlin until government officials opened it in November 1989.
+            Its demolition officially began on 13 June 1990 and finished in 1992.
+            The barrier included guard towers placed along large concrete walls, accompanied by a wide area that contained anti-vehicle trenches, "fakir beds" and other defenses. 
+            The Eastern Bloc portrayed the Wall as protecting its population from fascist elements conspiring to prevent the "will of the people" in building a socialist state in East Germany.
+          </history>
+        </monument>
+  
+    <monument monument-id="4" city-id="" type-id="">
+		    <name>Notre-Dame de Paris</name>
+		    <author>Unknown</author>
+		    <completion-date>
+          <day>35</day>
+          <month>April</month>
+          <year>1345</year>
+    </completion-date>
+            <costs currency="Billion CHF">24.5</costs>
+            <dimensions>
+                <width unit="m">11,5</width>
+                <height unit="m">55,86</height>
+                <length unit="m">11,5</length>
+            </dimensions>
+            <visiting>available</visiting> <!--available/non-available -->
+            <history>
+            Leaning Tower of Pisa is the campanile, or freestanding bell tower, of the cathedral of the Italian city of Pisa, known worldwide for its unintended tilt. 
+            The tower is situated behind the Pisa Cathedral and is the third oldest structure in the city's Cathedral Square (Piazza del Duomo), 
+            after the cathedral and the Pisa Baptistry.
+          </history>
+        </monument>
+
 	</monuments>
 </monuments-database>
