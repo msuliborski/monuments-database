@@ -1,37 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!ELEMENT monuments-database (authors, cities, monuments)>
+<!ELEMENT monuments-database (authors, cities, types, monuments)>
 
-<!ELEMENT authors (author)>
-<!ELEMENT author (first-name, last-name, ID)>
-<!ELEMENT first-name (#PCDATA)>
-<!ELEMENT last-name (#PCDATA)>
-<!ELEMENT ID (#PCDATA)>
-<!ELEMENT name (#PCDATA)>
+    <!ELEMENT authors (author+)>
+        <!ELEMENT author (first-name, last-name, ID)>
+            <!ELEMENT first-name (#PCDATA)>
+            <!ELEMENT last-name (#PCDATA)>
+            <!ELEMENT ID (#PCDATA)>
 
-        <!ELEMENT cities (city)>
-        <!ELEMENT city (name, country, area, elevation,
-                population, governing-mayor, date-of-establishment)>
+    <!ELEMENT cities (city)>
+        <!ELEMENT city (name, country, area, elevation, population, governing-mayor, date-of-establishment)>
+        <!ATTLIST city city-id ID #REQUIRED>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT country (#PCDATA)>
+        <!ELEMENT area (#PCDATA)>
+            <!ATTLIST area unit CDATA>
+        <!ELEMENT elevation (lowest-level, highest-level)>
+            <!ELEMENT lowest-level (#PCDATA)>
+            <!ELEMENT highest-level (#PCDATA)>
+        <!ELEMENT population (#PCDATA)>
+        <!ELEMENT governing-mayor (#PCDATA)>
+        <!ELEMENT date-of-establishment (day, month, year)>
+            <!ELEMENT day (#PCDATA)>
+            <!ELEMENT month (#PCDATA)>
+            <!ELEMENT year (#PCDATA)>
 
-        <!ELEMENT elevation (city)>
-        <name
-        country
-        area unit="km2"
-        elevation>
-            <lowest-level>28</lowest-level>
-            <highest-level>131</highest-level>
-        </elevation>
-        <population
-        governing-mayor
-        date-of-establishment>
-            <day>1</day>
-            <month>1</month>
-            <year>245</year>
-        </date-of-establishment>
+    <!ELEMENT types (type)>
+        <!ELEMENT type (#PCDATA)>
+        <!ATTLIST type type-id ID #REQUIRED>
 
-        <!ELEMENT monuments (monument+)>
-<!-- If an element i empty we write: <!ELEMENT name EMPTY> -->
-<!-- If we have an subelement and a text we write: <!ELEMENT name (#PCDATA | element_name)* --> 
-<!-- or we can write: <!ELEMENT name ANY> if i dont know what element it contains -->
+    <!ELEMENT monuments (monument)>
+        <!ELEMENT monument (name, author, completion-date, costs, dimensions, visiting, history)>
+            <!ATTLIST monument monument-id ID #REQUIRED>
+            <!ATTLIST monument type-id IDREF #REQUIRED>
+            <!ATTLIST monument city-id IDREF #REQUIRED>
 
-
+            <!ELEMENT name (#PCDATA)>
+            <!ELEMENT author (#PCDATA)>
+            <!ELEMENT completion-date (day, month, year)>
+                <!ELEMENT day (#PCDATA)>
+                <!ELEMENT month (#PCDATA)>
+                <!ELEMENT year (#PCDATA)>
+            <!ELEMENT costs (#PCDATA)>
+                <!ATTLIST costs currency CDATA>
+            <!ELEMENT dimensions (width, height, length)>
+                <!ELEMENT width (#PCDATA)>
+                    <!ATTLIST width unit CDATA>
+                <!ELEMENT height (#PCDATA)>
+                    <!ATTLIST height unit CDATA>
+                <!ELEMENT length (#PCDATA)>
+                    <!ATTLIST length unit CDATA>
+            <!ELEMENT visiting (#PCDATA)>
+            <!ELEMENT history (#PCDATA)>
