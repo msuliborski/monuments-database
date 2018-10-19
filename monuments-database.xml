@@ -2,27 +2,26 @@
 <!DOCTYPE monuments-database SYSTEM "monuments-database.dtd">
 
 
-
 <monuments-database>
 
-	<authors>
-		<author>
-			<first-name>Michał</first-name>
-			<last-name>Suliborski</last-name>
-			<ID>217863</ID>
-		</author>
+    <authors>
+        <author>
+            <first-name>Michał</first-name>
+            <last-name>Suliborski</last-name>
+            <student-ID>217863</student-ID>
+        </author>
 
-		<author>
-			<first-name>Mariusz</first-name>
-			<last-name>Pisarski</last-name>
-			<ID>217857</ID>
-		</author>
-	</authors>
+        <author>
+            <first-name>Mariusz</first-name>
+            <last-name>Pisarski</last-name>
+            <student-ID>217857</student-ID>
+        </author>
+    </authors>
 
 
-	<cities>
-		<city city-id="paris">
-			<name>Paris</name>
+    <cities>
+        <city city-id="paris">
+            <city-name>Paris</city-name>
             <country>France</country>
             <area unit="km2">105.4</area>
             <elevation>
@@ -31,15 +30,15 @@
             </elevation>
             <population>2 206 488</population>
             <governing-mayor>Anne Hidalgo</governing-mayor>
-			<date-of-establishment>
-				<day>1</day>
-				<month>1</month>
-				<year>245</year>
+            <date-of-establishment>
+                <establishment-day>1</establishment-day>
+                <establishment-month>1</establishment-month>
+                <establishment-year>245</establishment-year>
             </date-of-establishment>
         </city>
 
         <city city-id="rome">
-            <name>Rome</name>
+            <city-name>Rome</city-name>
             <country>Italy</country>
             <area unit="km2">1 285</area>
             <elevation>
@@ -49,14 +48,14 @@
             <population>4 355 725</population>
             <governing-mayor>Virginia Raggi</governing-mayor>
             <date-of-establishment>
-                <day>21</day>
-                <month>4</month>
-                <year>-753</year>
+                <establishment-day>21</establishment-day>
+                <establishment-month>4</establishment-month>
+                <establishment-year>-753</establishment-year>
             </date-of-establishment>
         </city>
 
         <city city-id="berlin">
-            <name>Berlin</name>
+            <city-name>Berlin</city-name>
             <country>Germany</country>
             <area unit="km2">891.7</area>
             <elevation>
@@ -66,14 +65,14 @@
             <population>3 711 930</population>
             <governing-mayor>Michael Muller</governing-mayor>
             <date-of-establishment>
-                <day>1</day>
-                <month>1</month>
-                <year>1192</year>
+                <establishment-day>1</establishment-day>
+                <establishment-month>1</establishment-month>
+                <establishment-year>1192</establishment-year>
             </date-of-establishment>
         </city>
 
         <city city-id="pisa">
-            <name>Pisa</name>
+            <city-name>Pisa</city-name>
             <country>Italy</country>
             <area unit="km2">185</area>
             <elevation>
@@ -83,14 +82,14 @@
             <population>91 104</population>
             <governing-mayor>Michele Conti</governing-mayor>
             <date-of-establishment>
-                <day>1</day>
-                <month>1</month>
-                <year>-420</year>
+                <establishment-day>1</establishment-day>
+                <establishment-month>1</establishment-month>
+                <establishment-year>-420</establishment-year>
             </date-of-establishment>
         </city>
 
         <city city-id="london">
-            <name>London</name>
+            <city-name>London</city-name>
             <country>England</country>
             <area unit="km2">1 572</area>
             <elevation>
@@ -100,14 +99,14 @@
             <population>8 825 000</population>
             <governing-mayor>Sadiq Khan</governing-mayor>
             <date-of-establishment>
-                <day>1</day>
-                <month>1</month>
-                <year>450</year>
+                <establishment-day>1</establishment-day>
+                <establishment-month>1</establishment-month>
+                <establishment-year>450</establishment-year>
             </date-of-establishment>
         </city>
 
         <city city-id="florence">
-            <name>Florence</name>
+            <city-name>Florence</city-name>
             <country>Italy</country>
             <area unit="km2">102.4</area>
             <elevation>
@@ -117,14 +116,14 @@
             <population>383 083</population>
             <governing-mayor>Dario Nardella</governing-mayor>
             <date-of-establishment>
-                <day>1</day>
-                <month>1</month>
-                <year>-200</year>
+                <establishment-day>1</establishment-day>
+                <establishment-month>1</establishment-month>
+                <establishment-year>-200</establishment-year>
             </date-of-establishment>
         </city>
 
-        <city city-id="7">
-            <name>Warsaw</name>
+        <city city-id="warsaw">
+            <city-name>Warsaw</city-name>
             <country>Poland</country>
             <area unit="km2">517.3</area>
             <elevation>
@@ -134,14 +133,14 @@
             <population>1 764 615</population>
             <governing-mayor>Hanna Gronkiewicz-Waltz</governing-mayor>
             <date-of-establishment>
-                <day>1</day>
-                <month>1</month>
-                <year>889</year>
+                <establishment-day>1</establishment-day>
+                <establishment-month>1</establishment-month>
+                <establishment-year>889</establishment-year>
             </date-of-establishment>
         </city>
 
         <city city-id="wroclaw">
-            <name>Wroclaw</name>
+            <city-name>Wroclaw</city-name>
             <country>Poland</country>
             <area unit="km2">292.9</area>
             <elevation>
@@ -151,14 +150,14 @@
             <population>639 258</population>
             <governing-mayor>Rafal Dutkiewicz</governing-mayor>
             <date-of-establishment>
-                <day>1</day>
-                <month>1</month>
-                <year>1112</year>
+                <establishment-day>1</establishment-day>
+                <establishment-month>1</establishment-month>
+                <establishment-year>1112</establishment-year>
             </date-of-establishment>
         </city>
 
         <city city-id="lodz">
-            <name>Lodz</name>
+            <city-name>Lodz</city-name>
             <country>Poland</country>
             <area unit="km2">293.2</area>
             <elevation>
@@ -168,14 +167,14 @@
             <population>639 258</population>
             <governing-mayor>Hanna Zdanowska</governing-mayor>
             <date-of-establishment>
-                <day>29</day>
-                <month>7</month>
-                <year>1423</year>
+                <establishment-day>29</establishment-day>
+                <establishment-month>7</establishment-month>
+                <establishment-year>1423</establishment-year>
             </date-of-establishment>
         </city>
 
         <city city-id="gdansk">
-            <name>Gdansk</name>
+            <city-name>Gdansk</city-name>
             <country>Poland</country>
             <area unit="km2">261.9</area>
             <elevation>
@@ -185,14 +184,14 @@
             <population>464 254</population>
             <governing-mayor>Pawel Adamowicz</governing-mayor>
             <date-of-establishment>
-                <day>20</day>
-                <month>3</month>
-                <year>997</year>
+                <establishment-day>20</establishment-day>
+                <establishment-month>3</establishment-month>
+                <establishment-year>997</establishment-year>
             </date-of-establishment>
         </city>
 
         <city city-id="rio-de-janeiro">
-            <name>Rio de Janeiro</name>
+            <city-name>Rio de Janeiro</city-name>
             <country>Brazil</country>
             <area unit="km2">1 221</area>
             <elevation>
@@ -202,14 +201,14 @@
             <population>6 688 930</population>
             <governing-mayor>Marcelo Crivella</governing-mayor>
             <date-of-establishment>
-                <day>1</day>
-                <month>1</month>
-                <year>1502 </year>
+                <establishment-day>1</establishment-day>
+                <establishment-month>1</establishment-month>
+                <establishment-year>1502</establishment-year>
             </date-of-establishment>
         </city>
 
         <city city-id="new-york">
-            <name>New York</name>
+            <city-name>New York</city-name>
             <country>United States</country>
             <area unit="km2">1 221</area>
             <elevation>
@@ -219,14 +218,14 @@
             <population>8 175 133</population>
             <governing-mayor>Bill de Blasio</governing-mayor>
             <date-of-establishment>
-                <day>1</day>
-                <month>1</month>
-                <year>1524 </year>
+                <establishment-day>1</establishment-day>
+                <establishment-month>1</establishment-month>
+                <establishment-year>1524</establishment-year>
             </date-of-establishment>
         </city>
 
 
-	</cities>
+    </cities>
 
     <types>
         <type type-id="observation-tower">Observation tower</type>
@@ -237,220 +236,236 @@
         <type type-id="landscape">Landscape</type>
     </types>
 
-	<monuments> 
-        
+    <monuments>
 
-	<monument monument-id="1" city-id="" type-id="">
-		    <name>Eiffel Tower</name>
-		    <author>Stephen Sauvestre</author>
-		    <completion-date>
-    <day>15</day>
-          <month>march</month>
-          <year>1889</year>    
-    </completion-date>
-            <costs currency="milion CHF">1,5</costs>
+
+        <monument monument-id="eiffel-tower" city-id="paris" type-id="observation-tower">
+            <monument-name>Eiffel Tower</monument-name>
+            <monument-author>Stephen Sauvestre</monument-author>
+            <completion-date>
+                <completion-day>15</completion-day>
+                <completion-month>march</completion-month>
+                <completion-year>1889</completion-year>
+            </completion-date>
+            <costs currency="million CHF">1.5</costs>
             <dimensions>
-                <width unit="m">124,90</width>
+                <width unit="m">124.90</width>
                 <height unit="m">324</height>
-                <length unit="m">124,90</length>
+                <length unit="m">124.90</length>
             </dimensions>
-            <visiting>available</visiting> <!--available/non-available -->
-            <history>Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France. 
-            It is named after the engineer Gustave Eiffel, whose company designed and built the tower.
-          </history>
+            <visiting>available</visiting>
+            <history>Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France.
+                It is named after the engineer Gustave Eiffel, whose company designed and built the tower.
+            </history>
         </monument>
-  
-<monument monument-id="2" city-id="" type-id="">
-		    <name>Colosseum</name>
-		    <author>Vespasian</author>
-		    <completion-date>
-        <day>Unknown</day>
-          <month>Unknown</month>
-          <year>80</year>
+
+        <monument monument-id="colosseum" city-id="rome" type-id="building">
+            <monument-name>Colosseum</monument-name>
+            <monument-author>Vespasian</monument-author>
+            <completion-date>
+                <completion-day>Unknown</completion-day>
+                <completion-month>Unknown</completion-month>
+                <completion-year>80</completion-year>
             </completion-date>
             <costs currency="Bilion Italian lire">40</costs>
             <dimensions>
                 <width unit="m">156</width>
-                <height unit="m">48,5</height>
+                <height unit="m">48.5</height>
                 <length unit="m">188</length>
             </dimensions>
-            <visiting>available</visiting> <!--available/non-available -->
+            <visiting>available</visiting>
             <history>
-            Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy.
-            Built of travertine, tuff, and brick-faced concrete, it is the largest amphitheatre ever built. 
-            The Colosseum is situated just east of the Roman Forum. 
-            Construction began under the emperor Vespasian in AD 72, and was completed in AD 80 under his successor and heir Titus.
-            Further modifications were made during the reign of Domitian. 
-            These three emperors are known as the Flavian dynasty, and the amphitheatre was named in Latin for its association with their family name (Flavius).
-          </history>
+                Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy.
+                Built of travertine, tuff, and brick-faced concrete, it is the largest amphitheatre ever built.
+                The Colosseum is situated just east of the Roman Forum.
+                Construction began under the emperor Vespasian in AD 72, and was completed in AD 80 under his successor
+                and heir Titus.
+                Further modifications were made during the reign of Domitian.
+                These three emperors are known as the Flavian dynasty, and the amphitheatre was named in Latin for its
+                association with their family name (Flavius).
+            </history>
         </monument>
-  
-  <monument monument-id="3" city-id="" type-id="">
-		    <name>Berlin Wall</name>
-		    <author>German Democratic Republic</author>
-		    <completion-date>
-          <day>13</day>
-          <month>August</month>
-          <year>1961</year>
-    </completion-date>
-            <costs currency="Bilion DM">22.5</costs>
+
+        <monument monument-id="berlin-wall" city-id="berlin" type-id="wall">
+            <monument-name>Berlin Wall</monument-name>
+            <monument-author>German Democratic Republic</monument-author>
+            <completion-date>
+                <completion-day>13</completion-day>
+                <completion-month>August</completion-month>
+                <completion-year>1961</completion-year>
+            </completion-date>
+            <costs currency="Billion DM">22.5</costs>
             <dimensions>
                 <width unit="m">156</width>
-                <height unit="m">4,2</height>
-                <length unit="m">111,9</length>
+                <height unit="m">4.2</height>
+                <length unit="m">111.9</length>
             </dimensions>
-            <visiting>available</visiting> <!--available/non-available -->
+            <visiting>available</visiting>
             <history>
-            Berlin Wall was a guarded concrete barrier that physically and ideologically divided Berlin from 1961 to 1989.
-            Constructed by the German Democratic Republic, starting on 13 August 1961, 
-            the Wall cut off West Berlin from virtually all of surrounding East Germany and East Berlin until government officials opened it in November 1989.
-            Its demolition officially began on 13 June 1990 and finished in 1992.
-            The barrier included guard towers placed along large concrete walls, accompanied by a wide area that contained anti-vehicle trenches, "fakir beds" and other defenses. 
-            The Eastern Bloc portrayed the Wall as protecting its population from fascist elements conspiring to prevent the "will of the people" in building a socialist state in East Germany.
-          </history>
+                Berlin Wall was a guarded concrete barrier that physically and ideologically divided Berlin from 1961 to
+                1989.
+                Constructed by the German Democratic Republic, starting on 13 August 1961,
+                the Wall cut off West Berlin from virtually all of surrounding East Germany and East Berlin until
+                government officials opened it in November 1989.
+                Its demolition officially began on 13 June 1990 and finished in 1992.
+                The barrier included guard towers placed along large concrete walls, accompanied by a wide area that
+                contained anti-vehicle trenches, "fakir beds" and other defenses.
+                The Eastern Bloc portrayed the Wall as protecting its population from fascist elements conspiring to
+                prevent the "will of the people" in building a socialist state in East Germany.
+            </history>
         </monument>
-  
-    <monument monument-id="4" city-id="" type-id="">
-		    <name>Leaning Tower of Pisa</name>
-		    <author>Bonanno Pisano</author>
-		    <completion-date>
-          <day>04</day>
-          <month>August</month>
-          <year>1173</year>
-    </completion-date>
+
+        <monument monument-id="leaning-tower-of-pisa" city-id="pisa" type-id="observation-tower">
+            <monument-name>Leaning Tower of Pisa</monument-name>
+            <monument-author>Bonanno Pisano</monument-author>
+            <completion-date>
+                <completion-day>04</completion-day>
+                <completion-month>August</completion-month>
+                <completion-year>1173</completion-year>
+            </completion-date>
             <costs currency="Million Dollars">2.9</costs>
             <dimensions>
-                <width unit="m">11,5</width>
-                <height unit="m">55,86</height>
-                <length unit="m">11,5</length>
+                <width unit="m">11.5</width>
+                <height unit="m">55.86</height>
+                <length unit="m">11.5</length>
             </dimensions>
             <visiting>available</visiting> <!--available/non-available -->
             <history>
-            Leaning Tower of Pisa is the campanile, or freestanding bell tower, of the cathedral of the Italian city of Pisa, known worldwide for its unintended tilt. 
-            The tower is situated behind the Pisa Cathedral and is the third oldest structure in the city's Cathedral Square (Piazza del Duomo), 
-            after the cathedral and the Pisa Baptistry.
-          </history>
+                Leaning Tower of Pisa is the campanile, or freestanding bell tower, of the cathedral of the Italian city
+                of Pisa, known worldwide for its unintended tilt.
+                The tower is situated behind the Pisa Cathedral and is the third oldest structure in the city's
+                Cathedral Square (Piazza del Duomo),
+                after the cathedral and the Pisa Baptistry.
+            </history>
         </monument>
 
-    <monument monument-id="5" city-id="" type-id="">
-      <name>Notre-Dame de Paris</name>
-      <author>Unknown</author>
-      <completion-date>
-        <day>35</day>
-        <month>April</month>
-        <year>1345</year>
-      </completion-date>
-      <costs currency="Billion CHF">24.5</costs>
-      <dimensions>
-        <width unit="m">48</width>
-        <height unit="m">90</height>
-        <length unit="m">128</length>
-      </dimensions>
-      <visiting>available</visiting>
-      <history>
-        Notre-Dame de Paris is a medieval Catholic cathedral on the Île de la Cité in the fourth arrondissement of Paris, France.
-        The cathedral is widely considered to be one of the finest examples of French Gothic architecture.
-        The innovative use of the rib vault and flying buttress, the enormous and colorful rose windows,
-        and the naturalism and abundance of its sculptural decoration all set it apart from earlier Romanesque architecture.
-      </history>
-    </monument>
+        <monument monument-id="notre-dame-de-paris" city-id="paris" type-id="building">
+            <monument-name>Notre-Dame de Paris</monument-name>
+            <monument-author>Unknown</monument-author>
+            <completion-date>
+                <completion-day>35</completion-day>
+                <completion-month>April</completion-month>
+                <completion-year>1345</completion-year>
+            </completion-date>
+            <costs currency="Billion CHF">24.5</costs>
+            <dimensions>
+                <width unit="m">48</width>
+                <height unit="m">90</height>
+                <length unit="m">128</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
+                Notre-Dame de Paris is a medieval Catholic cathedral on the Île de la Cité in the fourth arrondissement
+                of Paris, France.
+                The cathedral is widely considered to be one of the finest examples of French Gothic architecture.
+                The innovative use of the rib vault and flying buttress, the enormous and colorful rose windows,
+                and the naturalism and abundance of its sculptural decoration all set it apart from earlier Romanesque
+                architecture.
+            </history>
+        </monument>
 
-    <monument monument-id="5" city-id="" type-id="">
-      <name>Big Ben</name>
-      <author>Augustus Pugin</author>
-      <completion-date>
-        <day>31</day>
-        <month>May</month>
-        <year>1859</year>
-      </completion-date>
-      <costs currency="Million GBP">61</costs>
-      <dimensions>
-        <width unit="m">23</width>
-        <height unit="m">96</height>
-        <length unit="m">23</length>
-      </dimensions>
-      <visiting>available</visiting>
-      <history>
-        Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London and is usually extended to refer to both
-        the clock and the clock tower. The official name of the tower in which Big Ben is located was originally the Clock Tower,
-        but it was renamed Elizabeth Tower in 2012 to mark the Diamond Jubilee of Elizabeth II.
-      </history>
-    </monument>
-
-
-    <monument monument-id="6" city-id="" type-id="">
-      <name>Cattedrale di Santa Maria del Fiore</name>
-      <author>Arnolfo di Cambio</author>
-      <completion-date>
-        <day>09</day>
-        <month>September</month>
-        <year>1296</year>
-      </completion-date>
-      <costs currency="Million Italian lira">48</costs>
-      <dimensions>
-        <width unit="m">90</width>
-        <height unit="m">114,5</height>
-        <length unit="m">153</length>
-      </dimensions>
-      <visiting>available</visiting>
-      <history>
-        Cattedrale di Santa Maria del Fiore is the cathedral of Florence, Italy (Italian: Duomo di Firenze). 
-        It was begun in 1296 in the Gothic style to a design of Arnolfo di Cambio and was structurally completed by 1436, with the dome designed by Filippo Brunelleschi.
-        The exterior of the basilica is faced with polychrome marble panels in various shades of green and pink, bordered by white,
-        and has an elaborate 19th-century Gothic Revival façade by Emilio De Fabris.
-      </history>
-    </monument>
+        <monument monument-id="big-ben" city-id="london" type-id="building">
+            <monument-name>Big Ben</monument-name>
+            <monument-author>Augustus Pugin</monument-author>
+            <completion-date>
+                <completion-day>31</completion-day>
+                <completion-month>May</completion-month>
+                <completion-year>1859</completion-year>
+            </completion-date>
+            <costs currency="Million GBP">61</costs>
+            <dimensions>
+                <width unit="m">23</width>
+                <height unit="m">96</height>
+                <length unit="m">23</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
+                Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in
+                London and is usually extended to refer to both
+                the clock and the clock tower. The official name of the tower in which Big Ben is located was originally
+                the Clock Tower,
+                but it was renamed Elizabeth Tower in 2012 to mark the Diamond Jubilee of Elizabeth II.
+            </history>
+        </monument>
 
 
-    <monument monument-id="7" city-id="" type-id="">
-      <name>David</name>
-      <author>Michelangelo</author>
-      <completion-date>
-        <day>23</day>
-        <month>October</month>
-        <year>1504</year>
-      </completion-date>
-      <costs currency="Thousent Dollar">29</costs>
-      <dimensions>
-        <width unit="m">1,36</width>
-        <height unit="m">5,17</height>
-        <length unit="m">0,93</length>
-      </dimensions>
-      <visiting>available</visiting>
-      <history>
-        David is a 5.17-metre (17.0 ft) marble statue of a standing male nude.
-        The statue represents the Biblical hero David, a favoured subject in the art of Florence.
-      </history>
-    </monument>
+        <monument monument-id="cattedrale-di-santa-maria-del-fiore" city-id="florence" type-id="church/cathedral">
+            <monument-name>Cattedrale di Santa Maria del Fiore</monument-name>
+            <monument-author>Arnolfo di Cambio</monument-author>
+            <completion-date>
+                <completion-day>09</completion-day>
+                <completion-month>September</completion-month>
+                <completion-year>1296</completion-year>
+            </completion-date>
+            <costs currency="Million Italian lira">48</costs>
+            <dimensions>
+                <width unit="m">90</width>
+                <height unit="m">114.5</height>
+                <length unit="m">153</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
+                Cattedrale di Santa Maria del Fiore is the cathedral of Florence, Italy (Italian: Duomo di Firenze).
+                It was begun in 1296 in the Gothic style to a design of Arnolfo di Cambio and was structurally completed
+                by 1436, with the dome designed by Filippo Brunelleschi.
+                The exterior of the basilica is faced with polychrome marble panels in various shades of green and pink,
+                bordered by white,
+                and has an elaborate 19th-century Gothic Revival façade by Emilio De Fabris.
+            </history>
+        </monument>
 
 
-    <monument monument-id="8" city-id="" type-id="">
-      <name>Palace of Culture and Science</name>
-      <author>Lev Rudnev</author>
-      <completion-date>
-        <day>22</day>
-        <month>July</month>
-        <year>1955</year>
-      </completion-date>
-      <costs currency="Thousent PLN">102</costs>
-      <dimensions>
-        <width unit="m">54</width>
-        <height unit="m">237</height>
-        <length unit="m">48</length>
-      </dimensions>
-      <visiting>nonavailable</visiting>
-      <history>
-        Palace of Culture and Science is a notable high-rise building in Warsaw, Poland. Constructed in 1955, it is the center for various companies,
-        public institutions and cultural activities such as concerts, cinemas, theaters,
-        libraries, sports clubs, universities, scientific institutions and authorities of the Polish Academy of Sciences. 
-        Motivated by Polish historicism and American art deco high-rise buildings, 
-        the PKiN was designed by Soviet architect Lev Rudnev in "Seven Sisters" style and is informally referred to as the Eighth Sister.
-      </history>
-    </monument>
-    <!--  eifel, koloseum, mur berlinski, wieza w pizdzie, Notre-Dame, clock tower,
-Katedra Santa Maria del Fiore, Dawid (rzeźba), palac kultury, sky tower, Statua Wolności,
-Figura Jezusa Chrystusa Króla Wszechświata, pomnik neptuna stajnia jednorozcow, central park-->
-  
+        <monument monument-id="david" city-id="florence" type-id="sculpture">
+            <monument-name>David</monument-name>
+            <monument-author>Michelangelo</monument-author>
+            <completion-date>
+                <completion-day>23</completion-day>
+                <completion-month>October</completion-month>
+                <completion-year>1504</completion-year>
+            </completion-date>
+            <costs currency="Thousent Dollar">29</costs>
+            <dimensions>
+                <width unit="m">1.36</width>
+                <height unit="m">5.17</height>
+                <length unit="m">0.93</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
+                David is a 5.17-metre (17.0 ft) marble statue of a standing male nude.
+                The statue represents the Biblical hero David, a favoured subject in the art of Florence.
+            </history>
+        </monument>
 
-	</monuments>
+
+        <monument monument-id="palace-of-culture-and-science" city-id="warsaw" type-id="building">
+            <monument-name>Palace of Culture and Science</monument-name>
+            <monument-author>Lev Rudnev</monument-author>
+            <completion-date>
+                <completion-day>22</completion-day>
+                <completion-month>July</completion-month>
+                <completion-year>1955</completion-year>
+            </completion-date>
+            <costs currency="Thousent PLN">102</costs>
+            <dimensions>
+                <width unit="m">54</width>
+                <height unit="m">237</height>
+                <length unit="m">48</length>
+            </dimensions>
+            <visiting>nonavailable</visiting>
+            <history>
+                Palace of Culture and Science is a notable high-rise building in Warsaw, Poland. Constructed in 1955, it
+                is the center for various companies,
+                public institutions and cultural activities such as concerts, cinemas, theaters,
+                libraries, sports clubs, universities, scientific institutions and authorities of the Polish Academy of
+                Sciences.
+                Motivated by Polish historicism and American art deco high-rise buildings,
+                the PKiN was designed by Soviet architect Lev Rudnev in "Seven Sisters" style and is informally referred
+                to as the Eighth Sister.
+            </history>
+        </monument>
+        <!--  sky tower, Statua Wolności,
+    Figura Jezusa Chrystusa Króla Wszechświata, pomnik neptuna, stajnia jednorozcow, central park-->
+
+
+    </monuments>
 </monuments-database>
