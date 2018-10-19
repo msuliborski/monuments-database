@@ -463,7 +463,30 @@
                 to as the Eighth Sister.
             </history>
         </monument>
-        <!--  sky tower, Statua Wolności,
+
+        <monument monument-id="sky-tower" city-id="wroclaw" type-id="observation-tower">
+            <monument-name>Sky Tower</monument-name>
+            <monument-author>Mariusz Korszorsz</monument-author>
+            <completion-date>
+                <completion-day>1</completion-day>
+                <completion-month>5</completion-month>
+                <completion-year>2012</completion-year>
+            </completion-date>
+            <costs currency="Billion PLN">1.6</costs>
+            <dimensions>
+                <width unit="m">34</width>
+                <height unit="m">215</height>
+                <length unit="m">37</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
+                Sky Tower is a skyscraper in Wrocław, Poland. Construction began in December 2007 with the demolition of the 24-story Poltegor structure, until then the tallest building in the city.
+                Sky Tower is the tallest building in Poland in the category of height to roof and category of highest floor, and the second tallest structure overall after the Palace of Culture and Science in Warsaw.
+                A publicly accessible viewpoint is located on the 49th floor.
+            </history>
+        </monument>
+
+        <!-- Statua Wolności,
     Figura Jezusa Chrystusa Króla Wszechświata, pomnik neptuna, stajnia jednorozcow, central park-->
 
 
