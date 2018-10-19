@@ -31,7 +31,7 @@
             <population>2 206 488</population>
             <governing-mayor>Anne Hidalgo</governing-mayor>
             <date-of-establishment>
-                <establishment-day>1</establishment-day>
+                <establishment-day>12</establishment-day>
                 <establishment-month>1</establishment-month>
                 <establishment-year>245</establishment-year>
             </date-of-establishment>
@@ -65,8 +65,8 @@
             <population>3 711 930</population>
             <governing-mayor>Michael Muller</governing-mayor>
             <date-of-establishment>
-                <establishment-day>1</establishment-day>
-                <establishment-month>1</establishment-month>
+                <establishment-day>12</establishment-day>
+                <establishment-month>2</establishment-month>
                 <establishment-year>1192</establishment-year>
             </date-of-establishment>
         </city>
@@ -83,7 +83,7 @@
             <governing-mayor>Michele Conti</governing-mayor>
             <date-of-establishment>
                 <establishment-day>1</establishment-day>
-                <establishment-month>1</establishment-month>
+                <establishment-month>11</establishment-month>
                 <establishment-year>-420</establishment-year>
             </date-of-establishment>
         </city>
@@ -99,8 +99,8 @@
             <population>8 825 000</population>
             <governing-mayor>Sadiq Khan</governing-mayor>
             <date-of-establishment>
-                <establishment-day>1</establishment-day>
-                <establishment-month>1</establishment-month>
+                <establishment-day>23</establishment-day>
+                <establishment-month>4</establishment-month>
                 <establishment-year>450</establishment-year>
             </date-of-establishment>
         </city>
@@ -116,7 +116,7 @@
             <population>383 083</population>
             <governing-mayor>Dario Nardella</governing-mayor>
             <date-of-establishment>
-                <establishment-day>1</establishment-day>
+                <establishment-day>22</establishment-day>
                 <establishment-month>1</establishment-month>
                 <establishment-year>-200</establishment-year>
             </date-of-establishment>
@@ -133,8 +133,8 @@
             <population>1 764 615</population>
             <governing-mayor>Hanna Gronkiewicz-Waltz</governing-mayor>
             <date-of-establishment>
-                <establishment-day>1</establishment-day>
-                <establishment-month>1</establishment-month>
+                <establishment-day>7</establishment-day>
+                <establishment-month>11</establishment-month>
                 <establishment-year>889</establishment-year>
             </date-of-establishment>
         </city>
@@ -150,8 +150,8 @@
             <population>639 258</population>
             <governing-mayor>Rafal Dutkiewicz</governing-mayor>
             <date-of-establishment>
-                <establishment-day>1</establishment-day>
-                <establishment-month>1</establishment-month>
+                <establishment-day>11</establishment-day>
+                <establishment-month>11</establishment-month>
                 <establishment-year>1112</establishment-year>
             </date-of-establishment>
         </city>
@@ -218,8 +218,8 @@
             <population>8 175 133</population>
             <governing-mayor>Bill de Blasio</governing-mayor>
             <date-of-establishment>
-                <establishment-day>1</establishment-day>
-                <establishment-month>1</establishment-month>
+                <establishment-day>8</establishment-day>
+                <establishment-month>8</establishment-month>
                 <establishment-year>1524</establishment-year>
             </date-of-establishment>
         </city>
@@ -423,7 +423,7 @@
                 <completion-month>October</completion-month>
                 <completion-year>1504</completion-year>
             </completion-date>
-            <costs currency="Thousent Dollar">29</costs>
+            <costs currency="Thousands Dollar">29</costs>
             <dimensions>
                 <width unit="m">1.36</width>
                 <height unit="m">5.17</height>
@@ -445,7 +445,7 @@
                 <completion-month>July</completion-month>
                 <completion-year>1955</completion-year>
             </completion-date>
-            <costs currency="Thousent PLN">102</costs>
+            <costs currency="Thousands PLN">102</costs>
             <dimensions>
                 <width unit="m">54</width>
                 <height unit="m">237</height>
@@ -486,9 +486,73 @@
             </history>
         </monument>
 
-        <!-- Statua Wolności,
-    Figura Jezusa Chrystusa Króla Wszechświata, pomnik neptuna, stajnia jednorozcow, central park-->
+        <monument monument-id="statue-of-liberty" city-id="new-york" type-id="sculpture">
+            <monument-name>Statue of Liberty</monument-name>
+            <monument-author>Frederic Auguste Bartholdi</monument-author>
+            <completion-date>
+                <completion-day>28</completion-day>
+                <completion-month>10</completion-month>
+                <completion-year>1886</completion-year>
+            </completion-date>
+            <costs currency="Million dollars">2.3</costs>
+            <dimensions>
+                <width unit="m">8</width>
+                <height unit="m">46</height>
+                <length unit="m">8</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
+                According to the National Park Service, the idea for the Statue of Liberty was first proposed by Édouard René de Laboulaye,
+                president of the French Anti-Slavery Society and a prominent and important political thinker of his time.
+                The project is traced to a mid-1865 conversation between de Laboulaye, a staunch abolitionist, and Frédéric Bartholdi, a sculptor.
+            </history>
+        </monument>
 
+        <monument monument-id="christ-the-redeemer" city-id="rio-de-janeiro" type-id="sculpture">
+            <monument-name>Christ the Redeemer</monument-name>
+            <monument-author>Paul Landowski</monument-author>
+            <completion-date>
+                <completion-day>12</completion-day>
+                <completion-month>10</completion-month>
+                <completion-year>1931</completion-year>
+            </completion-date>
+            <costs currency="Million dollars">0.2</costs>
+            <dimensions>
+                <width unit="m">8</width>
+                <height unit="m">38</height>
+                <length unit="m">8</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
+                Vincentian priest, Pedro Maria Boss, first suggested placing a Christian monument on Mount Corcovado in the mid 1850s to honor Princess Isabel,
+                princess regent of Brazil and the daughter of Emperor Pedro II, but the project was not approved.[1] In 1889 the country became a republic,
+                and due to the separation of church and state, the proposed statue was dismissed.
+            </history>
+        </monument>
 
+        <monument monument-id="neptunes-fountain" city-id="gdansk" type-id="sculpture">
+            <monument-name>Neptune's Fountain</monument-name>
+            <monument-author>Abraham van den Blocke</monument-author>
+            <completion-date>
+                <completion-day>26</completion-day>
+                <completion-month>10</completion-month>
+                <completion-year>1633</completion-year>
+            </completion-date>
+            <costs currency="Thousands PLN">150</costs>
+            <dimensions>
+                <width unit="m">2</width>
+                <height unit="m">6</height>
+                <length unit="m">2</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
+                The local authorities of Gdańsk, together with Mayor Bartłomiej Schachmann wanted to raise a more notable monument.
+                The first mason to receive an offer to complete the project was Jakub Kordes from Lubeka, but for unknown reasons his plan was not accepted.
+                The new fountain was to be constructed at the centre of the facade of the Artus Court, from the Green Gate the fountain would be seen with the Gdańsk Main Town Hall in the background,
+                with the turn to the Long Lane. Neptune - the god of the sea - was to be placed facing the townhouses, which were the residence of the Polish kings,
+                while at their stay in Gdańsk, the mythological god was to have his head bow down to them.
+            </history>
+
+        </monument>
     </monuments>
 </monuments-database>
