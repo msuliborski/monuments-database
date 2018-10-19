@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- game of thrones, house of cards, house md, breaking bad, friends, how i met your mother -->
-<!DOCTYPE series-database SYSTEM "series-database.dtd"/>
+<!-- game of thrones, house of cards, house md, breaking bad, friends, how i met your mother
+<!DOCTYPE series-database SYSTEM "series-database.dtd"/> -->
 
 
 <monuments-database>
@@ -20,23 +20,221 @@
 	</authors>
 
 
-	<cities> <!-- paryz, rzym, berlin, pizda, londyn, Florencja, wawa, wroclaw, new york, rio, gdansk
-lodz, -->
-		<city city-id="">
-			<name></name>
-            <country></country>
-            <area unit="km2"></area>
-            <population></population>
+	<cities>
+		<city city-id="paris">
+			<name>Paris</name>
+            <country>France</country>
+            <area unit="km2">105.4</area>
+            <elevation>
+                <lowest-level>28</lowest-level>
+                <highest-level>131</highest-level>
+            </elevation>
+            <population>2 206 488</population>
+            <governing-mayor>Anne Hidalgo</governing-mayor>
 			<date-of-establishment>
-				<day></day>
-				<month></month>
-				<year></year>
+				<day>1</day>
+				<month>1</month>
+				<year>245</year>
             </date-of-establishment>
-		</city>
+        </city>
+
+        <city city-id="rome">
+            <name>Rome</name>
+            <country>Italy</country>
+            <area unit="km2">1 285</area>
+            <elevation>
+                <lowest-level>32</lowest-level>
+                <highest-level>58</highest-level>
+            </elevation>
+            <population>4 355 725</population>
+            <governing-mayor>Virginia Raggi</governing-mayor>
+            <date-of-establishment>
+                <day>21</day>
+                <month>4</month>
+                <year>-753</year>
+            </date-of-establishment>
+        </city>
+
+        <city city-id="berlin">
+            <name>Berlin</name>
+            <country>Germany</country>
+            <area unit="km2">891.7</area>
+            <elevation>
+                <lowest-level>401</lowest-level>
+                <highest-level>462</highest-level>
+            </elevation>
+            <population>3 711 930</population>
+            <governing-mayor>Michael Muller</governing-mayor>
+            <date-of-establishment>
+                <day>1</day>
+                <month>1</month>
+                <year>1192</year>
+            </date-of-establishment>
+        </city>
+
+        <city city-id="pisa">
+            <name>Pisa</name>
+            <country>Italy</country>
+            <area unit="km2">185</area>
+            <elevation>
+                <lowest-level>0</lowest-level>
+                <highest-level>10</highest-level>
+            </elevation>
+            <population>91 104</population>
+            <governing-mayor>Michele Conti</governing-mayor>
+            <date-of-establishment>
+                <day>1</day>
+                <month>1</month>
+                <year>-420</year>
+            </date-of-establishment>
+        </city>
+
+        <city city-id="london">
+            <name>London</name>
+            <country>England</country>
+            <area unit="km2">1 572</area>
+            <elevation>
+                <lowest-level>11</lowest-level>
+                <highest-level>54</highest-level>
+            </elevation>
+            <population>8 825 000</population>
+            <governing-mayor>Sadiq Khan</governing-mayor>
+            <date-of-establishment>
+                <day>1</day>
+                <month>1</month>
+                <year>450</year>
+            </date-of-establishment>
+        </city>
+
+        <city city-id="florence">
+            <name>Florence</name>
+            <country>Italy</country>
+            <area unit="km2">102.4</area>
+            <elevation>
+                <lowest-level>0</lowest-level>
+                <highest-level>97</highest-level>
+            </elevation>
+            <population>383 083</population>
+            <governing-mayor>Dario Nardella</governing-mayor>
+            <date-of-establishment>
+                <day>1</day>
+                <month>1</month>
+                <year>-200</year>
+            </date-of-establishment>
+        </city>
+
+        <city city-id="7">
+            <name>Warsaw</name>
+            <country>Poland</country>
+            <area unit="km2">517.3</area>
+            <elevation>
+                <lowest-level>78</lowest-level>
+                <highest-level>116</highest-level>
+            </elevation>
+            <population>1 764 615</population>
+            <governing-mayor>Hanna Gronkiewicz-Waltz</governing-mayor>
+            <date-of-establishment>
+                <day>1</day>
+                <month>1</month>
+                <year>889</year>
+            </date-of-establishment>
+        </city>
+
+        <city city-id="wroclaw">
+            <name>Wroclaw</name>
+            <country>Poland</country>
+            <area unit="km2">292.9</area>
+            <elevation>
+                <lowest-level>421</lowest-level>
+                <highest-level>491</highest-level>
+            </elevation>
+            <population>639 258</population>
+            <governing-mayor>Rafal Dutkiewicz</governing-mayor>
+            <date-of-establishment>
+                <day>1</day>
+                <month>1</month>
+                <year>1112</year>
+            </date-of-establishment>
+        </city>
+
+        <city city-id="lodz">
+            <name>Lodz</name>
+            <country>Poland</country>
+            <area unit="km2">293.2</area>
+            <elevation>
+                <lowest-level>192</lowest-level>
+                <highest-level>247</highest-level>
+            </elevation>
+            <population>639 258</population>
+            <governing-mayor>Hanna Zdanowska</governing-mayor>
+            <date-of-establishment>
+                <day>29</day>
+                <month>7</month>
+                <year>1423</year>
+            </date-of-establishment>
+        </city>
+
+        <city city-id="gdansk">
+            <name>Gdansk</name>
+            <country>Poland</country>
+            <area unit="km2">261.9</area>
+            <elevation>
+                <lowest-level>0</lowest-level>
+                <highest-level>50</highest-level>
+            </elevation>
+            <population>464 254</population>
+            <governing-mayor>Pawel Adamowicz</governing-mayor>
+            <date-of-establishment>
+                <day>20</day>
+                <month>3</month>
+                <year>997</year>
+            </date-of-establishment>
+        </city>
+
+        <city city-id="rio-de-janeiro">
+            <name>Rio de Janeiro</name>
+            <country>Brazil</country>
+            <area unit="km2">1 221</area>
+            <elevation>
+                <lowest-level>0</lowest-level>
+                <highest-level>1020</highest-level>
+            </elevation>
+            <population>6 688 930</population>
+            <governing-mayor>Marcelo Crivella</governing-mayor>
+            <date-of-establishment>
+                <day>1</day>
+                <month>1</month>
+                <year>1502 </year>
+            </date-of-establishment>
+        </city>
+
+        <city city-id="new-york">
+            <name>New York</name>
+            <country>United States</country>
+            <area unit="km2">1 221</area>
+            <elevation>
+                <lowest-level>0</lowest-level>
+                <highest-level>15</highest-level>
+            </elevation>
+            <population>8 175 133</population>
+            <governing-mayor>Bill de Blasio</governing-mayor>
+            <date-of-establishment>
+                <day>1</day>
+                <month>1</month>
+                <year>1524 </year>
+            </date-of-establishment>
+        </city>
+
+
 	</cities>
 
-    <types> <!-- observing tower, building, sculpture, church, landmark -->
-        <type type-id=""></type>
+    <types>
+        <type type-id="observation-tower">Observation tower</type>
+        <type type-id="building">Building</type>
+        <type type-id="sculpture">Sculpture</type>
+        <type type-id="church/cathedral">Church/Cathedral</type>
+        <type type-id="wall">Wall</type>
+        <type type-id="landscape">Landscape</type>
     </types>
 
 	<monuments> <!--  eifel, koloseum, mur berlinski, wieza w pizdzie, Notre-Dame, clock tower,
