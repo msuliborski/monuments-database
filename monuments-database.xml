@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- game of thrones, house of cards, house md, breaking bad, friends, how i met your mother
-<!DOCTYPE series-database SYSTEM "series-database.dtd"/> -->
+<!--
+<!DOCTYPE monuments-database SYSTEM "monuments-database.dtd">
+-->
 
 
 <monuments-database>

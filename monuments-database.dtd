@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT monuments-database (authors, cities, monuments)>
+
+<!ELEMENT authors (author)>
+<!ELEMENT author (first-name, last-name, ID)>
+<!ELEMENT first-name (#PCDATA)>
+<!ELEMENT last-name (#PCDATA)>
+<!ELEMENT ID (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+
+        <!ELEMENT cities (city)>
+        <!ELEMENT city (name, country, area, elevation,
+                population, governing-mayor, date-of-establishment)>
+
+        <!ELEMENT elevation (city)>
+        <name
+        country
+        area unit="km2"
+        elevation>
+            <lowest-level>28</lowest-level>
+            <highest-level>131</highest-level>
+        </elevation>
+        <population
+        governing-mayor
+        date-of-establishment>
+            <day>1</day>
+            <month>1</month>
+            <year>245</year>
+        </date-of-establishment>
+
+        <!ELEMENT monuments (monument+)>
+<!-- If an element i empty we write: <!ELEMENT name EMPTY> -->
+<!-- If we have an subelement and a text we write: <!ELEMENT name (#PCDATA | element_name)* --> 
+<!-- or we can write: <!ELEMENT name ANY> if i dont know what element it contains -->
+
+
