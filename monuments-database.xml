@@ -40,6 +40,7 @@
                 It is named after the engineer Gustave Eiffel, whose company designed and built the tower.
             </history>
         </monument>
+
         <monument monument-id="colosseum" city-id="rome" type-id="building">
             <monument-name>Colosseum</monument-name>
             <monument-author>Vespasian</monument-author>
@@ -66,6 +67,7 @@
                 association with their family name (Flavius).
             </history>
         </monument>
+
         <monument monument-id="berlin-wall" city-id="berlin" type-id="wall">
             <monument-name>Berlin Wall</monument-name>
             <monument-author>German Democratic Republic</monument-author>
@@ -94,6 +96,7 @@
                 prevent the "will of the people" in building a socialist state in East Germany.
             </history>
         </monument>
+
         <monument monument-id="leaning-tower-of-pisa" city-id="pisa" type-id="observation-tower">
             <monument-name>Leaning Tower of Pisa</monument-name>
             <monument-author>Bonanno Pisano</monument-author>
@@ -117,6 +120,7 @@
                 after the cathedral and the Pisa Baptistry.
             </history>
         </monument>
+
         <monument monument-id="notre-dame-de-paris" city-id="paris" type-id="building">
             <monument-name>Notre-Dame de Paris</monument-name>
             <monument-author>Unknown</monument-author>
@@ -141,6 +145,7 @@
                 architecture.
             </history>
         </monument>
+
         <monument monument-id="big-ben" city-id="london" type-id="building">
             <monument-name>Big Ben</monument-name>
             <monument-author>Augustus Pugin</monument-author>
@@ -164,6 +169,7 @@
                 but it was renamed Elizabeth Tower in 2012 to mark the Diamond Jubilee of Elizabeth II.
             </history>
         </monument>
+
         <monument monument-id="cattedrale-di-santa-maria-del-fiore" city-id="florence" type-id="church/cathedral">
             <monument-name>Cattedrale di Santa Maria del Fiore</monument-name>
             <monument-author>Arnolfo di Cambio</monument-author>
@@ -188,6 +194,7 @@
                 and has an elaborate 19th-century Gothic Revival façade by Emilio De Fabris.
             </history>
         </monument>
+
         <monument monument-id="david" city-id="florence" type-id="sculpture">
             <monument-name>David</monument-name>
             <monument-author>Michelangelo</monument-author>
@@ -208,6 +215,7 @@
                 The statue represents the Biblical hero David, a favoured subject in the art of Florence.
             </history>
         </monument>
+
         <monument monument-id="palace-of-culture-and-science" city-id="warsaw" type-id="building">
             <monument-name>Palace of Culture and Science</monument-name>
             <monument-author>Lev Rudnev</monument-author>
@@ -234,6 +242,7 @@
                 to as the Eighth Sister.
             </history>
         </monument>
+
         <monument monument-id="sky-tower" city-id="wroclaw" type-id="observation-tower">
             <monument-name>Sky Tower</monument-name>
             <monument-author>Mariusz Korszorsz</monument-author>
@@ -257,6 +266,7 @@
                 A publicly accessible viewpoint is located on the 49th floor.
             </history>
         </monument>
+
         <monument monument-id="statue-of-liberty" city-id="new-york" type-id="sculpture">
             <monument-name>Statue of Liberty</monument-name>
             <monument-author>Frederic Auguste Bartholdi</monument-author>
@@ -281,6 +291,7 @@
                 Frédéric Bartholdi, a sculptor.
             </history>
         </monument>
+
         <monument monument-id="christ-the-redeemer" city-id="rio-de-janeiro" type-id="sculpture">
             <monument-name>Christ the Redeemer</monument-name>
             <monument-author>Paul Landowski</monument-author>
@@ -304,6 +315,7 @@
                 and due to the separation of church and state, the proposed statue was dismissed.
             </history>
         </monument>
+
         <monument monument-id="neptunes-fountain" city-id="gdansk" type-id="sculpture">
             <monument-name>Neptune's Fountain</monument-name>
             <monument-author>Abraham van den Blocke</monument-author>
@@ -331,6 +343,7 @@
                 while at their stay in Gdańsk, the mythological god was to have his head bow down to them.
             </history>
         </monument>
+
         <monument monument-id="central-park" city-id="warsaw" type-id="building">
             <monument-name>Central Park</monument-name>
             <monument-author>Frederick Law Olmsted</monument-author>
@@ -356,6 +369,7 @@
                 park in New York City, covering 843 acres (341 ha).
             </history>
         </monument>
+
         <monument monument-id="stajnia-jednorozcow" city-id="lodz" type-id="building">
             <monument-name>Stajnia Jednorożców</monument-name>
             <monument-author>Jan Gałecki</monument-author>
@@ -397,6 +411,7 @@
                 <establishment-year>245</establishment-year>
             </establishment-date>
         </city>
+
         <city city-id="rome">
             <city-name>Rome</city-name>
             <country>Italy</country>
@@ -413,6 +428,7 @@
                 <establishment-year>-753</establishment-year>
             </establishment-date>
         </city>
+
         <city city-id="berlin">
             <city-name>Berlin</city-name>
             <country>Germany</country>
@@ -429,6 +445,7 @@
                 <establishment-year>1192</establishment-year>
             </establishment-date>
         </city>
+
         <city city-id="pisa">
             <city-name>Pisa</city-name>
             <country>Italy</country>
@@ -445,6 +462,7 @@
                 <establishment-year>-420</establishment-year>
             </establishment-date>
         </city>
+
         <city city-id="london">
             <city-name>London</city-name>
             <country>England</country>
@@ -461,6 +479,7 @@
                 <establishment-year>450</establishment-year>
             </establishment-date>
         </city>
+
         <city city-id="florence">
             <city-name>Florence</city-name>
             <country>Italy</country>
@@ -477,6 +496,7 @@
                 <establishment-year>-200</establishment-year>
             </establishment-date>
         </city>
+
         <city city-id="warsaw">
             <city-name>Warsaw</city-name>
             <country>Poland</country>
@@ -493,6 +513,7 @@
                 <establishment-year>889</establishment-year>
             </establishment-date>
         </city>
+
         <city city-id="wroclaw">
             <city-name>Wroclaw</city-name>
             <country>Poland</country>
@@ -509,6 +530,7 @@
                 <establishment-year>1112</establishment-year>
             </establishment-date>
         </city>
+
         <city city-id="lodz">
             <city-name>Lodz</city-name>
             <country>Poland</country>
@@ -525,6 +547,7 @@
                 <establishment-year>1423</establishment-year>
             </establishment-date>
         </city>
+
         <city city-id="gdansk">
             <city-name>Gdansk</city-name>
             <country>Poland</country>
@@ -541,6 +564,7 @@
                 <establishment-year>997</establishment-year>
             </establishment-date>
         </city>
+
         <city city-id="rio-de-janeiro">
             <city-name>Rio de Janeiro</city-name>
             <country>Brazil</country>
@@ -557,6 +581,7 @@
                 <establishment-year>1502</establishment-year>
             </establishment-date>
         </city>
+
         <city city-id="new-york">
             <city-name>New York</city-name>
             <country>United States</country>
@@ -583,4 +608,5 @@
         <type type-id="wall">Wall</type>
         <type type-id="landscape">Landscape</type>
     </types>
+
 </monuments-database>
