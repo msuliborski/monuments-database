@@ -601,12 +601,12 @@
     </cities>
 
     <types>
-        <type type-id="observation-tower">Observation tower</type>
-        <type type-id="building">Building</type>
-        <type type-id="sculpture">Sculpture</type>
-        <type type-id="church-cathedral">Church/Cathedral</type>
-        <type type-id="wall">Wall</type>
-        <type type-id="landscape">Landscape</type>
+        <type class="type" type-id="observation-tower">Observation tower</type>
+        <type class="type" type-id="building">Building</type>
+        <type class="type" type-id="sculpture">Sculpture</type>
+        <type class="type" type-id="church-cathedral">Church/Cathedral</type>
+        <type class="type" type-id="wall">Wall</type>
+        <type class="type" type-id="landscape">Landscape</type>
     </types>
 
 </monuments-database>

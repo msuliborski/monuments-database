@@ -228,6 +228,6 @@ types{
     flex-wrap: wrap;
     margin: 20px auto;
 }
-type{
+[class=type]{
     margin: 0 auto;
 }
