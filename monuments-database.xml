@@ -170,7 +170,7 @@
             </history>
         </monument>
 
-        <monument monument-id="cattedrale-di-santa-maria-del-fiore" city-id="florence" type-id="church/cathedral">
+        <monument monument-id="cattedrale-di-santa-maria-del-fiore" city-id="florence" type-id="church-cathedral">
             <monument-name>Cattedrale di Santa Maria del Fiore</monument-name>
             <monument-author>Arnolfo di Cambio</monument-author>
             <completion-date>
@@ -604,7 +604,7 @@
         <type type-id="observation-tower">Observation tower</type>
         <type type-id="building">Building</type>
         <type type-id="sculpture">Sculpture</type>
-        <type type-id="church/cathedral">Church/Cathedral</type>
+        <type type-id="church-cathedral">Church/Cathedral</type>
         <type type-id="wall">Wall</type>
         <type type-id="landscape">Landscape</type>
     </types>
