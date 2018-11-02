@@ -3,11 +3,11 @@
     <xsd:element name="monuments-database" >
         <xsd:complexType>
             <xsd:sequence> <!-- can be choice/sequence/all -->
-                <xsd:element name="title" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-                <xsd:element name="authors" type="xsd:string" minOccurs="1" maxOccurs="unbounded">
+                <xsd:element name="title" type="xsd:string"/>
+                <xsd:element name="authors" type="xsd:string">
                     <xsd:complexType>
                         <xsd:sequence>
-                            <xsd:element name="author" type="xsd:string" minOccurs="1" maxOccurs="1">
+                            <xsd:element name="author" type="xsd:string" maxOccurs="2">
                                 <xsd:complexType>
                                     <xsd:sequence>
                                         <xsd:element name="first-name" type="xsd:string"/>
@@ -19,7 +19,45 @@
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>
-                <xsd:element name="monuments" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element name="monuments" type="xsd:string">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="monument" type="xsd:string" minOccurs="0" maxOccurs="unbounded">
+                                <!--    <!ATTLIST monument monument-id ID #REQUIRED>
+                                        <!ATTLIST monument type-id IDREF #REQUIRED>
+                                        <!ATTLIST monument city-id IDREF #REQUIRED> -->
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="monument-name" type="xsd:string"/>
+                                        <xsd:element name="monument-author" type="xsd:string"/>
+                                        <xsd:element name="completion-date" type="xsd:string">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="completion-day" type="xsd:string"/>
+                                                    <xsd:element name="completion-month" type="xsd:string"/>
+                                                    <xsd:element name="completion-year" type="xsd:string"/>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                        <xsd:element name="costs" type="xsd:string"/>
+                                            <!-- <!ATTLIST costs currency CDATA #IMPLIED> -->
+                                        <xsd:element name="dimensions" type="xsd:string">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="width" type="xsd:string"/><!-- <!ATTLIST width unit CDATA #REQUIRED> -->
+                                                    <xsd:element name="height" type="xsd:string"/><!-- <!ATTLIST height unit CDATA #REQUIRED> -->
+                                                    <xsd:element name="length" type="xsd:string"/><!-- <!ATTLIST length currency CDATA #IMPLIED> -->
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                        <xsd:element name="visiting" type="xsd:string"/>
+                                        <xsd:element name="history" type="xsd:string"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
                 <xsd:element name="cities" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
                 <xsd:element name="types" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
             </xsd:sequence>
