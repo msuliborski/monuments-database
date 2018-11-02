@@ -59,12 +59,13 @@
                     </xsd:complexType>
                 </xsd:element>
                 <xsd:element name="cities" type="xsd:string">
-                    <xsd:complextype>
+                    <xsd:complexType>
                         <xsd:sequence>
                             <xsd:element name="city" type="xsd:string"  minOccurs="0" maxOccurs="unbounded">
                                 <xsd:complexType>
 
                                     <xsd:sequence>
+                                        <xsd:attribute name="city_id" type="xsd:string" use="required"/>
                                         <xsd:element name="city_name" type="xsd:string"/>
                                         <xsd:element name="country" type="xsd:string"/>
                                         <xsd:element name="governing-mayor" type="xsd:string"/>
@@ -94,7 +95,7 @@
                                 </xsd:complexType>
                             </xsd:element>
                         </xsd:sequence>
-                    </xsd:complextype>
+                    </xsd:complexType>
                 </xsd:element>
                 <xsd:element name="types">
                     <xsd:complexType>
