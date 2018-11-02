@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.xmlTechnology.org/Patient"
+	xmlns:tns="http://www.xmlTechnology.org/Patient"
+	xmlns:xyz="http://www.xmlTechnology.org/Common"
+	elementFormDefault="qualified">
+	
+	<xsd:include schemaLocation="PaymentType.xsd"/>
+	<xsd:import schemaLocation="Common.xsd" namespace="http://www.xmlTechnology.org/Common"/>
+	
+	<xsd:element name="patient" type="tns:patientType"/>
+	
+	<xsd:complexType name="patientType">
+		<xsd:sequence>
+			<xsd:element name="name" type="tns:string15CharType"/>
+			<xsd:element name="age" type="xsd:int" minOccurs="0"/>
+			<xsd:element name="email" type="xsd:string"/>
+			<xsd:element name="gender" type="tns:genderType"/>
+			<xsd:element name="phone" type="xsd:string" maxOccurs="unbounded"/>
+			<xsd:element name="payment" type="tns:paymentType"/>
+		</xsd:sequence>
+		<xsd:attribute name="no" type="xyz:noType" use="required"/>
+	</xsd:complexType>
+	
+
+	
+	<xsd:simpleType name="string15CharType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="15"></xsd:maxLength>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="genderType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="F"/>
+			<xsd:enumeration value="M"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	
+</xsd:schema>

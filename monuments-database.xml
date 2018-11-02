@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="monuments-database.css" type="text/css"?>
-<!DOCTYPE monuments-database SYSTEM "monuments-database.dtd">
+<!--<!DOCTYPE monuments-database SYSTEM "monuments-database.dtd">-->
 
-<monuments-database>
+<mnt:monuments-database
 
-    <title>Monuments Database</title>
+xmlns:mnt="http://www.example.org"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schamaLocation="http://www.example.org monuments-database.xsd"
+xmlns:mnt="http://www.w3.org/1999/xhtml">
 
-    <authors>
-        <author>
-            <first-name>Michał</first-name>
-            <last-name>Suliborski</last-name>
-            <student-id>217863</student-id>
-        </author>
+    <mnt:title>Monuments Database</mnt:title>
 
-        <author>
-            <first-name>Mariusz</first-name>
-            <last-name>Pisarski</last-name>
-            <student-id>217857</student-id>
-        </author>
-    </authors>
+    <mnt:authors>
+        <mnt:author>
+            <mnt:first-name>Michał</mnt:first-name>
+            <mnt:last-name>Suliborski</mnt:last-name>
+            <mnt:student-id>217863</mnt:student-id>
+        </mnt:author>
+
+        <mnt:author>
+            <mnt:first-name>Mariusz</mnt:first-name>
+            <mnt:last-name>Pisarski</mnt:last-name>
+            <mnt:student-id>217857</mnt:student-id>
+        </mnt:author>
+    </mnt:authors>
 
     <monuments>
         <monument monument-id="eiffel-tower" city-id="paris" type-id="observation-tower">
@@ -609,4 +614,4 @@
         <type class="type" type-id="landscape">Landscape</type>
     </types>
 
-</monuments-database>
+</mnt:monuments-database>
