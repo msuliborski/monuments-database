@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="monuments-database" >
+        <xsd:complexType>
+            <xsd:sequence> <!-- can be choice/sequence/all -->
+                <xsd:element name="title" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+                <xsd:element name="authors" type="xsd:string" minOccurs="1" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="author" type="xsd:string" minOccurs="1" maxOccurs="1">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="first-name" type="xsd:string"/>
+                                        <xsd:element name="last-name" type="xsd:string"/>
+                                        <xsd:element name="student-id" type="xsd:string"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="monuments" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element name="cities" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element name="types" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
