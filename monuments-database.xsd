@@ -58,7 +58,44 @@
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>
-                <xsd:element name="cities" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element name="cities" type="xsd:string">
+                    <xsd:complextype>
+                        <xsd:sequence>
+                            <xsd:element name="city" type="xsd:string"  minOccurs="0" maxOccurs="unbounded">
+                                <xsd:complexType>
+
+                                    <xsd:sequence>
+                                        <xsd:element name="city_name" type="xsd:string"/>
+                                        <xsd:element name="country" type="xsd:string"/>
+                                        <xsd:element name="governing-mayor" type="xsd:string"/>
+                                        <xsd:element name="area" type="xsd:string"/>
+                                        <xsd:element name="elevation" type="xsd:string">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="lowest-level" type="xsd:string"/>
+                                                    <xsd:element name="highest-level" type="xsd:string"/>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                        <xsd:element name="population" type="xsd:string"/>
+                                        <xsd:element name="establishment-date" type="xsd:string">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:sequence>
+                                                        <xsd:element name="establishment-day" type="xsd:string"/>
+                                                        <xsd:element name="establishment-month" type="xsd:string"/>
+                                                        <xsd:element name="establishment-year" type="xsd:string"/>
+                                                    </xsd:sequence>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complextype>
+                </xsd:element>
                 <xsd:element name="types">
                     <xsd:complexType>
                         <xsd:sequence>
