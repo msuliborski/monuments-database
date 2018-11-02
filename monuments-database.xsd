@@ -65,6 +65,7 @@
                                 <xsd:complexType>
 
                                     <xsd:sequence>
+                                        <xsd:attribute name="city_id" type="xsd:string" use="required"/>
                                         <xsd:element name="city_name" type="xsd:string"/>
                                         <xsd:element name="country" type="xsd:string"/>
                                         <xsd:element name="governing-mayor" type="xsd:string"/>
