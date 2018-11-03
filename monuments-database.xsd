@@ -40,14 +40,14 @@
                                                 <xsd:sequence>
                                                     <xsd:element name="completion-day" type="xsd:unsignedInt" />
                                                     <xsd:element name="completion-month" type="xsd:unsignedInt" />
-                                                    <xsd:element name="completion-year" type="xsd:unsignedInt" />
+                                                    <xsd:element name="completion-year" type="xsd:int" />
                                                 </xsd:sequence>
                                             </xsd:complexType>
                                         </xsd:element>
                                         <xsd:element name="costs">
                                             <xsd:complexType>
                                                 <xsd:simpleContent>
-                                                    <xsd:extension base="xsd:unsignedInt">
+                                                    <xsd:extension base="xsd:unsignedLong">
                                                         <xsd:attribute name="currency" type="xsd:string" use="required" />
                                                     </xsd:extension>
                                                 </xsd:simpleContent>
@@ -146,7 +146,7 @@
                                                 <xsd:sequence>
                                                     <xsd:element name="establishment-day" type="xsd:unsignedInt" />
                                                     <xsd:element name="establishment-month" type="xsd:unsignedInt" />
-                                                    <xsd:element name="establishment-year" type="xsd:unsignedInt" />
+                                                    <xsd:element name="establishment-year" type="xsd:int" />
                                                 </xsd:sequence>
                                             </xsd:complexType>
                                         </xsd:element>
