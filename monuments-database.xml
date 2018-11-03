@@ -2,7 +2,9 @@
 <?xml-stylesheet href="monuments-database.css" type="text/css"?>
 <!--<!DOCTYPE monuments-database SYSTEM "monuments-database.dtd">-->
 
-<monuments-database>
+<monuments-database xmlns="https://www.monuments-database.com"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="https://www.monuments-database.com monuments-database.xsd">
 
     <title>Monuments Database</title>
 
