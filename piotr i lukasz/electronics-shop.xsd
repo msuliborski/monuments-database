@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:pt="http://www.xmlTechnology.org/product-type"
+           targetNamespace="http://www.xmlTechnology.org/electronics-shop-namespace"
+           elementFormDefault="qualified">
+
+    <xs:import schemaLocation="product-type.xsd" namespace="http://www.xmlTechnology.org/product-type"/>
+
+    <!--  definition of simple elements -->
+    <xs:element name="electronics-shop" type="electronics-shop_type">
+
+        <!-- definition of key/keyref -->
+        <xs:keyref name="manufacturer-id_keyRef" refer="manufacturer-id_key">
+            <xs:selector xpath="manufacturer/*"/>
+            <xs:field xpath="@manufacturer-id"/>
+        </xs:keyref>
+        <xs:key name="manufacturer-id_key">
+            <xs:selector xpath="product/*"/>
+            <xs:field xpath="manufacturer-id"/>
+        </xs:key>
+
+    </xs:element>
+
+    <xs:element name="document-information" type="document-information_type"/>
+    <xs:element name="data" type="data_type"/>
+
+    <xs:element name="author" type="author_type" />
+    <xs:element name="description" type="xs:string"/>
+
+    <xs:element name="first-name" type="xs:string"/>
+    <xs:element name="last-name" type="xs:string" />
+    <xs:element name="student-id" type="xs:integer"/>
+
+    <xs:element name="categories" type="categories_type"/>
+    <xs:element name="products-list" type="products-list_type"/>
+
+    <xs:element name="product-types" type="product-types_type"/>
+
+    <xs:element name="manufacturer" type="manufacturer_type"/>
+
+    <xs:element name="manufacturer-name" type="xs:string"/>
+    <xs:element name="headquarters" type="headquarters_type"/>
+    <xs:element name="factory" type="xs:string"/>
+
+    <xs:element name="location" type="xs:string"/>
+    <xs:element name="country" type="xs:string"/>
+
+    <xs:element name="product-type" type="pt:product-type_type"/>
+
+    <xs:element name="product" type="product_type"/>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="price" type="price_type"/>
+    <xs:element name="release-date" type="release-date_type"/>
+    <xs:element name="warranty" type="warranty_type"/>
+    <xs:element name="specification" type="specification_type"/>
+    <xs:element name="user-rating" type="user-rating_type"/>
+    <xs:element name="in-stock" type="xs:integer"/>
+    <xs:element name="free-delivery" type="free-delivery_type"/>
+    <xs:element name="additional-information" type="xs:string"/>
+
+    <xs:element name="day" type="xs:integer"/>
+    <xs:element name="month" type="xs:integer"/>
+    <xs:element name="year" type="xs:integer"/>
+    
+    <xs:element name="weight" type="weight_type"/>
+    <xs:element name="display-size" type="display-size_type"/>
+    <xs:element name="color" type="xs:string"/>
+    <xs:element name="switch" type="xs:string"/>
+    <xs:element name="sensor" type="xs:string"/>
+
+
+    <!-- definition of attributes -->
+    <xs:attributeGroup name="product-attributes">
+        <xs:attribute name="product-id" type="xs:ID" use="required"/>
+        <xs:attribute name="category-id" type="xs:IDREF" use="required"/>
+        <xs:attribute name="manufacturer-id" type="xs:string" use="required"/>
+    </xs:attributeGroup>
+
+    <!-- definition of group elements -->
+    <xs:group name="product_elements">
+        <xs:sequence>
+            <xs:element ref="name"/>
+            <xs:element ref="price"/>
+            <xs:element ref="release-date"/>
+            <xs:element ref="warranty"/>
+            <xs:element ref="specification"/>
+            <xs:element ref="user-rating"/>
+            <xs:element ref="in-stock"/>
+            <xs:element ref="free-delivery"/>
+            <xs:element ref="additional-information"/>
+        </xs:sequence>
+    </xs:group>
+
+    <!-- definition of simple types -->
+    <xs:simpleType name="user-rating_type">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="currency_type">
+        <xs:restriction>
+            <xs:enumeration value="pln"/>
+            <xs:enumeration value="usd"/>
+            <xs:enumeration value="czk"/>
+            <xs:enumeration value="gbp"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- definition of complex types -->
+    <xs:complexType name="electronics-shop_type">
+        <xs:sequence>
+            <xs:element ref="document-information"/>
+            <xs:element ref="data"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="document-information_type">
+        <xs:sequence>
+            <xs:element ref="author" minOccurs="2" maxOccurs="2"/>
+            <xs:element ref="description"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="author_type" >
+        <xs:sequence>
+            <xs:element ref="first-name"/>
+            <xs:element ref="last-name"/>
+            <xs:element ref="student-id"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="data_type">
+        <xs:sequence>
+            <xs:element ref="categories"/>
+            <xs:element ref="products-list"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="categories_type">
+        <xs:sequence>
+            <xs:element name="manufacturers">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="manufacturer" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element ref="product-types"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="manufacturer_type">
+        <xs:sequence>
+            <xs:element ref="manufacturer-name"/>
+            <xs:element ref="headquarters"/>
+            <xs:element ref="factory"/>
+        </xs:sequence>
+        <xs:attribute name="manufacturer-id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="headquarters_type">
+        <xs:sequence>
+            <xs:element ref="location"/>
+            <xs:element ref="country"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="product-types_type">
+        <xs:sequence maxOccurs="8">
+            <xs:element ref="product-type"/>
+        </xs:sequence>
+        <xs:attribute name="class"/>
+        <xs:attribute name="title"/>
+    </xs:complexType>
+
+    <xs:complexType name="product_type">
+        <xs:group ref="product_elements"/>
+        <xs:attributeGroup ref="product-attributes"/>
+    </xs:complexType>
+    
+    <xs:complexType name="products-list_type">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element ref="product"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="price_type">
+        <xs:simpleContent>
+        <xs:extension base="xs:double">
+            <xs:attribute name="currency" type="currency_type"/>
+            <xs:attribute name="on-sale" type="xs:string"/>
+        </xs:extension>
+    </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="release-date_type">
+        <xs:sequence>
+            <xs:element ref="day"/>
+            <xs:element ref="month"/>
+            <xs:element ref="year"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="warranty_type">
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="time-unit" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="specification_type">
+        <xs:sequence>
+            <xs:element ref="weight"/>
+            <xs:element ref="display-size" minOccurs="0"/>
+            <xs:element ref="color"/>
+            <xs:choice>
+                <xs:element ref="switch" minOccurs="0"/>
+                <xs:element ref="sensor" minOccurs="0"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="free-delivery_type">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="available">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="available|non-available"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="weight_type">
+        <xs:simpleContent>
+            <xs:extension base="xs:double">
+                <xs:attribute name="weight-unit">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="g"/>
+                            <xs:enumeration value="kg"/>
+                            <xs:enumeration value="pounds"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="display-size_type">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="display_size-unit"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>

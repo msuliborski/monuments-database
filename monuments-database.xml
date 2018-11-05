@@ -603,6 +603,7 @@
     </cities>
 
     <types>
+        <type type-id="wdwd">wd</type>
         <type class="type" type-id="observation-tower">Observation tower</type>
         <type class="type" type-id="building">Building</type>
         <type class="type" type-id="sculpture">Sculpture</type>

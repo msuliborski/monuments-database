@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:patient
+	xmlns:tns="http://www.xmlTechnology.org/Patient"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.xmlTechnology.org/Patient Patient.xsd"
+	no="12345">
+	<tns:name>Joe Doe</tns:name>
+	<!-- <tns:age>50</tns:age>  -->
+	<tns:email>joedoe@any.email.com</tns:email>
+	<tns:gender>M</tns:gender>
+	<tns:phone>123456789</tns:phone>
+	<tns:phone>444455555</tns:phone>
+	<tns:phone>987654321</tns:phone>
+	<tns:phone>4456675654</tns:phone>
+	<tns:payment>
+		<tns:insurance>
+			<tns:limit>100000</tns:limit>
+			<tns:provider>NFZ-4</tns:provider>
+		</tns:insurance>
+	</tns:payment>
+</tns:patient>

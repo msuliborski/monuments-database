@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.xmlTechnology.org/product-type"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="product-type_type">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="category-id" type="xs:ID" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    </xs:schema>

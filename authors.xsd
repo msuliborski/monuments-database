@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://www.monuments-database.com"
+    elementFormDefault="qualified">
+
+    <xsd:complexType name="authors">
+        <xsd:sequence>
+            <xsd:element name="author" maxOccurs="2">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="first-name" type="xsd:string" />
+                        <xsd:element name="last-name" type="xsd:string" />
+                        <xsd:element name="student-id" type="xsd:unsignedInt" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

@@ -1,182 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="https://www.monuments-database.com"
-           xmlns="https://www.monuments-database.com"
-           elementFormDefault="qualified">
+    targetNamespace="https://www.monuments-database.com"
+    xmlns:main="https://www.monuments-database.com"
+    xmlns:el="https://www.monuments-database.com/elements"
+    elementFormDefault="qualified">
+
+    <xsd:include schemaLocation="authors.xsd"/>
+    <xsd:import schemaLocation="elements/monuments.xsd" namespace="https://www.monuments-database.com/elements"/>
+    <xsd:import schemaLocation="elements/cities.xsd" namespace="https://www.monuments-database.com/elements"/>
+    <xsd:import schemaLocation="elements/types.xsd" namespace="https://www.monuments-database.com/elements"/>
 
     <xsd:element name="monuments-database">
         <xsd:complexType>
             <xsd:sequence>
-                
                 <xsd:element name="title" type="xsd:string" />
-
-                <xsd:element name="authors">
-                    <xsd:complexType>
-                        <xsd:sequence>
-                            <xsd:element name="author" maxOccurs="2">
-                                <xsd:complexType>
-                                    <xsd:sequence>
-                                        <xsd:element name="first-name" type="xsd:string" />
-                                        <xsd:element name="last-name" type="xsd:string" />
-                                        <xsd:element name="student-id" type="xsd:unsignedInt" />
-                                    </xsd:sequence>
-                                </xsd:complexType>
-                            </xsd:element>
-                        </xsd:sequence>
-                    </xsd:complexType>
-                </xsd:element>
-
-                <xsd:element name="monuments">
-                    <xsd:complexType>
-                        <xsd:sequence>
-                            <xsd:element name="monument" maxOccurs="unbounded">
-                                <xsd:complexType>
-                                    <xsd:sequence>
-                                        <xsd:element name="monument-name" type="xsd:string" />
-                                        <xsd:element name="monument-author" type="xsd:string" />
-                                        <xsd:element name="completion-date">
-                                            <xsd:complexType>
-                                                <xsd:sequence>
-                                                    <xsd:element name="completion-day" type="xsd:unsignedInt" />
-                                                    <xsd:element name="completion-month" type="xsd:unsignedInt" />
-                                                    <xsd:element name="completion-year" type="xsd:int" />
-                                                </xsd:sequence>
-                                            </xsd:complexType>
-                                        </xsd:element>
-                                        <xsd:element name="costs">
-                                            <xsd:complexType>
-                                                <xsd:simpleContent>
-                                                    <xsd:extension base="xsd:unsignedLong">
-                                                        <xsd:attribute name="currency" type="xsd:string" use="required" />
-                                                    </xsd:extension>
-                                                </xsd:simpleContent>
-                                            </xsd:complexType>
-                                        </xsd:element>
-                                        <xsd:element name="dimensions">
-                                            <xsd:complexType>
-                                                <xsd:sequence>
-                                                    <xsd:element name="width">
-                                                        <xsd:complexType>
-                                                            <xsd:simpleContent>
-                                                                <xsd:extension base="xsd:decimal">
-                                                                    <xsd:attribute name="unit" type="xsd:string" use="required" />
-                                                                </xsd:extension>
-                                                            </xsd:simpleContent>
-                                                        </xsd:complexType>
-                                                    </xsd:element>
-                                                    <xsd:element name="height">
-                                                        <xsd:complexType>
-                                                            <xsd:simpleContent>
-                                                                <xsd:extension base="xsd:decimal">
-                                                                    <xsd:attribute name="unit" type="xsd:string" use="required" />
-                                                                </xsd:extension>
-                                                            </xsd:simpleContent>
-                                                        </xsd:complexType>
-                                                    </xsd:element>
-                                                    <xsd:element name="length">
-                                                        <xsd:complexType>
-                                                            <xsd:simpleContent>
-                                                                <xsd:extension base="xsd:decimal">
-                                                                    <xsd:attribute name="unit" type="xsd:string" use="required" />
-                                                                </xsd:extension>
-                                                            </xsd:simpleContent>
-                                                        </xsd:complexType>
-                                                    </xsd:element>
-                                                </xsd:sequence>
-                                            </xsd:complexType>
-                                        </xsd:element>
-                                        <xsd:element name="visiting" type="xsd:string" />
-                                        <xsd:element name="history" type="xsd:string" />
-                                    </xsd:sequence>
-                                    <xsd:attribute name="monument-id" type="xsd:string" use="required" />
-                                    <xsd:attribute name="city-id" type="xsd:string" use="required" />
-                                    <xsd:attribute name="type-id" type="xsd:string" use="required" />
-                                </xsd:complexType>
-                            </xsd:element>
-                        </xsd:sequence>
-                    </xsd:complexType>
-                </xsd:element>
-
-                <xsd:element name="cities">
-                    <xsd:complexType>
-                        <xsd:sequence>
-                            <xsd:element name="city" maxOccurs="unbounded">
-                                <xsd:complexType>
-                                    <xsd:sequence>
-                                        <xsd:element name="city-name" type="xsd:string" />
-                                        <xsd:element name="country" type="xsd:string" />
-                                        <xsd:element name="governing-mayor" type="xsd:string" />
-                                        <xsd:element name="area">
-                                            <xsd:complexType>
-                                                <xsd:simpleContent>
-                                                    <xsd:extension base="xsd:string">
-                                                        <xsd:attribute name="unit" type="xsd:string" use="required" />
-                                                    </xsd:extension>
-                                                </xsd:simpleContent>
-                                            </xsd:complexType>
-                                        </xsd:element>
-                                        <xsd:element name="elevation">
-                                            <xsd:complexType>
-                                                <xsd:sequence>
-                                                    <xsd:element name="lowest-level">
-                                                        <xsd:complexType>
-                                                            <xsd:simpleContent>
-                                                                <xsd:extension base="xsd:unsignedInt">
-                                                                    <xsd:attribute name="unit" type="xsd:string" use="required" />
-                                                                </xsd:extension>
-                                                            </xsd:simpleContent>
-                                                        </xsd:complexType>
-                                                    </xsd:element>
-                                                    <xsd:element name="highest-level">
-                                                        <xsd:complexType>
-                                                            <xsd:simpleContent>
-                                                                <xsd:extension base="xsd:unsignedInt">
-                                                                    <xsd:attribute name="unit" type="xsd:string" use="required" />
-                                                                </xsd:extension>
-                                                            </xsd:simpleContent>
-                                                        </xsd:complexType>
-                                                    </xsd:element>
-                                                </xsd:sequence>
-                                            </xsd:complexType>
-                                        </xsd:element>
-                                        <xsd:element name="population" type="xsd:unsignedLong" />
-                                        <xsd:element name="establishment-date">
-                                            <xsd:complexType>
-                                                <xsd:sequence>
-                                                    <xsd:element name="establishment-day" type="xsd:unsignedInt" />
-                                                    <xsd:element name="establishment-month" type="xsd:unsignedInt" />
-                                                    <xsd:element name="establishment-year" type="xsd:int" />
-                                                </xsd:sequence>
-                                            </xsd:complexType>
-                                        </xsd:element>
-                                    </xsd:sequence>
-                                    <xsd:attribute name="city-id" type="xsd:string" use="required" />
-                                </xsd:complexType>
-                            </xsd:element>
-                        </xsd:sequence>
-                    </xsd:complexType>
-                </xsd:element>
-
-                <xsd:element name="types">
-                    <xsd:complexType>
-                        <xsd:sequence>
-                            <xsd:element name="type" maxOccurs="unbounded">
-                                <xsd:complexType>
-                                    <xsd:simpleContent>
-                                        <xsd:extension base="xsd:string">
-                                            <xsd:attribute name="class" type="xsd:string" use="required" />
-                                            <xsd:attribute name="type-id" type="xsd:string" use="required" />
-                                        </xsd:extension>
-                                    </xsd:simpleContent>
-                                </xsd:complexType>
-                            </xsd:element>
-                        </xsd:sequence>
-                    </xsd:complexType>
-                </xsd:element>
-
+                <xsd:element name="authors" type="main:authors" maxOccurs="2"/>
+                <xsd:element name="monuments" type="el:monuments" maxOccurs="unbounded"/>
+                <xsd:element name="cities" type="el:cities" maxOccurs="unbounded"/>
+                <xsd:element name="types" type="el:types" maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:complexType>
-
     </xsd:element>
+
 </xsd:schema>
