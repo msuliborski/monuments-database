@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="https://www.monuments-database.com"
-    elementFormDefault="qualified">
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://www.monuments-database.com/elements"
+        xmlns:el="https://www.monuments-database.com/elements"
+        elementFormDefault="qualified">
 
     <xsd:complexType name="cities">
         <xsd:sequence>
@@ -57,6 +59,10 @@
                     </xsd:sequence>
                     <xsd:attribute name="city-id" type="xsd:ID" use="required" />
                 </xsd:complexType>
+                <!--<xsd:key name="city-id">-->
+                    <!--<xsd:selector xpath="./cities/city"/>-->
+                    <!--<xsd:field xpath="@city-id"/>-->
+                <!--</xsd:key>-->
             </xsd:element>
         </xsd:sequence>
     </xsd:complexType>

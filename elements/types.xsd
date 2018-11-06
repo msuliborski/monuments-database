@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="https://www.monuments-database.com"
-    elementFormDefault="qualified">
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://www.monuments-database.com/elements"
+        xmlns:el="https://www.monuments-database.com/elements"
+        elementFormDefault="qualified">
 
     <xsd:complexType name="types">
         <xsd:sequence>
@@ -14,6 +16,10 @@
                         </xsd:extension>
                     </xsd:simpleContent>
                 </xsd:complexType>
+                <!--<xsd:key name="type-id">-->
+                    <!--<xsd:selector xpath="./types/type"/>-->
+                    <!--<xsd:field xpath="@type-id"/>-->
+                <!--</xsd:key>-->
             </xsd:element>
         </xsd:sequence>
     </xsd:complexType>

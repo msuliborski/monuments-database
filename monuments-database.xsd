@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="https://www.monuments-database.com"
-    xmlns:main="https://www.monuments-database.com"
-    elementFormDefault="qualified">
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://www.monuments-database.com"
+        xmlns:main="https://www.monuments-database.com"
+        xmlns:el="https://www.monuments-database.com/elements"
+        elementFormDefault="qualified">
 
     <xsd:include schemaLocation="authors.xsd"/>
-    <xsd:include schemaLocation="elements/monuments.xsd" />
-    <xsd:include schemaLocation="elements/cities.xsd" />
-    <xsd:include schemaLocation="elements/types.xsd" />
+    <xsd:import schemaLocation="elements/monuments.xsd" namespace="https://www.monuments-database.com/elements"/>
+    <xsd:import schemaLocation="elements/cities.xsd" namespace="https://www.monuments-database.com/elements"/>
+    <xsd:import schemaLocation="elements/types.xsd" namespace="https://www.monuments-database.com/elements"/>
 
     <xsd:element name="monuments-database">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="title" type="xsd:string" />
                 <xsd:element name="authors" type="main:authors" maxOccurs="2"/>
-                <xsd:element name="monuments" type="main:monuments" maxOccurs="unbounded"/>
-                <xsd:element name="cities" type="main:cities" maxOccurs="unbounded"/>
-                <xsd:element name="types" type="main:types" maxOccurs="unbounded"/>
+                <xsd:element name="monuments" type="el:monuments" maxOccurs="unbounded"/>
+                <xsd:element name="cities" type="el:cities" maxOccurs="unbounded"/>
+                <xsd:element name="types" type="el:types" maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:complexType>
-
-
-        <xsd:key name="city-id">
-            <xsd:selector xpath="./cities/city"/>
+        <xsd:key name="city-id-key">
+            <xsd:selector xpath="el:cities/city"/>
             <xsd:field xpath="@city-id"/>
         </xsd:key>
-        <xsd:key name="type-id">
-            <xsd:selector xpath="./types/type"/>
+        <xsd:key name="type-id-key">
+            <xsd:selector xpath="el:types/type"/>
             <xsd:field xpath="@type-id"/>
         </xsd:key>
-        <xsd:key name="monument-id">
-            <xsd:selector xpath="./monuments/monument"/>
+        <xsd:key name="monument-id-key">
+            <xsd:selector xpath="el:monuments/monument"/>
             <xsd:field xpath="@monument-id"/>
         </xsd:key>
         <xsd:keyref name="city-to-monument-ref" refer="city-id">
-            <xsd:selector xpath="./monuments/monument"/>
+            <xsd:selector xpath="el:monuments/monument"/>
             <xsd:field xpath="@city-id"/>
         </xsd:keyref>
         <xsd:keyref name="type-to-monument-ref" refer="type-id">
-            <xsd:selector xpath="./monuments/monument"/>
+            <xsd:selector xpath="el:monuments/monument"/>
             <xsd:field xpath="@type-id"/>
         </xsd:keyref>
     </xsd:element>
