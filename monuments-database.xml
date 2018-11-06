@@ -25,7 +25,7 @@
     </main:authors>
 
     <main:monuments>
-        <el:monument monument-id="eiffel-tower" city-id="paris" type-id="observation-tower">
+        <el:monument>
             <el:monument-name>Eiffel Tower</el:monument-name>
             <el:monument-author>Stephen Sauvestre</el:monument-author>
             <el:completion-date>
@@ -45,7 +45,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="colosseum" city-id="rome" type-id="building">
+        <el:monument>
             <el:monument-name>Colosseum</el:monument-name>
             <el:monument-author>Vespasian</el:monument-author>
             <el:completion-date>
@@ -72,7 +72,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="berlin-wall" city-id="berlin" type-id="wall">
+        <el:monument>
             <el:monument-name>Berlin Wall</el:monument-name>
             <el:monument-author>German Democratic Republic</el:monument-author>
             <el:completion-date>
@@ -101,7 +101,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="leaning-tower-of-pisa" city-id="pisa" type-id="observation-tower">
+        <el:monument>
             <el:monument-name>Leaning Tower of Pisa</el:monument-name>
             <el:monument-author>Bonanno Pisano</el:monument-author>
             <el:completion-date>
@@ -125,7 +125,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="notre-dame-de-paris" city-id="paris" type-id="building">
+        <el:monument>
             <el:monument-name>Notre-Dame de Paris</el:monument-name>
             <el:monument-author>Unknown</el:monument-author>
             <el:completion-date>
@@ -150,7 +150,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="big-ben" city-id="london" type-id="building">
+        <el:monument>
             <el:monument-name>Big Ben</el:monument-name>
             <el:monument-author>Augustus Pugin</el:monument-author>
             <el:completion-date>
@@ -174,7 +174,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="cattedrale-di-santa-maria-del-fiore" city-id="florence" type-id="church-cathedral">
+        <el:monument >
             <el:monument-name>Cattedrale di Santa Maria del Fiore</el:monument-name>
             <el:monument-author>Arnolfo di Cambio</el:monument-author>
             <el:completion-date>
@@ -199,7 +199,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="david" city-id="florence" type-id="sculpture">
+        <el:monument >
             <el:monument-name>David</el:monument-name>
             <el:monument-author>Michelangelo</el:monument-author>
             <el:completion-date>
@@ -220,7 +220,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="palace-of-culture-and-science" city-id="warsaw" type-id="building">
+        <el:monument >
             <el:monument-name>Palace of Culture and Science</el:monument-name>
             <el:monument-author>Lev Rudnev</el:monument-author>
             <el:completion-date>
@@ -247,7 +247,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="sky-tower" city-id="wroclaw" type-id="observation-tower">
+        <el:monument>
             <el:monument-name>Sky Tower</el:monument-name>
             <el:monument-author>Mariusz Korszorsz</el:monument-author>
             <el:completion-date>
@@ -271,7 +271,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="statue-of-liberty" city-id="new-york" type-id="sculpture">
+        <el:monument >
             <el:monument-name>Statue of Liberty</el:monument-name>
             <el:monument-author>Frederic Auguste Bartholdi</el:monument-author>
             <el:completion-date>
@@ -296,7 +296,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="christ-the-redeemer" city-id="rio-de-janeiro" type-id="sculpture">
+        <el:monument >
             <el:monument-name>Christ the Redeemer</el:monument-name>
             <el:monument-author>Paul Landowski</el:monument-author>
             <el:completion-date>
@@ -320,7 +320,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="neptunes-fountain" city-id="gdansk" type-id="sculpture">
+        <el:monument >
             <el:monument-name>Neptune's Fountain</el:monument-name>
             <el:monument-author>Abraham van den Blocke</el:monument-author>
             <el:completion-date>
@@ -348,7 +348,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="central-park" city-id="warsaw" type-id="building">
+        <el:monument >
             <el:monument-name>Central Park</el:monument-name>
             <el:monument-author>Frederick Law Olmsted</el:monument-author>
             <el:completion-date>
@@ -374,7 +374,7 @@
             </el:history>
         </el:monument>
 
-        <el:monument monument-id="stajnia-jednorozcow" city-id="lodz" type-id="building">
+        <el:monument>
             <el:monument-name>Stajnia Jednorożców</el:monument-name>
             <el:monument-author>Jan Gałecki</el:monument-author>
             <el:completion-date>
@@ -399,7 +399,7 @@
     </main:monuments>
 
     <main:cities>
-        <el:city city-id="paris">
+        <el:city >
             <el:city-name>Paris</el:city-name>
             <el:country>France</el:country>
             <el:governing-mayor>Anne Hidalgo</el:governing-mayor>
@@ -416,7 +416,7 @@
             </el:establishment-date>
         </el:city>
 
-        <el:city city-id="rome">
+        <el:city>
             <el:city-name>Rome</el:city-name>
             <el:country>Italy</el:country>
             <el:governing-mayor>Virginia Raggi</el:governing-mayor>
@@ -433,7 +433,7 @@
             </el:establishment-date>
         </el:city>
 
-        <el:city city-id="berlin">
+        <el:city>
             <el:city-name>Berlin</el:city-name>
             <el:country>Germany</el:country>
             <el:governing-mayor>Michael Muller</el:governing-mayor>
@@ -450,7 +450,7 @@
             </el:establishment-date>
         </el:city>
 
-        <el:city city-id="pisa">
+        <el:city>
             <el:city-name>Pisa</el:city-name>
             <el:country>Italy</el:country>
             <el:governing-mayor>Michele Conti</el:governing-mayor>
@@ -467,7 +467,7 @@
             </el:establishment-date>
         </el:city>
 
-        <el:city city-id="london">
+        <el:city >
             <el:city-name>London</el:city-name>
             <el:country>England</el:country>
             <el:governing-mayor>Sadiq Khan</el:governing-mayor>
@@ -484,7 +484,7 @@
             </el:establishment-date>
         </el:city>
 
-        <el:city city-id="florence">
+        <el:city>
             <el:city-name>Florence</el:city-name>
             <el:country>Italy</el:country>
             <el:governing-mayor>Dario Nardella</el:governing-mayor>
@@ -501,7 +501,7 @@
             </el:establishment-date>
         </el:city>
 
-        <el:city city-id="warsaw">
+        <el:city>
             <el:city-name>Warsaw</el:city-name>
             <el:country>Poland</el:country>
             <el:governing-mayor>Hanna Gronkiewicz-Waltz</el:governing-mayor>
@@ -518,7 +518,7 @@
             </el:establishment-date>
         </el:city>
 
-        <el:city city-id="wroclaw">
+        <el:city >
             <el:city-name>Wroclaw</el:city-name>
             <el:country>Poland</el:country>
             <el:governing-mayor>Rafal Dutkiewicz</el:governing-mayor>
@@ -535,7 +535,7 @@
             </el:establishment-date>
         </el:city>
 
-        <el:city city-id="lodz">
+        <el:city >
             <el:city-name>Lodz</el:city-name>
             <el:country>Poland</el:country>
             <el:governing-mayor>Hanna Zdanowska</el:governing-mayor>
@@ -552,7 +552,7 @@
             </el:establishment-date>
         </el:city>
 
-        <el:city city-id="gdansk">
+        <el:city>
             <el:city-name>Gdansk</el:city-name>
             <el:country>Poland</el:country>
             <el:governing-mayor>Pawel Adamowicz</el:governing-mayor>
@@ -569,7 +569,7 @@
             </el:establishment-date>
         </el:city>
 
-        <el:city city-id="rio-de-janeiro">
+        <el:city>
             <el:city-name>Rio de Janeiro</el:city-name>
             <el:country>Brazil</el:country>
             <el:governing-mayor>Marcelo Crivella</el:governing-mayor>
@@ -586,7 +586,7 @@
             </el:establishment-date>
         </el:city>
 
-        <el:city city-id="new-york">
+        <el:city>
             <el:city-name>New York</el:city-name>
             <el:country>United States</el:country>
             <el:governing-mayor>Bill de Blasio</el:governing-mayor>
@@ -605,13 +605,12 @@
     </main:cities>
 
     <main:types>
-        <el:type type-id="wdwd">wd</el:type>
-        <el:type class="type" type-id="observation-tower">Observation tower</el:type>
-        <el:type class="type" type-id="building">Building</el:type>
-        <el:type class="type" type-id="sculpture">Sculpture</el:type>
-        <el:type class="type" type-id="church-cathedral">Church/Cathedral</el:type>
-        <el:type class="type" type-id="wall">Wall</el:type>
-        <el:type class="type" type-id="landscape">Landscape</el:type>
+        <el:type >Observation tower</el:type>
+        <el:type >Building</el:type>
+        <el:type >Sculpture</el:type>
+        <el:type >Church/Cathedral</el:type>
+        <el:type >Wall</el:type>
+        <el:type >Landscape</el:type>
     </main:types>
 
 </main:monuments-database>
