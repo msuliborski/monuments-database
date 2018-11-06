@@ -9,6 +9,9 @@
         <xsd:sequence>
             <xsd:element name="monument" maxOccurs="unbounded">
                 <xsd:complexType>
+
+
+
                     <xsd:sequence>
                         <xsd:element name="monument-name" type="xsd:string" />
                         <xsd:element name="monument-author" type="xsd:string" />
@@ -66,11 +69,27 @@
                         <xsd:element name="visiting" type="xsd:string" />
                         <xsd:element name="history" type="xsd:string" />
                     </xsd:sequence>
-                    <!--<xsd:attribute name="monument-id" type="xsd:ID" use="required" />-->
-                    <!--<xsd:attribute name="city-id" type="xsd:IDREF" use="required" />-->
-                    <!--<xsd:attribute name="type-id" type="xsd:IDREF" use="required" />-->
+
+                    <xsd:attribute name="monument-id" type="xsd:ID" use="required" />
+                    <xsd:attribute name="city-id" type="xsd:IDREF" use="required" />
+                    <xsd:attribute name="type-id" type="xsd:IDREF" use="required" />
+
                 </xsd:complexType>
+                <xsd:key name="monument-id">
+                    <xsd:selector xpath="./monuments/monument"/>
+                    <xsd:field xpath="@monument-id"/>
+                </xsd:key>
+                <xsd:keyref name="city-id-ref" refer="city-id-key">
+                    <xsd:selector xpath="./monuments/monument"/>
+                    <xsd:field xpath="@city-id"/>
+                </xsd:keyref>
+                <xsd:keyref name="ype-id-ref" refer="type-id-key">
+                    <xsd:selector xpath="./monuments/monument"/>
+                    <xsd:field xpath="@type-id"/>
+                </xsd:keyref>
+
             </xsd:element>
+
         </xsd:sequence>
     </xsd:complexType>
 
@@ -126,18 +145,34 @@
                             </xsd:complexType>
                         </xsd:element>
                     </xsd:sequence>
-                    <!--<xsd:attribute name="city-id" type="xsd:ID" use="required" />-->
+                    <xsd:attribute name="city-id" type="xsd:ID" use="required" />
                 </xsd:complexType>
+                <xsd:key name="city-id-key">
+                    <xsd:selector xpath="./cities/city"/>
+                    <xsd:field xpath="@city-id"/>
+                </xsd:key>
             </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
 
     <xsd:complexType name="types">
         <xsd:sequence>
-            <xsd:element name="type" maxOccurs="unbounded"/>
+            <xsd:element name="type" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:extension base="xsd:string">
+                            <xsd:attribute name="class" type="xsd:string" use="optional" />
+                            <xsd:attribute name="type-id" type="xsd:ID" use="required" />
+                        </xsd:extension>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+                <xsd:key name="type-id-key">
+                    <xsd:selector xpath="./types/type"/>
+                    <xsd:field xpath="@type-id"/>
+                </xsd:key>
+            </xsd:element>
         </xsd:sequence>
-        <!--<xsd:attribute name="class" type="xsd:string" use="optional" />-->
-        <!--<xsd:attribute name="type-id" type="xsd:ID" use="required" />-->
+
     </xsd:complexType>
 
 </xsd:schema>
