@@ -9,7 +9,7 @@
             <xsd:element name="author" maxOccurs="2">
                 <xsd:complexType>
                     <xsd:sequence>
-                        <xsd:element name="first-name" type="xsd:string" >
+                        <xsd:element name="first-name" >
                             <xsd:simpleType>
                                 <xsd:restriction base="xsd:string">
                                     <xsd:maxLength  value="50"/>
@@ -18,7 +18,7 @@
                             </xsd:simpleType>
                         </xsd:element>
 
-                        <xsd:element name="last-name" type="xsd:string" >
+                        <xsd:element name="last-name" >
                             <xsd:simpleType>
                                 <xsd:restriction base="xsd:string">
                                     <xsd:maxLength  value="50"/>
@@ -26,7 +26,7 @@
                                 </xsd:restriction>
                             </xsd:simpleType>
                         </xsd:element>
-                        <xsd:element name="student-id" type="xsd:unsignedInt" >
+                        <xsd:element name="student-id">
                             <xsd:simpleType>
                                 <xsd:restriction base="xsd:unsignedInt">
                                     <xsd:maxInclusive  value="999999"/>

@@ -10,14 +10,14 @@
             <xsd:element name="monument" maxOccurs="unbounded">
                 <xsd:complexType>
                     <xsd:sequence>
-                        <xsd:element name="monument-name" type="xsd:string" >
+                        <xsd:element name="monument-name" >
                             <xsd:simpleType>
                                 <xsd:restriction base="xsd:string">
                                     <xsd:maxLength  value="250"/>
                                 </xsd:restriction>
                             </xsd:simpleType>
                         </xsd:element>
-                        <xsd:element name="monument-author" type="xsd:string" >
+                        <xsd:element name="monument-author" >
                             <xsd:simpleType>
                                 <xsd:restriction base="xsd:string">
                                     <xsd:maxLength  value="250"/>
@@ -33,7 +33,7 @@
                             <xsd:complexType>
                                 <xsd:simpleContent>
                                     <xsd:extension base="xsd:unsignedLong">
-                                        <xsd:attribute name="currency" type="xsd:string" use="required" />
+                                        <xsd:attribute name="currency" use="required" />
                                     </xsd:extension>
                                 </xsd:simpleContent>
                             </xsd:complexType>
@@ -43,10 +43,9 @@
                                 <xsd:group ref="el:dimensions"/>
                             </xsd:complexType>
                         </xsd:element>
-                        <xsd:element name="visiting" type="xsd:string" />
-                        <xsd:element name="history" type="xsd:string" />
+                        <xsd:element name="visiting" />
+                        <xsd:element name="history" />
                     </xsd:sequence>
-
                     <xsd:attribute name="monument-id" type="xsd:ID" use="required" />
                     <xsd:attribute name="city-id" type="xsd:IDREF" use="required" />
                     <xsd:attribute name="type-id" type="xsd:IDREF" use="required" />
@@ -62,8 +61,7 @@
 
     <xsd:group name="completion-date">
         <xsd:sequence>
-            <xsd:element name="completion-day" type="xsd:unsignedInt" >
-
+            <xsd:element name="completion-day">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:unsignedInt">
                         <xsd:minInclusive value="0"/>
@@ -72,8 +70,7 @@
                 </xsd:simpleType>
             </xsd:element>
 
-
-            <xsd:element name="completion-month" type="xsd:unsignedInt" >
+            <xsd:element name="completion-month">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:unsignedInt">
                         <xsd:minInclusive value="0"/>
@@ -81,7 +78,8 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element name="completion-year" type="xsd:int" >
+
+            <xsd:element name="completion-year">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:int">
                         <xsd:minInclusive value="-10000"/>
@@ -95,15 +93,11 @@
 
     <xsd:group name="dimensions">
         <xsd:sequence>
-
             <xsd:element name="width">
-
-
                 <xsd:complexType>
                     <xsd:simpleContent>
-
                         <xsd:extension base="xsd:decimal" >
-                            <xsd:attribute name="unit" type="xsd:string" use="required" >
+                            <xsd:attribute name="unit" use="required" >
                                 <xsd:simpleType>
                                     <xsd:restriction base="xsd:string">
                                         <xsd:maxLength  value="5"/>
@@ -112,17 +106,15 @@
 
                             </xsd:attribute>
                         </xsd:extension>
-
-
-
                     </xsd:simpleContent>
                 </xsd:complexType>
             </xsd:element>
+
             <xsd:element name="height">
                 <xsd:complexType>
                     <xsd:simpleContent>
                         <xsd:extension base="xsd:decimal">
-                            <xsd:attribute name="unit" type="xsd:string" use="required" >
+                            <xsd:attribute name="unit" use="required" >
                                 <xsd:simpleType>
                                     <xsd:restriction base="xsd:string">
                                         <xsd:maxLength  value="5"/>
@@ -133,11 +125,12 @@
                     </xsd:simpleContent>
                 </xsd:complexType>
             </xsd:element>
+
             <xsd:element name="length">
                 <xsd:complexType>
                     <xsd:simpleContent>
                         <xsd:extension base="xsd:decimal">
-                            <xsd:attribute name="unit" type="xsd:string" use="required" >
+                            <xsd:attribute name="unit" use="required" >
                                 <xsd:simpleType>
                                     <xsd:restriction base="xsd:string">
                                         <xsd:maxLength  value="5"/>
@@ -149,7 +142,6 @@
                     </xsd:simpleContent>
                 </xsd:complexType>
             </xsd:element>
-
         </xsd:sequence>
     </xsd:group>
 
@@ -159,7 +151,7 @@
             <xsd:element name="city" maxOccurs="unbounded">
                 <xsd:complexType>
                     <xsd:sequence>
-                        <xsd:element name="city-name" type="xsd:string" >
+                        <xsd:element name="city-name" >
                             <xsd:simpleType>
                                 <xsd:restriction base="xsd:string">
                                     <xsd:maxLength  value="250"/>
@@ -167,28 +159,31 @@
                                 </xsd:restriction>
                             </xsd:simpleType>
                         </xsd:element>
-                        <xsd:element name="country" type="xsd:string" >
+
+                        <xsd:element name="country" >
                             <xsd:simpleType>
                                 <xsd:restriction base="xsd:string">
                                     <xsd:maxLength  value="50"/>
-                                    <xsd:pattern value="([a-zA-z -])*"/>
+                                    <xsd:pattern value="([a-zA-z \-])*"/>
                                 </xsd:restriction>
                             </xsd:simpleType>
                         </xsd:element>
-                        <xsd:element name="governing-mayor" type="xsd:string" >
+
+                        <xsd:element name="governing-mayor" >
                             <xsd:simpleType>
                                 <xsd:restriction base="xsd:string">
                                     <xsd:maxLength  value="50"/>
-                                    <xsd:pattern value="([a-zA-z -])*"/>
+                                    <xsd:pattern value="([a-zA-z \-])*"/>
 
                                 </xsd:restriction>
                             </xsd:simpleType>
                         </xsd:element>
+
                         <xsd:element name="area">
                             <xsd:complexType>
                                 <xsd:simpleContent>
                                     <xsd:extension base="xsd:string">
-                                        <xsd:attribute name="unit" type="xsd:string" fixed="km2" >
+                                        <xsd:attribute name="unit" fixed="km2" >
                                             <xsd:simpleType>
                                                 <xsd:restriction base="xsd:string">
                                                     <xsd:maxLength  value="5"/>
@@ -200,12 +195,13 @@
                                 </xsd:simpleContent>
                             </xsd:complexType>
                         </xsd:element>
+
                         <xsd:element name="elevation">
                             <xsd:complexType>
                                 <xsd:group ref="el:elevation"/>
                             </xsd:complexType>
                         </xsd:element>
-                        <xsd:element name="population" type="xsd:unsignedLong" >
+                        <xsd:element name="population" >
                             <xsd:simpleType>
                                 <xsd:restriction base="xsd:unsignedLong">
                                     <xsd:minInclusive value="0"/>
@@ -220,6 +216,7 @@
                                 <xsd:group ref="el:establishment-date"/>
                             </xsd:complexType>
                         </xsd:element>
+
                     </xsd:sequence>
                     <xsd:attribute name="city-id" type="xsd:ID" use="required" />
                 </xsd:complexType>
@@ -242,7 +239,7 @@
                 <xsd:complexType>
                     <xsd:simpleContent>
                         <xsd:extension base="xsd:unsignedInt">
-                            <xsd:attribute name="unit" type="xsd:string" use="required" >
+                            <xsd:attribute name="unit" use="required" >
                                 <xsd:simpleType>
                                     <xsd:restriction base="xsd:string">
                                         <xsd:maxLength  value="5"/>
@@ -250,7 +247,6 @@
                                     </xsd:restriction>
                                 </xsd:simpleType>
                             </xsd:attribute>
-
                         </xsd:extension>
                     </xsd:simpleContent>
                 </xsd:complexType>
@@ -259,7 +255,7 @@
                 <xsd:complexType>
                     <xsd:simpleContent>
                         <xsd:extension base="xsd:unsignedInt">
-                            <xsd:attribute name="unit" type="xsd:string" use="required" >
+                            <xsd:attribute name="unit" use="required" >
                                 <xsd:simpleType>
                                     <xsd:restriction base="xsd:string">
                                         <xsd:maxLength  value="5"/>
@@ -274,10 +270,9 @@
         </xsd:sequence>
     </xsd:group>
 
-
     <xsd:group name="establishment-date">
         <xsd:sequence>
-            <xsd:element name="establishment-day" type="xsd:unsignedInt" >
+            <xsd:element name="establishment-day" >
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:unsignedInt">
                         <xsd:minInclusive value="0"/>
@@ -285,7 +280,7 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element name="establishment-month" type="xsd:unsignedInt" >
+            <xsd:element name="establishment-month">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:unsignedInt">
                         <xsd:minInclusive value="0"/>
@@ -293,7 +288,7 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element name="establishment-year" type="xsd:int" >
+            <xsd:element name="establishment-year" >
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:int">
                         <xsd:minInclusive value="-10000"/>
@@ -304,15 +299,13 @@
         </xsd:sequence>
     </xsd:group>
 
-
-
     <xsd:complexType name="types">
         <xsd:sequence>
             <xsd:element name="type" maxOccurs="unbounded">
                 <xsd:complexType>
                     <xsd:simpleContent>
                         <xsd:extension base="xsd:string">
-                            <xsd:attribute name="class" type="xsd:string" use="optional" >
+                            <xsd:attribute name="class" use="optional" >
                                 <xsd:simpleType>
                                     <xsd:restriction base="xsd:string">
                                         <xsd:maxLength  value="5"/>
