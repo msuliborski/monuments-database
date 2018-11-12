@@ -242,7 +242,15 @@
                 <xsd:complexType>
                     <xsd:simpleContent>
                         <xsd:extension base="xsd:unsignedInt">
-                            <xsd:attribute name="unit" type="xsd:string" use="required" />
+                            <xsd:attribute name="unit" type="xsd:string" use="required" >
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:maxLength  value="5"/>
+                                        <xsd:pattern value="([a-zA-z 0-9])*"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:attribute>
+
                         </xsd:extension>
                     </xsd:simpleContent>
                 </xsd:complexType>
@@ -251,7 +259,14 @@
                 <xsd:complexType>
                     <xsd:simpleContent>
                         <xsd:extension base="xsd:unsignedInt">
-                            <xsd:attribute name="unit" type="xsd:string" use="required" />
+                            <xsd:attribute name="unit" type="xsd:string" use="required" >
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:maxLength  value="5"/>
+                                        <xsd:pattern value="([a-zA-z 0-9])*"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:attribute>
                         </xsd:extension>
                     </xsd:simpleContent>
                 </xsd:complexType>
@@ -262,9 +277,30 @@
 
     <xsd:group name="establishment-date">
         <xsd:sequence>
-            <xsd:element name="establishment-day" type="xsd:unsignedInt" />
-            <xsd:element name="establishment-month" type="xsd:unsignedInt" />
-            <xsd:element name="establishment-year" type="xsd:int" />
+            <xsd:element name="establishment-day" type="xsd:unsignedInt" >
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:unsignedInt">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="31"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="establishment-month" type="xsd:unsignedInt" >
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:unsignedInt">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="12"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="establishment-year" type="xsd:int" >
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:int">
+                        <xsd:minInclusive value="-10000"/>
+                        <xsd:maxInclusive value="10000"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
         </xsd:sequence>
     </xsd:group>
 
@@ -276,7 +312,14 @@
                 <xsd:complexType>
                     <xsd:simpleContent>
                         <xsd:extension base="xsd:string">
-                            <xsd:attribute name="class" type="xsd:string" use="optional" />
+                            <xsd:attribute name="class" type="xsd:string" use="optional" >
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:maxLength  value="5"/>
+                                        <xsd:pattern value="([a-zA-z])*"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:attribute>
                             <xsd:attribute name="type-id" type="xsd:ID" use="required" />
                         </xsd:extension>
                     </xsd:simpleContent>
