@@ -10,8 +10,20 @@
             <xsd:element name="monument" maxOccurs="unbounded">
                 <xsd:complexType>
                     <xsd:sequence>
-                        <xsd:element name="monument-name" type="xsd:string" />
-                        <xsd:element name="monument-author" type="xsd:string" />
+                        <xsd:element name="monument-name" type="xsd:string" >
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength  value="250"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                        <xsd:element name="monument-author" type="xsd:string" >
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength  value="250"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
                         <xsd:element name="completion-date">
                             <xsd:complexType>
                                 <xsd:group ref="el:completion-date"/>
@@ -48,6 +60,39 @@
         </xsd:sequence>
     </xsd:complexType>
 
+    <xsd:group name="completion-date">
+        <xsd:sequence>
+            <xsd:element name="completion-day" type="xsd:unsignedInt" >
+
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:unsignedInt">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="31"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+
+
+            <xsd:element name="completion-month" type="xsd:unsignedInt" >
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:unsignedInt">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="12"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="completion-year" type="xsd:int" >
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:int">
+                        <xsd:minInclusive value="-10000"/>
+                        <xsd:maxInclusive value="10000"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:group>
+
+
     <xsd:group name="dimensions">
         <xsd:sequence>
             <xsd:sequence>
@@ -82,13 +127,6 @@
         </xsd:sequence>
     </xsd:group>
 
-    <xsd:group name="completion-date">
-        <xsd:sequence>
-            <xsd:element name="completion-day" type="xsd:unsignedInt" />
-            <xsd:element name="completion-month" type="xsd:unsignedInt" />
-            <xsd:element name="completion-year" type="xsd:int" />
-        </xsd:sequence>
-    </xsd:group>
 
     <xsd:complexType name="cities">
         <xsd:sequence>
