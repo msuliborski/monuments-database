@@ -67,15 +67,15 @@
                         <xsd:element name="history" type="xsd:string" />
                     </xsd:sequence>
 
-                    <xsd:attribute name="monument-id" type="xsd:string" use="required" />
-                    <xsd:attribute name="city-id" type="xsd:string" use="required" />
-                    <xsd:attribute name="type-id" type="xsd:string" use="required" />
+                    <xsd:attribute name="monument-id" type="xsd:ID" use="required" />
+                    <xsd:attribute name="city-id" type="xsd:IDREF" use="required" />
+                    <xsd:attribute name="type-id" type="xsd:IDREF" use="required" />
 
                 </xsd:complexType>
-                <xsd:unique name="monument-id">
+                <xsd:key name="monument-id-key">
                     <xsd:selector xpath="./monuments/monument"/>
                     <xsd:field xpath="@monument-id"/>
-                </xsd:unique>
+                </xsd:key>
             </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
@@ -132,12 +132,12 @@
                             </xsd:complexType>
                         </xsd:element>
                     </xsd:sequence>
-                    <xsd:attribute name="city-id" type="xsd:string" use="required" />
+                    <xsd:attribute name="city-id" type="xsd:ID" use="required" />
                 </xsd:complexType>
-                <xsd:unique name="city-id-key">
+                <xsd:key name="city-id-key">
                     <xsd:selector xpath="./cities/city"/>
                     <xsd:field xpath="@city-id"/>
-                </xsd:unique>
+                </xsd:key>
                 <xsd:keyref name="city-id-ref" refer="el:city-id-key">
                     <xsd:selector xpath="./monuments/monument"/>
                     <xsd:field xpath="@city-id"/>
@@ -153,14 +153,14 @@
                     <xsd:simpleContent>
                         <xsd:extension base="xsd:string">
                             <xsd:attribute name="class" type="xsd:string" use="optional" />
-                            <xsd:attribute name="type-id" type="xsd:string" use="required" />
+                            <xsd:attribute name="type-id" type="xsd:ID" use="required" />
                         </xsd:extension>
                     </xsd:simpleContent>
                 </xsd:complexType>
-                <xsd:unique name="type-id-key">
+                <xsd:key name="type-id-key">
                     <xsd:selector xpath="./types/type"/>
                     <xsd:field xpath="@type-id"/>
-                </xsd:unique>
+                </xsd:key>
                 <xsd:keyref name="type-id-ref" refer="el:type-id-key">
                     <xsd:selector xpath="./monuments/monument"/>
                     <xsd:field xpath="@type-id"/>
@@ -168,9 +168,5 @@
             </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
-
-
-
-
 
 </xsd:schema>
