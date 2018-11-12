@@ -13,7 +13,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="title" type="xsd:string" />
-                <xsd:element name="authors" type="main:authors" maxOccurs="2"/>
+                <xsd:element name="authors" type="main:authors"/>
                 <xsd:element name="monuments" type="el:monuments"/>
                 <xsd:element name="cities" type="el:cities" />
                 <xsd:element name="types" type="el:types" />
