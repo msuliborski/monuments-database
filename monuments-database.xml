@@ -129,7 +129,7 @@
             <el:monument-name>Notre-Dame de Paris</el:monument-name>
             <el:monument-author>Unknown</el:monument-author>
             <el:completion-date>
-                <el:completion-day>35</el:completion-day>
+                <el:completion-day>31</el:completion-day>
                 <el:completion-month>04</el:completion-month>
                 <el:completion-year>1345</el:completion-year>
             </el:completion-date>
