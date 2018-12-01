@@ -6,8 +6,8 @@
 	<xsl:template match="/">
 	
 		<xsl:element name="monument-database-raport">
-			<xsl:apply-templates match="monuments-database/authors"/>
-
+			<xsl:apply-templates select="monuments-database/authors"/>
+			<xsl:apply-templates select="monuments-database/cities"/>
 		</xsl:element>
 		
 	</xsl:template>
@@ -20,5 +20,9 @@
 			</xsl:element>
 		</xsl:for-each>
 	</xsl:template>
-	
+
+	<xsl:template match="monuments-database/cities">
+
+	</xsl:template>
+
 </xsl:stylesheet>
