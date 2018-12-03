@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="monuments-database.css" type="text/css"?>
+<?xml-stylesheet href="monuments-database.xsl" type="text/xsl"?>
 <!--<!DOCTYPE monuments-database SYSTEM "monuments-database.dtd">-->
 
 <main:monuments-database
