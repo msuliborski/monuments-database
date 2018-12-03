@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<company>
+
+	<metainfo>
+		<projectContent>Plik z danymi o produktach w magazynach firmy.</projectContent>
+		<author nationality="PL">
+			<first_name>Jarosław</first_name>
+			<last_name>Suchiński</last_name>
+			</author>
+		<author sex="Male">
+			<first_name>Paweł</first_name>
+			<last_name>Wacławiak</last_name>
+		</author>
+		<last_modification_time>2018-10-28 12:25:17</last_modification_time>
+	</metainfo>
+
+	<warehouse warehouse_id="w1" address="Łódź, ul. Świtezianki 13" post_code="94-542">
+		
+		<product category="cat1">
+			<code>SM-G935F</code>
+			<name>Samsung Galaxy S7 edge</name>
+			<price>
+				<value currency="PLN">2095.00</value>
+				<value currency="EUR">595.00</value>
+				<value currency="GBP">427.95</value>
+			</price>
+			<quantity>21</quantity>
+			<rating>4.8</rating>
+			<description>Super telefon z zaoblonym ekranem.
+			</description>
+			<adding_date>
+				<day>2</day>
+				<month>12</month>
+				<year>2017</year>
+			</adding_date>
+		</product>
+		
+		<product category="cat1">
+			<code>SM-G954G</code>
+			<name>Samsung Galaxy S8</name>
+			<price>
+				<value currency="PLN">2699.00</value>
+				<value currency="USD">764.99</value>
+			</price>
+			<quantity>0</quantity>
+			<rating>4.9</rating>
+			<description>Znakomita jakość wykonania, świetny do gier. Polecam serdecznie.</description>
+			<adding_date>
+				<day>19</day>
+				<month>04</month>
+				<year>2018</year>
+			</adding_date>
+		</product>
+
+		<product category="cat2">
+			<code>CA-1303L</code>
+			<name>Casio Classic</name>
+			<price>
+				<value currency="PLN">170.00</value>
+			</price>
+			<quantity>6</quantity>
+			<rating>4.0</rating>
+			<description>Klasyczny zegarek z mechanizmem kwarcowym.</description>
+			<adding_date>
+				<day>15</day>
+				<month>2</month>
+				<year>2010</year>
+			</adding_date>
+		</product>
+
+		<product category="cat2">
+			<code>DZ-5449D</code>
+			<name>Diesel Kray Kray</name>
+			<price>
+				<value currency="PLN">700.00</value>
+			</price>
+			<quantity>4</quantity>
+			<rating>4.5</rating>
+			<description>Ekskluzywny zegarek na miękkim pasku.</description>
+			<adding_date>
+				<day>14</day>
+				<month>6</month>
+				<year>2016</year>
+			</adding_date>
+		</product>
+
+		<product category="cat3">
+			<code>GS-1A2ER</code>
+			<name>Casio G-shock</name>
+			<price>
+				<value currency="PLN">319.00</value>
+			</price>
+			<quantity>20</quantity>
+			<rating>4.9</rating>
+			<description>Wytrzymały i wygodny zegarek, idealny na wyprawy pozamiejskie.</description>
+			<adding_date>
+				<day>6</day>
+				<month>10</month>
+				<year>2015</year>
+			</adding_date>
+		</product>
+
+		<product category="cat3">
+			<code>VB-R520U</code>
+			<name>ASUS VivoBook</name>
+			<price>
+				<value currency="PLN">2899.00</value>
+			</price>
+			<quantity>11</quantity>
+			<rating>4.2</rating>
+			<description>Wydajny i elegancki notebook</description>
+			<adding_date>
+				<day>15</day>
+				<month>9</month>
+				<year>2018</year>
+			</adding_date>
+		</product>
+
+		<product category="cat5">
+			<code>ES-100BG</code>
+			<name>Razor Power Core</name>
+			<price><value currency="PLN">999.00</value></price>
+			<quantity>3</quantity>
+			<rating>4.6</rating>
+			<description>Hulajnoga elektryczna dużej mocy. Napęd nadprzestrzenny rozgrzewa w 21 sekund.</description>
+			<adding_date>
+				<day>21</day>
+				<month>10</month>
+				<year>2017</year>
+			</adding_date>
+		</product>
+
+		<product category="cat4">
+			<code>TP-81A24</code>
+			<name>Trust Primo 10</name>
+			<price><value currency="PLN">79.00</value></price>
+			<quantity>13</quantity>
+			<rating>3.9</rating>
+			<description>Ładowarka indukcyjna</description>
+			<adding_date>
+				<day>21</day>
+				<month>11</month>
+				<year>2018</year>
+			</adding_date>
+		</product>
+
+		<product category="cat4">
+			<code>AP-38HU1</code>
+			<name>Huawei AP38</name>
+			<price><value currency="PLN">89.00</value></price>
+			<quantity>5</quantity>
+			<rating>4.1</rating>
+			<description>Ładowarka samochodowa</description>
+			<adding_date>
+				<day>11</day>
+				<month>04</month>
+				<year>2009</year>
+			</adding_date>
+		</product>
+
+		<product category="cat4">
+			<code>AS-I72F7</code>
+			<name>Samsung 1A Fast Charge</name>
+			<price><value currency="PLN">179.00</value></price>
+			<quantity>2</quantity>
+			<rating>4.3</rating>
+			<description>Dzięki ładowarce Samsung z funkcją szybkiego ładowania Fast Charge możesz błyskawicznie uzupełnić energię w swoim Galaxy Note 9 lub innym urządzeniu kompatybilnym z tą technologią.</description>
+			<adding_date>
+				<day>25</day>
+				<month>11</month>
+				<year>2016</year>
+			</adding_date>
+		</product>
+
+		<product category="cat3">
+			<code>MB-2P41G</code>
+			<name>MacBook Air 128</name>
+			<price><value currency="PLN">3999.00</value></price>
+			<quantity>4</quantity>
+			<rating>4.5</rating>
+			<description>Z Apple MacBook Air będziesz mógł pracować czy też oglądać filmy z iTunes przez cały dzień, dzięki wydajności baterii gwarantującej 12 godzinny czas pracy na jednym ładowaniu.</description>
+			<adding_date>
+				<day>13</day>
+				<month>05</month>
+				<year>2018</year>
+			</adding_date>
+		</product>
+
+	</warehouse>
+
+	<warehouse warehouse_id="w2" address="Zgierz, al. Aleksandrowska 55" post_code="95-100">
+
+		<product category="cat3">
+			<code>AV-38G5D</code>
+			<name>ASUS VivoBook S14</name>
+			<price><value currency="PLN">3199.00</value></price>
+			<quantity>3</quantity>
+			<rating>4.6</rating>
+			<description>ASUS VivoBook S14 zapewnia wszystkim podróżnikom nieograniczone możliwości. Jego kompaktowa i lekka konstrukcja mierzy w profilu 19 mm i waży łącznie jedynie 1,4 kg.</description>
+			<adding_date>
+				<day>06</day>
+				<month>09</month>
+				<year>2018</year>
+			</adding_date>
+		</product>
+
+		<product category="cat3">
+			<code>DI-23KI5</code>
+			<name>Dell Inspiron 3576</name>
+			<price><value currency="PLN">3099.00</value></price>
+			<quantity>5</quantity>
+			<rating>4.8</rating>
+			<description>Porxządna maszyna, lepszych nie szukajcie.</description>
+			<adding_date>
+				<day>15</day>
+				<month>07</month>
+				<year>2018</year>
+			</adding_date>
+		</product>
+
+		<product category="cat3">
+			<code>LV-I320X</code>
+			<name>Lenovo Ideapad 320-15</name>
+			<price><value currency="PLN">2749.00</value></price>
+			<quantity>7</quantity>
+			<rating>4.3</rating>
+			<description>Sprawdź, jak Lenovo Ideapad 320 wygląda w rzeczywistości. </description>
+			<adding_date>
+				<day>27</day>
+				<month>11</month>
+				<year>2017</year>
+			</adding_date>
+		</product>
+
+		<product category="cat3">
+			<code>HU-23BD7</code>
+			<name>Huawei MateBook D</name>
+			<price><value currency="PLN">3299.00</value></price>
+			<quantity>1</quantity>
+			<rating>4.2</rating>
+			<description>To rewolucja w technologii komputerowej i designie.</description>
+			<adding_date>
+				<day>10</day>
+				<month>04</month>
+				<year>2015</year>
+			</adding_date>
+		</product>
+
+		<product category="cat1">
+			<code>XI-24PO9</code>
+			<name>Xiaomi Pocophone F1</name>
+			<price><value currency="PLN">1499.00</value></price>
+			<quantity>2</quantity>
+			<rating>4.1</rating>
+			<description>Xiaomi Pocophone F1 64 GB Graphite Black to smartfon jedyny w swoim rodzaju. Wykorzystuje rewolucyjny system chłodzenia cieczą, który zapewnia stabilną pracę wydajnych podzespołów.</description>
+			<adding_date>
+				<day>01</day>
+				<month>02</month>
+				<year>2017</year>
+			</adding_date>
+		</product>
+
+		<product category="cat1">
+			<code>IP-23SG0</code>
+			<name>Apple iPhone X 64GB Space Gray</name>
+			<price><value currency="PLN">4479.00</value></price>
+			<quantity>8</quantity>
+			<rating>4.8</rating>
+			<description>Futurystyczna konstrukcja iPhone X 64 GB Gwiezdna szarość nie posiada już przycisków nawigacyjnych u dołu ekranu. Udoskonalony iOS sprawi, że każdą czynność wykonasz gestem. </description>
+			<adding_date>
+				<day>05</day>
+				<month>07</month>
+				<year>2018</year>
+			</adding_date>
+		</product>
+
+		<product category="cat2">
+			<code>HU-2BDL7</code>
+			<name>Huawei Band 2 Pro</name>
+			<price><value currency="PLN">229.00</value></price>
+			<quantity>21</quantity>
+			<rating>3.6</rating>
+			<description>Huawei Band 2 Pro jest komfortowy, wygląda świetne i ma wiele przydatnych na co dzień funkcji. </description>
+			<adding_date>
+				<day>16</day>
+				<month>06</month>
+				<year>2016</year>
+			</adding_date>
+		</product>
+
+		<product category="cat1">
+			<code>OP-87HY1</code>
+			<name>OnePlus 6</name>
+			<price><value currency="PLN">2399.00</value></price>
+			<quantity>4</quantity>
+			<rating>4.9</rating>
+			<description>Mistrzowskie wykonanie OnePlus 6 64 GB Mirror Black to piękne preludium dla jego niezwykłych możliwości. Dwie tafle szkła Corning Gorilla Glass otaczają smukłą konstrukcję, w której zagościł potężny procesor Snapdragon 845, 6 GB pamięci RAM oraz funkcja szybkiego ładowania. Na froncie panoramiczny wyświetlacz AMOLED z kalibracją obrazu, z tyłu podwójny aparat pełen zaawansowanych funkcji. OnePlus 6 to ekskluzywny sprzęt klasy premium. I kropka.</description>
+			<adding_date>
+				<day>11</day>
+				<month>09</month>
+				<year>2018</year>
+			</adding_date>
+		</product>
+
+		<product category="cat1">
+			<code>HP-52NG8</code>
+			<name>Huawei P20 Pro</name>
+			<price><value currency="PLN">3039.00</value></price>
+			<quantity>3</quantity>
+			<rating>4.7</rating>
+			<description>Pora na przełom w fotografii mobilnej. Pora na Huawei P20 Pro purpurowy, wyposażony w potrójny aparat Leica, osiągający imponującą rozdzielczość 40 Mpix. Moduły fotograficzne wzbogacono ponadto funkcją trójwymiarowego odwzorowania twarzy, czy przewidywania ruchu, którymi zarządzają algorytmy sztucznej inteligencji. P20 Pro jest także pierwszym smartfonem, który reaguje na Twój głos, dotknięcie oraz spojrzenie. Jest Twój. Od bajecznego ekranu FullView 2.0 OLED, po system dźwięku Hi-Fi.</description>
+			<adding_date>
+				<day>13</day>
+				<month>09</month>
+				<year>2019</year>
+			</adding_date>
+		</product>
+
+		<product category="cat1">
+			<code>HR-13HUZ</code>
+			<name>Honor 10 LTE</name>
+			<price><value currency="PLN">1749.00</value></price>
+			<quantity>2</quantity>
+			<rating>4.4</rating>
+			<description>Honor 10 64 GB niebieski to urzekająco smukła konstrukcja z metalu i połyskliwego szkła.</description>
+			<adding_date>
+				<day>26</day>
+				<month>10</month>
+				<year>2017</year>
+			</adding_date>
+		</product>
+
+	</warehouse>
+
+	<categories>
+		<category id="cat1">telefon</category>
+		<category id="cat2">zegarek</category>
+		<category id="cat3">laptop</category>
+		<category id="cat4">akcesoria</category>
+		<category id="cat5">inne</category>
+	</categories>
+
+	<currencies>
+		<currency id="PLN"></currency>
+		<currency id="USD"></currency>
+		<currency id="EUR"></currency>
+		<currency id="GBP"></currency>
+		<currency id="RUB"></currency>
+		<currency id="CHF"></currency>
+		<currency id="JNY"></currency>
+		<currency id="CNY"></currency>
+		<currency id="CZK"></currency>
+	</currencies>
+
+</company>

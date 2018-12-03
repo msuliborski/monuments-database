@@ -1,66 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="monuments-database.xsl" type="text/xsl"?>
-<!--<!DOCTYPE monuments-database SYSTEM "monuments-database.dtd">-->
 
-<main:monuments-database
-        xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
-        xsd:schemaLocation="https://www.monuments-database.com monuments-database.xsd"
-        xmlns:main="https://www.monuments-database.com"
-        xmlns:el="https://www.monuments-database.com/elements">
+<monuments-database>
 
-    <main:title>Monuments Database</main:title>
+    <title>Monuments Database</title>
 
-    <main:authors>
-        <main:author>
-            <main:first-name>Michał</main:first-name>
-            <main:last-name>Suliborski</main:last-name>
-            <main:student-id>217863</main:student-id>
-        </main:author>
+    <authors>
+        <author>
+            <first-name>Michał</first-name>
+            <last-name>Suliborski</last-name>
+            <student-id>217863</student-id>
+        </author>
 
-        <main:author>
-            <main:first-name>Mariusz</main:first-name>
-            <main:last-name>Pisarski</main:last-name>
-            <main:student-id>217857</main:student-id>
-        </main:author>
-    </main:authors>
+        <author>
+            <first-name>Mariusz</first-name>
+            <last-name>Pisarski</last-name>
+            <student-id>217857</student-id>
+        </author>
+    </authors>
 
-    <main:monuments>
-        <el:monument monument-id="eiffel-tower" city-id="paris" type-id="observation-tower">
-            <el:monument-name>Eiffel Tower</el:monument-name>
-            <el:monument-author>Stephen Sauvestre</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>15</el:completion-day>
-                <el:completion-month>03</el:completion-month>
-                <el:completion-year>1889</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="CHF">1500000000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">124.9</el:width>
-                <el:height unit="m">324</el:height>
-                <el:length unit="m">124.9</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France.
+    <monuments>
+        <monument monument-id="eiffel-tower" city-id="paris" type-id="observation-tower">
+            <monument-name>Eiffel Tower</monument-name>
+            <monument-author>Stephen Sauvestre</monument-author>
+            <completion-date>
+                <completion-day>15</completion-day>
+                <completion-month>03</completion-month>
+                <completion-year>1889</completion-year>
+            </completion-date>
+            <costs currency="CHF">1500000000</costs>
+            <dimensions>
+                <width unit="m">124.9</width>
+                <height unit="m">324</height>
+                <length unit="m">124.9</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France.
                 It is named after the engineer Gustave Eiffel, whose company designed and built the tower.
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="colosseum" city-id="rome" type-id="building">
-            <el:monument-name>Colosseum</el:monument-name>
-            <el:monument-author>Vespasian</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>01</el:completion-day>
-                <el:completion-month>01</el:completion-month>
-                <el:completion-year>80</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="ITL">40000000000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">156</el:width>
-                <el:height unit="m">48.5</el:height>
-                <el:length unit="m">188</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>
+        <monument monument-id="colosseum" city-id="rome" type-id="building">
+            <monument-name>Colosseum</monument-name>
+            <monument-author>Vespasian</monument-author>
+            <completion-date>
+                <completion-day>01</completion-day>
+                <completion-month>01</completion-month>
+                <completion-year>80</completion-year>
+            </completion-date>
+            <costs currency="ITL">40000000000</costs>
+            <dimensions>
+                <width unit="m">156</width>
+                <height unit="m">48.5</height>
+                <length unit="m">188</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
                 Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy.
                 Built of travertine, tuff, and brick-faced concrete, it is the largest amphitheatre ever built.
                 The Colosseum is situated just east of the Roman Forum.
@@ -69,25 +63,25 @@
                 Further modifications were made during the reign of Domitian.
                 These three emperors are known as the Flavian dynasty, and the amphitheatre was named in Latin for its
                 association with their family name (Flavius).
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="berlin-wall" city-id="berlin" type-id="wall">
-            <el:monument-name>Berlin Wall</el:monument-name>
-            <el:monument-author>German Democratic Republic</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>13</el:completion-day>
-                <el:completion-month>8</el:completion-month>
-                <el:completion-year>1961</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="DM">22500000000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">156</el:width>
-                <el:height unit="m">4.2</el:height>
-                <el:length unit="m">111.9</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>
+        <monument monument-id="berlin-wall" city-id="berlin" type-id="wall">
+            <monument-name>Berlin Wall</monument-name>
+            <monument-author>German Democratic Republic</monument-author>
+            <completion-date>
+                <completion-day>13</completion-day>
+                <completion-month>8</completion-month>
+                <completion-year>1961</completion-year>
+            </completion-date>
+            <costs currency="DM">22500000000</costs>
+            <dimensions>
+                <width unit="m">156</width>
+                <height unit="m">4.2</height>
+                <length unit="m">111.9</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
                 Berlin Wall was a guarded concrete barrier that physically and ideologically divided Berlin from 1961 to
                 1989.
                 Constructed by the German Democratic Republic, starting on 13 August 1961,
@@ -98,144 +92,144 @@
                 contained anti-vehicle trenches, "fakir beds" and other defenses.
                 The Eastern Bloc portrayed the Wall as protecting its population from fascist elements conspiring to
                 prevent the "will of the people" in building a socialist state in East Germany.
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="leaning-tower-of-pisa" city-id="pisa" type-id="observation-tower">
-            <el:monument-name>Leaning Tower of Pisa</el:monument-name>
-            <el:monument-author>Bonanno Pisano</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>04</el:completion-day>
-                <el:completion-month>08</el:completion-month>
-                <el:completion-year>1173</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="USD">2900000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">11.5</el:width>
-                <el:height unit="m">55.86</el:height>
-                <el:length unit="m">11.5</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting> <!--available/non-available -->
-            <el:history>
+        <monument monument-id="leaning-tower-of-pisa" city-id="pisa" type-id="observation-tower">
+            <monument-name>Leaning Tower of Pisa</monument-name>
+            <monument-author>Bonanno Pisano</monument-author>
+            <completion-date>
+                <completion-day>04</completion-day>
+                <completion-month>08</completion-month>
+                <completion-year>1173</completion-year>
+            </completion-date>
+            <costs currency="USD">2900000</costs>
+            <dimensions>
+                <width unit="m">11.5</width>
+                <height unit="m">55.86</height>
+                <length unit="m">11.5</length>
+            </dimensions>
+            <visiting>available</visiting> <!--available/non-available -->
+            <history>
                 Leaning Tower of Pisa is the campanile, or freestanding bell tower, of the cathedral of the Italian city
                 of Pisa, known worldwide for its unintended tilt.
                 The tower is situated behind the Pisa Cathedral and is the third oldest structure in the city's
                 Cathedral Square (Piazza del Duomo),
                 after the cathedral and the Pisa Baptistry.
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="notre-dame-de-paris" city-id="paris" type-id="building">
-            <el:monument-name>Notre-Dame de Paris</el:monument-name>
-            <el:monument-author>Unknown</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>31</el:completion-day>
-                <el:completion-month>04</el:completion-month>
-                <el:completion-year>1345</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="CHF">24500000000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">48</el:width>
-                <el:height unit="m">90</el:height>
-                <el:length unit="m">128</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>
+        <monument monument-id="notre-dame-de-paris" city-id="paris" type-id="building">
+            <monument-name>Notre-Dame de Paris</monument-name>
+            <monument-author>Unknown</monument-author>
+            <completion-date>
+                <completion-day>31</completion-day>
+                <completion-month>04</completion-month>
+                <completion-year>1345</completion-year>
+            </completion-date>
+            <costs currency="CHF">24500000000</costs>
+            <dimensions>
+                <width unit="m">48</width>
+                <height unit="m">90</height>
+                <length unit="m">128</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
                 Notre-Dame de Paris is a medieval Catholic cathedral on the Île de la Cité in the fourth arrondissement
                 of Paris, France.
                 The cathedral is widely considered to be one of the finest examples of French Gothic architecture.
                 The innovative use of the rib vault and flying buttress, the enormous and colorful rose windows,
                 and the naturalism and abundance of its sculptural decoration all set it apart from earlier Romanesque
                 architecture.
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="big-ben" city-id="london" type-id="building">
-            <el:monument-name>Big Ben</el:monument-name>
-            <el:monument-author>Augustus Pugin</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>31</el:completion-day>
-                <el:completion-month>05</el:completion-month>
-                <el:completion-year>1859</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="GBP">61000000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">23</el:width>
-                <el:height unit="m">96</el:height>
-                <el:length unit="m">23</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>
+        <monument monument-id="big-ben" city-id="london" type-id="building">
+            <monument-name>Big Ben</monument-name>
+            <monument-author>Augustus Pugin</monument-author>
+            <completion-date>
+                <completion-day>31</completion-day>
+                <completion-month>05</completion-month>
+                <completion-year>1859</completion-year>
+            </completion-date>
+            <costs currency="GBP">61000000</costs>
+            <dimensions>
+                <width unit="m">23</width>
+                <height unit="m">96</height>
+                <length unit="m">23</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
                 Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in
                 London and is usually extended to refer to both
                 the clock and the clock tower. The official name of the tower in which Big Ben is located was originally
                 the Clock Tower,
                 but it was renamed Elizabeth Tower in 2012 to mark the Diamond Jubilee of Elizabeth II.
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="cattedrale-di-santa-maria-del-fiore" city-id="florence" type-id="church-cathedral">
-            <el:monument-name>Cattedrale di Santa Maria del Fiore</el:monument-name>
-            <el:monument-author>Arnolfo di Cambio</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>09</el:completion-day>
-                <el:completion-month>09</el:completion-month>
-                <el:completion-year>1296</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="ITL">48000000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">90</el:width>
-                <el:height unit="m">114.5</el:height>
-                <el:length unit="m">153</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>
+        <monument monument-id="cattedrale-di-santa-maria-del-fiore" city-id="florence" type-id="church-cathedral">
+            <monument-name>Cattedrale di Santa Maria del Fiore</monument-name>
+            <monument-author>Arnolfo di Cambio</monument-author>
+            <completion-date>
+                <completion-day>09</completion-day>
+                <completion-month>09</completion-month>
+                <completion-year>1296</completion-year>
+            </completion-date>
+            <costs currency="ITL">48000000</costs>
+            <dimensions>
+                <width unit="m">90</width>
+                <height unit="m">114.5</height>
+                <length unit="m">153</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
                 Cattedrale di Santa Maria del Fiore is the cathedral of Florence, Italy (Italian: Duomo di Firenze).
                 It was begun in 1296 in the Gothic style to a design of Arnolfo di Cambio and was structurally completed
                 by 1436, with the dome designed by Filippo Brunelleschi.
                 The exterior of the basilica is faced with polychrome marble panels in various shades of green and pink,
                 bordered by white,
                 and has an elaborate 19th-century Gothic Revival façade by Emilio De Fabris.
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="david" city-id="florence" type-id="sculpture">
-            <el:monument-name>David</el:monument-name>
-            <el:monument-author>Michelangelo</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>23</el:completion-day>
-                <el:completion-month>10</el:completion-month>
-                <el:completion-year>1504</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="USD">29000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">1.36</el:width>
-                <el:height unit="m">5.17</el:height>
-                <el:length unit="m">0.93</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>
+        <monument monument-id="david" city-id="florence" type-id="sculpture">
+            <monument-name>David</monument-name>
+            <monument-author>Michelangelo</monument-author>
+            <completion-date>
+                <completion-day>23</completion-day>
+                <completion-month>10</completion-month>
+                <completion-year>1504</completion-year>
+            </completion-date>
+            <costs currency="USD">29000</costs>
+            <dimensions>
+                <width unit="m">1.36</width>
+                <height unit="m">5.17</height>
+                <length unit="m">0.93</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
                 David is a 5.17-metre (17.0 ft) marble statue of a standing male nude.
                 The statue represents the Biblical hero David, a favoured subject in the art of Florence.
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="palace-of-culture-and-science" city-id="warsaw" type-id="building">
-            <el:monument-name>Palace of Culture and Science</el:monument-name>
-            <el:monument-author>Lev Rudnev</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>22</el:completion-day>
-                <el:completion-month>07</el:completion-month>
-                <el:completion-year>1955</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="PLN">102000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">54</el:width>
-                <el:height unit="m">237</el:height>
-                <el:length unit="m">48</el:length>
-            </el:dimensions>
-            <el:visiting>nonavailable</el:visiting>
-            <el:history>
+        <monument monument-id="palace-of-culture-and-science" city-id="warsaw" type-id="building">
+            <monument-name>Palace of Culture and Science</monument-name>
+            <monument-author>Lev Rudnev</monument-author>
+            <completion-date>
+                <completion-day>22</completion-day>
+                <completion-month>07</completion-month>
+                <completion-year>1955</completion-year>
+            </completion-date>
+            <costs currency="PLN">102000</costs>
+            <dimensions>
+                <width unit="m">54</width>
+                <height unit="m">237</height>
+                <length unit="m">48</length>
+            </dimensions>
+            <visiting>nonavailable</visiting>
+            <history>
                 Palace of Culture and Science is a notable high-rise building in Warsaw, Poland. Constructed in 1955, it
                 is the center for various companies,
                 public institutions and cultural activities such as concerts, cinemas, theaters,
@@ -244,98 +238,98 @@
                 Motivated by Polish historicism and American art deco high-rise buildings,
                 the PKiN was designed by Soviet architect Lev Rudnev in "Seven Sisters" style and is informally referred
                 to as the Eighth Sister.
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="sky-tower" city-id="wroclaw" type-id="observation-tower">
-            <el:monument-name>Sky Tower</el:monument-name>
-            <el:monument-author>Mariusz Korszorsz</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>01</el:completion-day>
-                <el:completion-month>05</el:completion-month>
-                <el:completion-year>2012</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="PLN">1600000000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">34</el:width>
-                <el:height unit="m">215</el:height>
-                <el:length unit="m">37</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>
+        <monument monument-id="sky-tower" city-id="wroclaw" type-id="observation-tower">
+            <monument-name>Sky Tower</monument-name>
+            <monument-author>Mariusz Korszorsz</monument-author>
+            <completion-date>
+                <completion-day>01</completion-day>
+                <completion-month>05</completion-month>
+                <completion-year>2012</completion-year>
+            </completion-date>
+            <costs currency="PLN">1600000000</costs>
+            <dimensions>
+                <width unit="m">34</width>
+                <height unit="m">215</height>
+                <length unit="m">37</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
                 Sky Tower is a skyscraper in Wrocław, Poland. Construction began in December 2007 with the demolition of
                 the 24-story Poltegor structure, until then the tallest building in the city.
                 Sky Tower is the tallest building in Poland in the category of height to roof and category of highest
                 floor, and the second tallest structure overall after the Palace of Culture and Science in Warsaw.
                 A publicly accessible viewpoint is located on the 49th floor.
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="statue-of-liberty" city-id="new-york" type-id="sculpture">
-            <el:monument-name>Statue of Liberty</el:monument-name>
-            <el:monument-author>Frederic Auguste Bartholdi</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>28</el:completion-day>
-                <el:completion-month>10</el:completion-month>
-                <el:completion-year>1886</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="USD">23000000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">8</el:width>
-                <el:height unit="m">46</el:height>
-                <el:length unit="m">8</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>
+        <monument monument-id="statue-of-liberty" city-id="new-york" type-id="sculpture">
+            <monument-name>Statue of Liberty</monument-name>
+            <monument-author>Frederic Auguste Bartholdi</monument-author>
+            <completion-date>
+                <completion-day>28</completion-day>
+                <completion-month>10</completion-month>
+                <completion-year>1886</completion-year>
+            </completion-date>
+            <costs currency="USD">23000000</costs>
+            <dimensions>
+                <width unit="m">8</width>
+                <height unit="m">46</height>
+                <length unit="m">8</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
                 According to the National Park Service, the idea for the Statue of Liberty was first proposed by Édouard
                 René de Laboulaye,
                 president of the French Anti-Slavery Society and a prominent and important political thinker of his
                 time.
                 The project is traced to a mid-1865 conversation between de Laboulaye, a staunch abolitionist, and
                 Frédéric Bartholdi, a sculptor.
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="christ-the-redeemer" city-id="rio-de-janeiro" type-id="sculpture">
-            <el:monument-name>Christ the Redeemer</el:monument-name>
-            <el:monument-author>Paul Landowski</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>12</el:completion-day>
-                <el:completion-month>10</el:completion-month>
-                <el:completion-year>1931</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="USD">200000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">8</el:width>
-                <el:height unit="m">38</el:height>
-                <el:length unit="m">8</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>
+        <monument monument-id="christ-the-redeemer" city-id="rio-de-janeiro" type-id="sculpture">
+            <monument-name>Christ the Redeemer</monument-name>
+            <monument-author>Paul Landowski</monument-author>
+            <completion-date>
+                <completion-day>12</completion-day>
+                <completion-month>10</completion-month>
+                <completion-year>1931</completion-year>
+            </completion-date>
+            <costs currency="USD">200000</costs>
+            <dimensions>
+                <width unit="m">8</width>
+                <height unit="m">38</height>
+                <length unit="m">8</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
                 Vincentian priest, Pedro Maria Boss, first suggested placing a Christian monument on Mount Corcovado in
                 the mid 1850s to honor Princess Isabel,
                 princess regent of Brazil and the daughter of Emperor Pedro II, but the project was not approved. In
                 1889 the country became a republic,
                 and due to the separation of church and state, the proposed statue was dismissed.
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="neptunes-fountain" city-id="gdansk" type-id="sculpture">
-            <el:monument-name>Neptune's Fountain</el:monument-name>
-            <el:monument-author>Abraham van den Blocke</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>26</el:completion-day>
-                <el:completion-month>10</el:completion-month>
-                <el:completion-year>1633</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="PLN">150000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">2</el:width>
-                <el:height unit="m">6</el:height>
-                <el:length unit="m">2</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>
+        <monument monument-id="neptunes-fountain" city-id="gdansk" type-id="sculpture">
+            <monument-name>Neptune's Fountain</monument-name>
+            <monument-author>Abraham van den Blocke</monument-author>
+            <completion-date>
+                <completion-day>26</completion-day>
+                <completion-month>10</completion-month>
+                <completion-year>1633</completion-year>
+            </completion-date>
+            <costs currency="PLN">150000</costs>
+            <dimensions>
+                <width unit="m">2</width>
+                <height unit="m">6</height>
+                <length unit="m">2</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
                 The local authorities of Gdańsk, together with Mayor Bartłomiej Schachmann wanted to raise a more
                 notable monument.
                 The first mason to receive an offer to complete the project was Jakub Kordes from Lubeka, but for
@@ -345,25 +339,25 @@
                 with the turn to the Long Lane. Neptune - the god of the sea - was to be placed facing the townhouses,
                 which were the residence of the Polish kings,
                 while at their stay in Gdańsk, the mythological god was to have his head bow down to them.
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="central-park" city-id="warsaw" type-id="building">
-            <el:monument-name>Central Park</el:monument-name>
-            <el:monument-author>Frederick Law Olmsted</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>23</el:completion-day>
-                <el:completion-month>05</el:completion-month>
-                <el:completion-year>1857</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="PLN">37500000</el:costs>
-            <el:dimensions>
-                <el:width unit="km">11</el:width>
-                <el:height unit="m">16</el:height>
-                <el:length unit="km">27</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>
+        <monument monument-id="central-park" city-id="warsaw" type-id="building">
+            <monument-name>Central Park</monument-name>
+            <monument-author>Frederick Law Olmsted</monument-author>
+            <completion-date>
+                <completion-day>23</completion-day>
+                <completion-month>05</completion-month>
+                <completion-year>1857</completion-year>
+            </completion-date>
+            <costs currency="PLN">37500000</costs>
+            <dimensions>
+                <width unit="km">11</width>
+                <height unit="m">16</height>
+                <length unit="km">27</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
                 Central Park is an urban park in Manhattan, New York City.
                 It is located between the Upper West Side and Upper East Side, roughly bounded by Fifth Avenue on the
                 east, Central Park West (Eighth Avenue) on the west,
@@ -371,247 +365,247 @@
                 Central Park is the most visited urban park in the United States, with 40 million visitors in 2013,
                 and one of the most filmed locations in the world. In terms of area, Central Park is the fifth-largest
                 park in New York City, covering 843 acres (341 ha).
-            </el:history>
-        </el:monument>
+            </history>
+        </monument>
 
-        <el:monument monument-id="stajnia-jednorozcow" city-id="lodz" type-id="building">
-            <el:monument-name>Stajnia Jednorożców</el:monument-name>
-            <el:monument-author>Jan Gałecki</el:monument-author>
-            <el:completion-date>
-                <el:completion-day>31</el:completion-day>
-                <el:completion-month>10</el:completion-month>
-                <el:completion-year>2015</el:completion-year>
-            </el:completion-date>
-            <el:costs currency="PLN">600000</el:costs>
-            <el:dimensions>
-                <el:width unit="m">13</el:width>
-                <el:height unit="m">33</el:height>
-                <el:length unit="m">100</el:length>
-            </el:dimensions>
-            <el:visiting>available</el:visiting>
-            <el:history>
+        <monument monument-id="stajnia-jednorozcow" city-id="lodz" type-id="building">
+            <monument-name>Stajnia Jednorożców</monument-name>
+            <monument-author>Jan Gałecki</monument-author>
+            <completion-date>
+                <completion-day>31</completion-day>
+                <completion-month>10</completion-month>
+                <completion-year>2015</completion-year>
+            </completion-date>
+            <costs currency="PLN">600000</costs>
+            <dimensions>
+                <width unit="m">13</width>
+                <height unit="m">33</height>
+                <length unit="m">100</length>
+            </dimensions>
+            <visiting>available</visiting>
+            <history>
                 Stajnia jednorożców is a tram station connecting two transport axes of the city of Łódź: the W-Z route
                 and the Łódź Regional Tram (north-south).
                 It is located on Mickiewicza Avenue, between Kościuszki Avenue and Piotrkowska Street. It was opened on
                 October 31, 2015.
-            </el:history>
-        </el:monument>
-    </main:monuments>
+            </history>
+        </monument>
+    </monuments>
 
-    <main:cities>
-        <el:city city-id="paris">
-            <el:city-name>Paris</el:city-name>
-            <el:country>France</el:country>
-            <el:governing-mayor>Anne Hidalgo</el:governing-mayor>
-            <el:area unit="km2">105.4</el:area>
-            <el:elevation>
-                <el:lowest-level unit="m">28</el:lowest-level>
-                <el:highest-level unit="m">131</el:highest-level>
-            </el:elevation>
-            <el:population>2206488</el:population>
-            <el:establishment-date>
-                <el:establishment-day>12</el:establishment-day>
-                <el:establishment-month>01</el:establishment-month>
-                <el:establishment-year>245</el:establishment-year>
-            </el:establishment-date>
-        </el:city>
+    <cities>
+        <city city-id="paris">
+            <city-name>Paris</city-name>
+            <country>France</country>
+            <governing-mayor>Anne Hidalgo</governing-mayor>
+            <area unit="km2">105.4</area>
+            <elevation>
+                <lowest-level unit="m">28</lowest-level>
+                <highest-level unit="m">131</highest-level>
+            </elevation>
+            <population>2206488</population>
+            <establishment-date>
+                <establishment-day>12</establishment-day>
+                <establishment-month>01</establishment-month>
+                <establishment-year>245</establishment-year>
+            </establishment-date>
+        </city>
 
-        <el:city city-id="rome">
-            <el:city-name>Rome</el:city-name>
-            <el:country>Italy</el:country>
-            <el:governing-mayor>Virginia Raggi</el:governing-mayor>
-            <el:area unit="km2">1285</el:area>
-            <el:elevation>
-                <el:lowest-level unit="m">32</el:lowest-level>
-                <el:highest-level unit="m">58</el:highest-level>
-            </el:elevation>
-            <el:population>4355725</el:population>
-            <el:establishment-date>
-                <el:establishment-day>21</el:establishment-day>
-                <el:establishment-month>04</el:establishment-month>
-                <el:establishment-year>-753</el:establishment-year>
-            </el:establishment-date>
-        </el:city>
+        <city city-id="rome">
+            <city-name>Rome</city-name>
+            <country>Italy</country>
+            <governing-mayor>Virginia Raggi</governing-mayor>
+            <area unit="km2">1285</area>
+            <elevation>
+                <lowest-level unit="m">32</lowest-level>
+                <highest-level unit="m">58</highest-level>
+            </elevation>
+            <population>4355725</population>
+            <establishment-date>
+                <establishment-day>21</establishment-day>
+                <establishment-month>04</establishment-month>
+                <establishment-year>-753</establishment-year>
+            </establishment-date>
+        </city>
 
-        <el:city city-id="berlin">
-            <el:city-name>Berlin</el:city-name>
-            <el:country>Germany</el:country>
-            <el:governing-mayor>Michael Muller</el:governing-mayor>
-            <el:area unit="km2">891.7</el:area>
-            <el:elevation>
-                <el:lowest-level unit="m">401</el:lowest-level>
-                <el:highest-level unit="m">462</el:highest-level>
-            </el:elevation>
-            <el:population>3711930</el:population>
-            <el:establishment-date>
-                <el:establishment-day>12</el:establishment-day>
-                <el:establishment-month>02</el:establishment-month>
-                <el:establishment-year>1192</el:establishment-year>
-            </el:establishment-date>
-        </el:city>
+        <city city-id="berlin">
+            <city-name>Berlin</city-name>
+            <country>Germany</country>
+            <governing-mayor>Michael Muller</governing-mayor>
+            <area unit="km2">891.7</area>
+            <elevation>
+                <lowest-level unit="m">401</lowest-level>
+                <highest-level unit="m">462</highest-level>
+            </elevation>
+            <population>3711930</population>
+            <establishment-date>
+                <establishment-day>12</establishment-day>
+                <establishment-month>02</establishment-month>
+                <establishment-year>1192</establishment-year>
+            </establishment-date>
+        </city>
 
-        <el:city city-id="pisa">
-            <el:city-name>Pisa</el:city-name>
-            <el:country>Italy</el:country>
-            <el:governing-mayor>Michele Conti</el:governing-mayor>
-            <el:area unit="km2">185</el:area>
-            <el:elevation>
-                <el:lowest-level unit="m">0</el:lowest-level>
-                <el:highest-level unit="m">10</el:highest-level>
-            </el:elevation>
-            <el:population>91104</el:population>
-            <el:establishment-date>
-                <el:establishment-day>01</el:establishment-day>
-                <el:establishment-month>11</el:establishment-month>
-                <el:establishment-year>-420</el:establishment-year>
-            </el:establishment-date>
-        </el:city>
+        <city city-id="pisa">
+            <city-name>Pisa</city-name>
+            <country>Italy</country>
+            <governing-mayor>Michele Conti</governing-mayor>
+            <area unit="km2">185</area>
+            <elevation>
+                <lowest-level unit="m">0</lowest-level>
+                <highest-level unit="m">10</highest-level>
+            </elevation>
+            <population>91104</population>
+            <establishment-date>
+                <establishment-day>01</establishment-day>
+                <establishment-month>11</establishment-month>
+                <establishment-year>-420</establishment-year>
+            </establishment-date>
+        </city>
 
-        <el:city city-id="london">
-            <el:city-name>London</el:city-name>
-            <el:country>England</el:country>
-            <el:governing-mayor>Sadiq Khan</el:governing-mayor>
-            <el:area unit="km2">1572</el:area>
-            <el:elevation>
-                <el:lowest-level unit="m">11</el:lowest-level>
-                <el:highest-level unit="m">54</el:highest-level>
-            </el:elevation>
-            <el:population>8825000</el:population>
-            <el:establishment-date>
-                <el:establishment-day>23</el:establishment-day>
-                <el:establishment-month>04</el:establishment-month>
-                <el:establishment-year>450</el:establishment-year>
-            </el:establishment-date>
-        </el:city>
+        <city city-id="london">
+            <city-name>London</city-name>
+            <country>England</country>
+            <governing-mayor>Sadiq Khan</governing-mayor>
+            <area unit="km2">1572</area>
+            <elevation>
+                <lowest-level unit="m">11</lowest-level>
+                <highest-level unit="m">54</highest-level>
+            </elevation>
+            <population>8825000</population>
+            <establishment-date>
+                <establishment-day>23</establishment-day>
+                <establishment-month>04</establishment-month>
+                <establishment-year>450</establishment-year>
+            </establishment-date>
+        </city>
 
-        <el:city city-id="florence">
-            <el:city-name>Florence</el:city-name>
-            <el:country>Italy</el:country>
-            <el:governing-mayor>Dario Nardella</el:governing-mayor>
-            <el:area unit="km2">102.4</el:area>
-            <el:elevation>
-                <el:lowest-level unit="m">0</el:lowest-level>
-                <el:highest-level unit="m">97</el:highest-level>
-            </el:elevation>
-            <el:population>383083</el:population>
-            <el:establishment-date>
-                <el:establishment-day>22</el:establishment-day>
-                <el:establishment-month>01</el:establishment-month>
-                <el:establishment-year>-200</el:establishment-year>
-            </el:establishment-date>
-        </el:city>
+        <city city-id="florence">
+            <city-name>Florence</city-name>
+            <country>Italy</country>
+            <governing-mayor>Dario Nardella</governing-mayor>
+            <area unit="km2">102.4</area>
+            <elevation>
+                <lowest-level unit="m">0</lowest-level>
+                <highest-level unit="m">97</highest-level>
+            </elevation>
+            <population>383083</population>
+            <establishment-date>
+                <establishment-day>22</establishment-day>
+                <establishment-month>01</establishment-month>
+                <establishment-year>-200</establishment-year>
+            </establishment-date>
+        </city>
 
-        <el:city city-id="warsaw">
-            <el:city-name>Warsaw</el:city-name>
-            <el:country>Poland</el:country>
-            <el:governing-mayor>Hanna Gronkiewicz-Waltz</el:governing-mayor>
-            <el:area unit="km2">517.3</el:area>
-            <el:elevation>
-                <el:lowest-level unit="m">78</el:lowest-level>
-                <el:highest-level unit="m">116</el:highest-level>
-            </el:elevation>
-            <el:population>1764615</el:population>
-            <el:establishment-date>
-                <el:establishment-day>07</el:establishment-day>
-                <el:establishment-month>11</el:establishment-month>
-                <el:establishment-year>889</el:establishment-year>
-            </el:establishment-date>
-        </el:city>
+        <city city-id="warsaw">
+            <city-name>Warsaw</city-name>
+            <country>Poland</country>
+            <governing-mayor>Hanna Gronkiewicz-Waltz</governing-mayor>
+            <area unit="km2">517.3</area>
+            <elevation>
+                <lowest-level unit="m">78</lowest-level>
+                <highest-level unit="m">116</highest-level>
+            </elevation>
+            <population>1764615</population>
+            <establishment-date>
+                <establishment-day>07</establishment-day>
+                <establishment-month>11</establishment-month>
+                <establishment-year>889</establishment-year>
+            </establishment-date>
+        </city>
 
-        <el:city city-id="wroclaw">
-            <el:city-name>Wroclaw</el:city-name>
-            <el:country>Poland</el:country>
-            <el:governing-mayor>Rafal Dutkiewicz</el:governing-mayor>
-            <el:area unit="km2">292.9</el:area>
-            <el:elevation>
-                <el:lowest-level unit="m">421</el:lowest-level>
-                <el:highest-level unit="m">491</el:highest-level>
-            </el:elevation>
-            <el:population>639258</el:population>
-            <el:establishment-date>
-                <el:establishment-day>11</el:establishment-day>
-                <el:establishment-month>11</el:establishment-month>
-                <el:establishment-year>1112</el:establishment-year>
-            </el:establishment-date>
-        </el:city>
+        <city city-id="wroclaw">
+            <city-name>Wroclaw</city-name>
+            <country>Poland</country>
+            <governing-mayor>Rafal Dutkiewicz</governing-mayor>
+            <area unit="km2">292.9</area>
+            <elevation>
+                <lowest-level unit="m">421</lowest-level>
+                <highest-level unit="m">491</highest-level>
+            </elevation>
+            <population>639258</population>
+            <establishment-date>
+                <establishment-day>11</establishment-day>
+                <establishment-month>11</establishment-month>
+                <establishment-year>1112</establishment-year>
+            </establishment-date>
+        </city>
 
-        <el:city city-id="lodz">
-            <el:city-name>Lodz</el:city-name>
-            <el:country>Poland</el:country>
-            <el:governing-mayor>Hanna Zdanowska</el:governing-mayor>
-            <el:area unit="km2">293.2</el:area>
-            <el:elevation>
-                <el:lowest-level unit="m">192</el:lowest-level>
-                <el:highest-level unit="m">247</el:highest-level>
-            </el:elevation>
-            <el:population>639258</el:population>
-            <el:establishment-date>
-                <el:establishment-day>29</el:establishment-day>
-                <el:establishment-month>07</el:establishment-month>
-                <el:establishment-year>1423</el:establishment-year>
-            </el:establishment-date>
-        </el:city>
+        <city city-id="lodz">
+            <city-name>Lodz</city-name>
+            <country>Poland</country>
+            <governing-mayor>Hanna Zdanowska</governing-mayor>
+            <area unit="km2">293.2</area>
+            <elevation>
+                <lowest-level unit="m">192</lowest-level>
+                <highest-level unit="m">247</highest-level>
+            </elevation>
+            <population>639258</population>
+            <establishment-date>
+                <establishment-day>29</establishment-day>
+                <establishment-month>07</establishment-month>
+                <establishment-year>1423</establishment-year>
+            </establishment-date>
+        </city>
 
-        <el:city city-id="gdansk">
-            <el:city-name>Gdansk</el:city-name>
-            <el:country>Poland</el:country>
-            <el:governing-mayor>Pawel Adamowicz</el:governing-mayor>
-            <el:area unit="km2">261.9</el:area>
-            <el:elevation>
-                <el:lowest-level unit="m">0</el:lowest-level>
-                <el:highest-level unit="m">50</el:highest-level>
-            </el:elevation>
-            <el:population>464254</el:population>
-            <el:establishment-date>
-                <el:establishment-day>20</el:establishment-day>
-                <el:establishment-month>03</el:establishment-month>
-                <el:establishment-year>997</el:establishment-year>
-            </el:establishment-date>
-        </el:city>
+        <city city-id="gdansk">
+            <city-name>Gdansk</city-name>
+            <country>Poland</country>
+            <governing-mayor>Pawel Adamowicz</governing-mayor>
+            <area unit="km2">261.9</area>
+            <elevation>
+                <lowest-level unit="m">0</lowest-level>
+                <highest-level unit="m">50</highest-level>
+            </elevation>
+            <population>464254</population>
+            <establishment-date>
+                <establishment-day>20</establishment-day>
+                <establishment-month>03</establishment-month>
+                <establishment-year>997</establishment-year>
+            </establishment-date>
+        </city>
 
-        <el:city city-id="rio-de-janeiro">
-            <el:city-name>Rio de Janeiro</el:city-name>
-            <el:country>Brazil</el:country>
-            <el:governing-mayor>Marcelo Crivella</el:governing-mayor>
-            <el:area unit="km2">1 221</el:area>
-            <el:elevation>
-                <el:lowest-level unit="m">0</el:lowest-level>
-                <el:highest-level unit="m">1020</el:highest-level>
-            </el:elevation>
-            <el:population>6688930</el:population>
-            <el:establishment-date>
-                <el:establishment-day>01</el:establishment-day>
-                <el:establishment-month>01</el:establishment-month>
-                <el:establishment-year>1502</el:establishment-year>
-            </el:establishment-date>
-        </el:city>
+        <city city-id="rio-de-janeiro">
+            <city-name>Rio de Janeiro</city-name>
+            <country>Brazil</country>
+            <governing-mayor>Marcelo Crivella</governing-mayor>
+            <area unit="km2">1 221</area>
+            <elevation>
+                <lowest-level unit="m">0</lowest-level>
+                <highest-level unit="m">1020</highest-level>
+            </elevation>
+            <population>6688930</population>
+            <establishment-date>
+                <establishment-day>01</establishment-day>
+                <establishment-month>01</establishment-month>
+                <establishment-year>1502</establishment-year>
+            </establishment-date>
+        </city>
 
-        <el:city city-id="new-york">
-            <el:city-name>New York</el:city-name>
-            <el:country>United States</el:country>
-            <el:governing-mayor>Bill de Blasio</el:governing-mayor>
-            <el:area unit="km2">1 221</el:area>
-            <el:elevation>
-                <el:lowest-level unit="m">0</el:lowest-level>
-                <el:highest-level unit="m">15</el:highest-level>
-            </el:elevation>
-            <el:population>8175133</el:population>
-            <el:establishment-date>
-                <el:establishment-day>08</el:establishment-day>
-                <el:establishment-month>08</el:establishment-month>
-                <el:establishment-year>1524</el:establishment-year>
-            </el:establishment-date>
-        </el:city>
-    </main:cities>
+        <city city-id="new-york">
+            <city-name>New York</city-name>
+            <country>United States</country>
+            <governing-mayor>Bill de Blasio</governing-mayor>
+            <area unit="km2">1 221</area>
+            <elevation>
+                <lowest-level unit="m">0</lowest-level>
+                <highest-level unit="m">15</highest-level>
+            </elevation>
+            <population>8175133</population>
+            <establishment-date>
+                <establishment-day>08</establishment-day>
+                <establishment-month>08</establishment-month>
+                <establishment-year>1524</establishment-year>
+            </establishment-date>
+        </city>
+    </cities>
 
-    <main:types>
-        <el:type type-id="wdwd">wd</el:type>
-        <el:type class="type" type-id="observation-tower">Observation tower</el:type>
-        <el:type class="type" type-id="building">Building</el:type>
-        <el:type class="type" type-id="sculpture">Sculpture</el:type>
-        <el:type class="type" type-id="church-cathedral">Church/Cathedral</el:type>
-        <el:type class="type" type-id="wall">Wall</el:type>
-        <el:type class="type" type-id="landscape">Landscape</el:type>
-    </main:types>
+    <types>
+        <type type-id="wdwd">wd</type>
+        <type class="type" type-id="observation-tower">Observation tower</type>
+        <type class="type" type-id="building">Building</type>
+        <type class="type" type-id="sculpture">Sculpture</type>
+        <type class="type" type-id="church-cathedral">Church/Cathedral</type>
+        <type class="type" type-id="wall">Wall</type>
+        <type class="type" type-id="landscape">Landscape</type>
+    </types>
 
-</main:monuments-database>
+</monuments-database>
