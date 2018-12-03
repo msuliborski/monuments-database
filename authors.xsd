@@ -13,7 +13,7 @@
                             <xsd:simpleType>
                                 <xsd:restriction base="xsd:string">
                                     <xsd:maxLength  value="50"/>
-                                    <xsd:pattern value="([a-zA-z -łąęóżźśćńŚÓĄĘŻŹĆŃŁ])*"/>
+                                    <xsd:pattern value="([a-zA-Z -łąęóżźśćńŚÓĄĘŻŹĆŃŁ])*"/>
                                 </xsd:restriction>
                             </xsd:simpleType>
                         </xsd:element>
@@ -22,7 +22,7 @@
                             <xsd:simpleType>
                                 <xsd:restriction base="xsd:string">
                                     <xsd:maxLength  value="50"/>
-                                    <xsd:pattern value="([a-zA-z -łąęóżźśćńŚÓĄĘŻŹĆŃŁ])*"/>
+                                    <xsd:pattern value="([a-zA-Z -łąęóżźśćńŚÓĄĘŻŹĆŃŁ])*"/>
                                 </xsd:restriction>
                             </xsd:simpleType>
                         </xsd:element>

@@ -309,7 +309,7 @@
                                 <xsd:simpleType>
                                     <xsd:restriction base="xsd:string">
                                         <xsd:maxLength  value="5"/>
-                                        <xsd:pattern value="([a-zA-z])*"/>
+                                        <xsd:pattern value="([a-zA-Z])*"/>
                                     </xsd:restriction>
                                 </xsd:simpleType>
                             </xsd:attribute>
