@@ -1,1 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<monuments-database-report>
+   <title>Monuments Database</title>
+   <authors>
+      <author>
+         <first-name>Michał</first-name>
+         <last-name>Suliborski</last-name>
+         <student-id>217863</student-id>
+      </author>
+      <author>
+         <first-name>Mariusz</first-name>
+         <last-name>Pisarski</last-name>
+         <student-id>217857</student-id>
+      </author>
+   </authors>
+   <cities>
+      <city>
+         <city-name>Paris</city-name>
+         <population>2206488</population>
+      </city>
+      <city>
+         <city-name>Rome</city-name>
+         <population>4355725</population>
+      </city>
+      <city>
+         <city-name>Berlin</city-name>
+         <population>3711930</population>
+      </city>
+      <city>
+         <city-name>Pisa</city-name>
+         <population>91104</population>
+      </city>
+      <city>
+         <city-name>London</city-name>
+         <population>8825000</population>
+      </city>
+      <city>
+         <city-name>Florence</city-name>
+         <population>383083</population>
+      </city>
+      <city>
+         <city-name>Warsaw</city-name>
+         <population>1764615</population>
+      </city>
+      <city>
+         <city-name>Wroclaw</city-name>
+         <population>639258</population>
+      </city>
+      <city>
+         <city-name>Lodz</city-name>
+         <population>639258</population>
+      </city>
+      <city>
+         <city-name>Gdansk</city-name>
+         <population>464254</population>
+      </city>
+      <city>
+         <city-name>Rio de Janeiro</city-name>
+         <population>6688930</population>
+      </city>
+      <city>
+         <city-name>New York</city-name>
+         <population>8175133</population>
+      </city>
+   </cities>
+   <summary>
+      <sumPopulation>3.7944778E7</sumPopulation>
+      <avgPopulation>3.162065E6</avgPopulation>
+      <sumCosts>9.0273481E10</sumCosts>
+      <avgCosts>6.018232067E9</avgCosts>
+      <reportGenerationDate>04-12-2018 03:02</reportGenerationDate>
+   </summary>
+</monuments-database-report>
