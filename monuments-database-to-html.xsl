@@ -21,9 +21,21 @@
 					<xsl:for-each select="monuments-database/cities/city">
 						<h2><xsl:value-of select="city-name"/></h2>
 						<xsl:for-each select="monuments-database/monuments/monument">
-							<xsl:if test="monuments-database/cities/city/@city-id = monuments-database/monuments/monument/@city-id">
-								monuments-database/cities/city/@city-id
+							awdwa
+							<xsl:if test="1 >= 1">
+								<p>wefea</p>
 							</xsl:if>
+							<xsl:choose>
+								<xsl:when test="12 >= 1">
+									<b>Platinum</b>
+								</xsl:when>
+								<xsl:when test="12133 >= 20">
+									<b>Gold</b>
+								</xsl:when>
+								<xsl:otherwise>
+									<b>Silver</b>
+								</xsl:otherwise>
+							</xsl:choose>
 
 						</xsl:for-each>
 					</xsl:for-each>
