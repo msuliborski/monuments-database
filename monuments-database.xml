@@ -27,7 +27,7 @@
                 <completion-month>03</completion-month>
                 <completion-year>1889</completion-year>
             </completion-date>
-            <costs currency="CHF">1500000000</costs>
+            <costs currency="USD">1500000000</costs>
             <dimensions>
                 <width unit="m">124.9</width>
                 <height unit="m">324</height>
@@ -47,7 +47,7 @@
                 <completion-month>01</completion-month>
                 <completion-year>80</completion-year>
             </completion-date>
-            <costs currency="ITL">40000000000</costs>
+            <costs currency="USD">40000000000</costs>
             <dimensions>
                 <width unit="m">156</width>
                 <height unit="m">48.5</height>
@@ -74,7 +74,7 @@
                 <completion-month>8</completion-month>
                 <completion-year>1961</completion-year>
             </completion-date>
-            <costs currency="DM">22500000000</costs>
+            <costs currency="USD">22500000000</costs>
             <dimensions>
                 <width unit="m">156</width>
                 <height unit="m">4.2</height>
@@ -127,7 +127,7 @@
                 <completion-month>04</completion-month>
                 <completion-year>1345</completion-year>
             </completion-date>
-            <costs currency="CHF">24500000000</costs>
+            <costs currency="USD">24500000000</costs>
             <dimensions>
                 <width unit="m">48</width>
                 <height unit="m">90</height>
@@ -152,7 +152,7 @@
                 <completion-month>05</completion-month>
                 <completion-year>1859</completion-year>
             </completion-date>
-            <costs currency="GBP">61000000</costs>
+            <costs currency="USD">61000000</costs>
             <dimensions>
                 <width unit="m">23</width>
                 <height unit="m">96</height>
@@ -176,7 +176,7 @@
                 <completion-month>09</completion-month>
                 <completion-year>1296</completion-year>
             </completion-date>
-            <costs currency="ITL">48000000</costs>
+            <costs currency="USD">48000000</costs>
             <dimensions>
                 <width unit="m">90</width>
                 <height unit="m">114.5</height>
@@ -222,7 +222,7 @@
                 <completion-month>07</completion-month>
                 <completion-year>1955</completion-year>
             </completion-date>
-            <costs currency="PLN">102000</costs>
+            <costs currency="USD">102000</costs>
             <dimensions>
                 <width unit="m">54</width>
                 <height unit="m">237</height>
@@ -249,7 +249,7 @@
                 <completion-month>05</completion-month>
                 <completion-year>2012</completion-year>
             </completion-date>
-            <costs currency="PLN">1600000000</costs>
+            <costs currency="USD">1600000000</costs>
             <dimensions>
                 <width unit="m">34</width>
                 <height unit="m">215</height>
@@ -322,7 +322,7 @@
                 <completion-month>10</completion-month>
                 <completion-year>1633</completion-year>
             </completion-date>
-            <costs currency="PLN">150000</costs>
+            <costs currency="USD">150000</costs>
             <dimensions>
                 <width unit="m">2</width>
                 <height unit="m">6</height>
@@ -350,7 +350,7 @@
                 <completion-month>05</completion-month>
                 <completion-year>1857</completion-year>
             </completion-date>
-            <costs currency="PLN">37500000</costs>
+            <costs currency="USD">37500000</costs>
             <dimensions>
                 <width unit="km">11</width>
                 <height unit="m">16</height>
@@ -376,7 +376,7 @@
                 <completion-month>10</completion-month>
                 <completion-year>2015</completion-year>
             </completion-date>
-            <costs currency="PLN">600000</costs>
+            <costs currency="USD">600000</costs>
             <dimensions>
                 <width unit="m">13</width>
                 <height unit="m">33</height>
