@@ -3,7 +3,7 @@
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-	<xsl:output method="html" encoding="utf-8" />
+	<xsl:output method="html" encoding="utf-8" indent="yes" />
 
 	<xsl:template match="/">
 
@@ -22,7 +22,7 @@
 					</xsl:for-each>
 				<div style="text-align: center; width: 50%; margin: 0 auto;">
 					<h2>Cities</h2>
-					<table border="1">
+					<table style="border: 1px solid;">
 						<tr>
 							<th>Name</th>
 							<th>Size</th>
@@ -57,7 +57,7 @@
 					<p></p>
 
 					<h2>Summary</h2>
-					<table border="1">
+					<table style="border: 1px solid;">
 						<tr>
 							<th>Sum of all citizens</th>
 							<th>Average citizens in cities</th>
