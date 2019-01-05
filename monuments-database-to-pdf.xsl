@@ -9,28 +9,20 @@
 	            encoding="UTF-8"/>
 
 	<xsl:template match="/">
-
 		<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
-
 			<fo:layout-master-set>
-				<!---->
-				<!--page dimensions-->
 				<fo:simple-page-master master-name="A4"
 				                       page-height="297mm"
 				                       page-width="210mm">
-
-					<!--working and displaying area-->
 					<fo:region-body margin-bottom="1.5cm"
 					                margin-top="1.5cm"
-					                margin-left="0.75cm"
-					                margin-right="0.75cm"/>
+					                margin-left="0.50cm"
+					                margin-right="0.50cm"/>
 					<fo:region-before extent="1.5cm"/>
 					<fo:region-after extent="1.5cm"/>
 					<fo:region-start extent="1.0cm"/>
 					<fo:region-end extent="1.0cm"/>
-					<!---->
 				</fo:simple-page-master>
-
 			</fo:layout-master-set>
 
 
