@@ -1,13 +1,3 @@
-
-
-
-
-
-<!--all antek-->
-
-
-
-
 <?xml version="1.0"?>
 
 <xsl:stylesheet version="1.0"
@@ -153,8 +143,6 @@
 	</xsl:template>
 
 
-
-	<!--template for displaying information about movie-->
 	<xsl:template name="movieInfo">
 		<xsl:variable name="offset" select="65"/>
 		<xsl:variable name="position" select="100 + (position() - 1) * $offset"/>
