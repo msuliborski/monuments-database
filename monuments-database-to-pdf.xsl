@@ -130,7 +130,7 @@
 								<fo:table-cell padding="5px">
 									<fo:block margin="10">
 										<xsl:call-template name="repeatable">
-										<xsl:with-param name="times" select="count"/>
+											<xsl:with-param name="times" select="count"/>
 										</xsl:call-template>
 									</fo:block>
 								</fo:table-cell>
