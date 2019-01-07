@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monuments-database-report>
+   <title>Monuments Database</title>
+   <authors>
+      <author>
+         <first-name>Michal</first-name>
+         <last-name>Suliborski</last-name>
+         <student-id>217863</student-id>
+      </author>
+      <author>
+         <first-name>Mariusz</first-name>
+         <last-name>Pisarski</last-name>
+         <student-id>217857</student-id>
+      </author>
+   </authors>
+   <cities>
+      <city>
+         <city-name>Paris</city-name>
+         <population>2206488</population>
+         <count>23</count>
+      </city>
+      <city>
+         <city-name>Rome</city-name>
+         <population>4355725</population>
+         <count>32</count>
+      </city>
+      <city>
+         <city-name>Berlin</city-name>
+         <population>3711930</population>
+         <count>12</count>
+      </city>
+      <city>
+         <city-name>Pisa</city-name>
+         <population>91104</population>
+         <count>18</count>
+      </city>
+      <city>
+         <city-name>London</city-name>
+         <population>8825000</population>
+         <count>70</count>
+      </city>
+      <city>
+         <city-name>Florence</city-name>
+         <population>383083</population>
+         <count>40</count>
+      </city>
+      <city>
+         <city-name>Warsaw</city-name>
+         <population>1764615</population>
+         <count>17</count>
+      </city>
+      <city>
+         <city-name>Wroclaw</city-name>
+         <population>639258</population>
+         <count>45</count>
+      </city>
+      <city>
+         <city-name>Lodz</city-name>
+         <population>639258</population>
+         <count>35</count>
+      </city>
+      <city>
+         <city-name>Gdansk</city-name>
+         <population>464254</population>
+         <count>22</count>
+      </city>
+      <city>
+         <city-name>Rio de Janeiro</city-name>
+         <population>6688930</population>
+         <count>22</count>
+      </city>
+      <city>
+         <city-name>New York</city-name>
+         <population>8175133</population>
+         <count>20</count>
+      </city>
+   </cities>
+   <summary>
+      <sumPopulation>37944778</sumPopulation>
+      <avgPopulation>3162065</avgPopulation>
+      <sumCosts>90273481000</sumCosts>
+      <avgCosts>6532250</avgCosts>
+      <reportGenerationDate>11.12.2018, 10:31 a.m.</reportGenerationDate>
+   </summary>
+</monuments-database-report>
