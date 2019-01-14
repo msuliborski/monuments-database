@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     x="0" y="0" width="450" height="800" style="margin: 0 auto;">
+
+    <rect id="game-border" x="0" y="0" width="450" height="800" style="fill: black; stroke: black;"/>
+    <text id="title" x="20" y="50" onclick="spawnBrick()" style="fill: white; font-size: 50px; font-weight: bold;">WILD CATCHER</text>
+
+    <circle id="player" cx="225" cy="750" r="25" fill="red"/>
+
+    <text id="score-text" x="160" y="350" style="fill: white; font-size: 200px; font-weight: bold; opacity: 0.2; ">0</text>>
+
+    <text id="play-text" onclick="startGame()" x="60" y="500" style="fill: white; font-size: 120px; font-weight: bold; opacity: 0.2; ">PLAY</text>>
+
+    <script xlink:href="logic.js" />
+
+</svg>
