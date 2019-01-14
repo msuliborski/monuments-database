@@ -12,10 +12,10 @@ var score = 0;
 var playerSpeed = 0;
 var playerSpeedCoefficient = 5;
 
-var spawning = 0;
-var lowering = 0;
-var colliding = 0;
-var steering = 0;
+var spawning;
+var lowering;
+var colliding;
+var steering;
 
 isLeftArrowPressed = false;
 isRightArrowPressed = false;
@@ -32,6 +32,38 @@ function startGame() {
     scoreText.innerHTML = score;
 
     playText.setAttribute("visibility", "hidden")
+}
+
+
+function spawnBall() {
+    var newBall = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    newBall.setAttributeNS(null,"id","ball"+ballNumber);
+    newBall.setAttributeNS(null,"cx",randomNumber(25, 375));
+    newBall.setAttributeNS(null,"cy",-25);
+    newBall.setAttributeNS(null,"r",25);
+    r = Math.floor(randomNumber(1, 3));
+    var color = "red";
+    if(r == 1) color = "red";
+    else if(r == 2) color = "blue";
+    else if(r == 3) color = "green";
+    newBall.setAttributeNS(null,"fill", color+"");
+    newBall.setAttributeNS(null,"stroke","none");
+
+    document.getElementById("svg").appendChild(newBall);
+    ballNumber++;
+}
+
+function lowerBalls() {
+    var i;
+    for (i = 0; i < ballNumber; i++) {
+        ball = document.getElementById("ball"+i);
+        if (ball != null) {
+            ball.setAttribute('cy', (ball.attributes.cy.value*1 + ballSpeed*1));
+            if (ball.attributes.cy.value * 1 >= 825) {
+                endGame();
+            }
+        }
+    }
 }
 
 function checkCollcions() {
@@ -51,7 +83,6 @@ function checkCollcions() {
             }
         }
     }
-
     if (score <= 9) scoreText.setAttribute("x", 160);
     else scoreText.setAttribute("x", 120);
 }
@@ -89,27 +120,6 @@ function handlePlayer() {
 }
 
 
-function spawnBall() {
-    var newBall = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    newBall.setAttributeNS(null,"id","ball"+ballNumber);
-    newBall.setAttributeNS(null,"cx",randomNumber(25, 375));
-    newBall.setAttributeNS(null,"cy",-25);
-    newBall.setAttributeNS(null,"r",25);
-    r = Math.floor(randomNumber(1, 4));
-    var color = "red";
-    if(r == 1) color = "red";
-    else if(r == 2) color = "blue";
-    else if(r == 3) color = "green";
-    newBall.setAttributeNS(null,"fill", color+"");
-    newBall.setAttributeNS(null,"stroke","none");
-
-    document.getElementById("svg").appendChild(newBall);
-    ballNumber++;
-    clearInterval(lowering);
-    lowering = setInterval(lowerBalls, 16.67);
-
-
-}
 
 function endGame() {
     clearInterval(spawning);
@@ -124,21 +134,6 @@ function endGame() {
     }
 
     playText.setAttribute("visibility", "visible")
-}
-
-
-function lowerBalls() {
-    var i;
-    for (i = 0; i < ballNumber; i++) {
-        ball = document.getElementById("ball"+i);
-        if (ball != null) {
-            ball.setAttribute('cy', (ball.attributes.cy.value*1 + ballSpeed*1));
-            if (ball.attributes.cy.value * 1 >= 825) {
-                endGame();
-            }
-        }
-    }
-
 }
 
 
