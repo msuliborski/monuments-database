@@ -41,7 +41,7 @@ function spawnBall() {
     newBall.setAttributeNS(null,"cx",randomNumber(25, 375));
     newBall.setAttributeNS(null,"cy",-25);
     newBall.setAttributeNS(null,"r",25);
-    r = Math.floor(randomNumber(1, 3));
+    r = Math.floor(randomNumber(1, 4));
     var color = "red";
     if(r == 1) color = "red";
     else if(r == 2) color = "blue";
