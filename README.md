@@ -1,6 +1,5 @@
 # Monuments Database
 Exercises from XML. XML Technologies (2018)
-
 * Task 1 - Using CSS for XML formatting and DTD definition
 * Task 2 - XML document plus XML Schema
 * Task 3 - Transformations using XSLT, part 1 (XML, XHTML)
@@ -8,11 +7,11 @@ Exercises from XML. XML Technologies (2018)
 * Task 5 - XML application
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Cloning
 ```
-$ git clone https://github.com/msuliborski/monuments-atabase
+$ git clone https://github.com/msuliborski/monuments-database
 ```
 
 ### Usage
